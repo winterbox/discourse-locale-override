@@ -765,29 +765,29 @@ ko:
           '0_2': '당신은 이 토픽에 관한 모든 알림을 무시합니다.'
           '0': '당신은 이 토픽에 관한 모든 알림을 무시합니다.'
         watching_pm:
-          title: "알림 : 주시 중"
-          description: "개인 메시지의 새로운 게시글은 항상 알림이 동작합니다. 읽지 않은 글의 수는 토픽 옆에 표시됩니다."
+          title: "알림: 팔로잉"
+          description: "개인 메시지에 업데이트가 있을 시 알림을 받습니다. 읽지 않은 새 글의 수는 제목 옆에 표시됩니다."
         watching:
-          title: "주시 중"
-          description: "이 토픽의 새로운 게시글은 항상 알림이 동작합니다. 읽지 않은 글의 수는 토픽 옆에 표시됩니다."
+          title: "알림: 팔로잉"
+          description: "이 토픽에 새로운 글이 달리면 알림을 받습니다. 읽지 않은 새 글의 수는 제목 옆에 표시됩니다."
         tracking_pm:
-          title: "알림 : 새 글 표시 중"
-          description: "읽지 않은 글과 새로운 게시물 수를 볼 수 있습니다. 누군가 당신의 @name을 언급했거나 당신의 글에 답글을 작성하면 알림을 받습니다."
+          title: "알림: 업데이트 표시"
+          description: "읽지 않은 새 글의 수가 제목 옆에 표시 됩니다. 누군가 당신의 @name 을 언급하거나 당신에게 답글을 작성한 경우에 알림을 받습니다."
         tracking:
-          title: "새 글 표시 중"
-          description: "읽지 않은 게시글의 수는 토픽 옆에 표시됩니다. 당신의 @이름 을 언급하거나 당신의 게시글에 답글을 작성한 경우에 알림이 작동합니다."
+          title: "알림: 업데이트 표시"
+          description: "읽지 않은 새 글의 수가 제목 옆에 표시됩니다. 누군가 당신의 @name 을 언급하거나 당신에게 답글을 작성한 경우에 알림을 받습니다."
         regular:
           title: "알림: 일반"
-          description: "누군가가 게시물에 @사용자이름 또는 답글을 달 경우에 알림을 받게 됩니다."
+          description: "누군가 당신의 @name 을 언급하거나 당신의 글에 답글이 달릴 때만 알림을 받게 됩니다."
         regular_pm:
           title: "알림: 일반"
-          description: "누군가 당신의 @name 으로 언급했거나 당신의 글에 답글이 달릴 때만 알림을 받게 됩니다."
+          description: "누군가 당신의 @name 을 언급하거나 당신의 글에 답글이 달릴 때만 알림을 받게 됩니다."
         muted_pm:
-          title: "알림 : 끔"
+          title: "알림: 끔"
           description: "이 개인 메시지에 대해 어떠한 알림도 받지 않지 않습니다."
         muted:
-          title: "알림 없음"
-          description: "아무 알림도 없습니다. '읽지 않은 글' 탭에 나타나지 않습니다."
+          title: "알림: 끔"
+          description: "아무 알림도 받지 않습니다. '팔로잉' 탭에 나타나지 않습니다."
       actions:
         recover: "토픽 다시 복구"
         delete: "토픽 삭제"
@@ -1090,17 +1090,17 @@ ko:
       parent: "부모 카테고리"
       notifications:
         watching:
-          title: "주시 중"
-          description: "이 카테고리 내의 새로운 토픽들을 지켜보도록 자동으로 설정됩니다. 새로운 게시글이나 토픽에 대하여 알림을 받게되며 토픽 옆에 읽지 않은 게시글의 수가 표시됩니다."
+          title: "알림: 팔로잉"
+          description: "이 카테고리 내의 새로운 토픽들을 팔로잉하도록 자동으로 설정됩니다. 새로운 게시글이나 토픽에 대하여 알림을 받게되며 제목 옆에 읽지 않은 글의 수가 표시됩니다."
         tracking:
-          title: "새 글 표시 중"
-          description: "이 카테고리 내의 새로운 토픽들을 추적하도록 자동으로 설정됩니다. 토픽 옆에 읽지 않은 게시글의 수가 표시됩니다."
+          title: "알림: 업데이트 표시"
+          description: "이 카테고리 내의 새로운 토픽들에 대한 업데이트를 표시하도록 자동으로 설정됩니다. 제목 옆에 읽지 않은 글의 수가 표시됩니다."
         regular:
           title: "알림: 일반"
-          description: "누군가 당신의 @name 으로 언급했거나 당신의 글에 답글이 달릴 때만 알림을 받게 됩니다."
+          description: "누군가 당신의 @name 을 언급하거나 당신의 글에 답글이 달릴 때만 알림을 받게 됩니다."
         muted:
-          title: "알림 꺼짐"
-          description: "이 카테고리의 새로운 토픽에 대한 알림을 받지 않고 읽지 않\x1C은 탭에도 표시하지 않습니다."
+          title: "알림: 끔"
+          description: "이 카테고리의 새로운 토픽에 대한 알림을 받지 않고 '팔로잉' 탭에도 나타나지 않습니다."
     flagging:
       title: '게시글을 신고하는 이유를 알려주세요.'
       action: '게시물 신고하기'
@@ -1173,40 +1173,40 @@ ko:
       with_topics: "%{filter} 토픽"
       with_category: "%{filter} %{category} 토픽"
       latest:
-        title: "최근"
-        help: "최근 업데이트된 토픽 보기"
+        title: "All"
+        help: "최근 이야기 중인 토픽"
       hot:
-        title: "인기 토픽"
-        help: "기간별 인기 토픽 보기"
+        title: "Hot"
+        help: "핫 토픽 모음"
       starred:
         title: "즐겨찾기"
-        help: "즐겨찾기한 토픽 보기"
+        help: "즐겨찾기한 토픽"
       read:
         title: "읽은 토픽"
-        help: "최근 읽은 토픽 보기"
+        help: "최근 읽은 토픽"
       categories:
         title: "카테고리"
         title_in: "카테고리 - {{categoryName}}"
-        help: "카테고리별로 토픽 보기"
+        help: "카테고리별 토픽"
       unread:
         title:
-          zero: "읽지 않은"
-          one: "읽지 않은(1)"
-          other: "읽지 않은({{count}})"
-        help: "지켜보거나 추적 중인 읽지 않은 토픽 "
+          zero: "팔로잉"
+          one: "팔로잉 (1)"
+          other: "팔로잉 ({{count}})"
+        help: "팔로잉하는 토픽들 중에 새 글이 업데이트 된 토픽('알림: 업데이트 표시' 포함)"
         lower_title_with_count:
-          one: "1개의 읽지 않은 글"
-          other: "{{count}}개의 읽지 않은 글"
+          one: "1개의 읽지 않은 게시물"
+          other: "{{count}}개의 읽지 않은 게시물"
       new:
         lower_title_with_count:
           one: "1 new"
           other: "{{count}} new"
         lower_title: "new"
         title:
-          zero: "새로운"
-          one: "새로운(1)"
-          other: "새로운({{count}})"
-        help: "며칠 내에 만들어진 토픽"
+          zero: "새 토픽"
+          one: "새 토픽(1)"
+          other: "새 토픽({{count}})"
+        help: "최근 개설된 새 토픽"
       posted:
         title: "내 게시물"
         help: "당신이 게시한 글"
@@ -1217,21 +1217,21 @@ ko:
           other: "{{categoryName}} ({{count}})"
         help: "{{categoryName}}카테고리의 최신 토픽"
       top:
-        title: "인기"
-        help: "작년 또는 지난 달, 지난 주, 어제에 활발했던 토픽"
+        title: "베스트"
+        help: "기간별 베스트 토픽"
         yearly:
-          title: "연간 인기글"
+          title: "연간 베스트"
         monthly:
-          title: "월간 인기글"
+          title: "월간 베스트"
         weekly:
-          title: "주간 인기글"
+          title: "주간 베스트"
         daily:
-          title: "일간 인기글"
+          title: "일간 베스트"
         this_year: "이번 년도"
         this_month: "이번 달"
         this_week: "이번 주"
         today: "오늘"
-        other_periods: "더 많은 인기 토픽 보기"
+        other_periods: "더 많은 베스트 토픽 보기"
     browser_update: '안타깝게도 <a href="http://www.discourse.org/faq/#browser">사용하시는 브라우저가 오래되어서 이 사이트를 이용하기 어렵습니다.</a>. <a href="http://browsehappy.com">브라우저를 업그레이드 하시기 바랍니다.</a>.'
     permission_types:
       full: "생성 / 답글 / 보기"
@@ -1897,10 +1897,10 @@ ko:
         bookmark: '<b>b</b> Bookmark post'
         edit: '<b>e</b> Edit post'
         delete: '<b>d</b> Delete post'
-        mark_muted: '<b>m</b>, <b>m</b> 토픽 알람 : 끄기'
-        mark_regular: '<b>m</b>, <b>r</b> 토픽 알람 : 일반(기본)으로 설정하기'
-        mark_tracking: '<b>m</b>, <b>t</b> 토픽 알람 : 추적하기'
-        mark_watching: '<b>m</b>, <b>w</b> 토픽 알람 : 주시하기'
+        mark_muted: '<b>m</b>, <b>m</b> 토픽 알림: 끔'
+        mark_regular: '<b>m</b>, <b>r</b> 토픽 알림: 일반'
+        mark_tracking: '<b>m</b>, <b>t</b> 토픽 알림: 업데이트 표시'
+        mark_watching: '<b>m</b>, <b>w</b> 토픽 알림: 팔로잉'
     badges:
       title: 뱃지
       allow_title: "뱃지를 칭호로 사용 가능하도록 허용할까요?"
