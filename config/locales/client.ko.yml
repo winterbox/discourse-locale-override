@@ -1173,7 +1173,7 @@ ko:
       with_topics: "%{filter} 토픽"
       with_category: "%{filter} %{category} 토픽"
       latest:
-        title: "All"
+        title: "최근"
         help: "최근 이야기 중인 토픽"
       hot:
         title: "Hot"
