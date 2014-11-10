@@ -21,14 +21,14 @@ ko:
     dates:
       time: "a h:mm"
       long_no_year: "MMM D a h:mm "
-      long_no_year_no_time: "MMM D"
-      long_with_year: "YYYY  MMM D a h:mm"
-      long_with_year_no_time: "YYYY MMM D"
-      long_date_with_year: "MMM D, 'YY LT"
-      long_date_without_year: "MMM D, LT"
-      long_date_with_year_without_time: "MMM D, 'YY"
-      long_date_without_year_with_linebreak: "MMM D <br/>LT"
-      long_date_with_year_with_linebreak: "MMM D, 'YY <br/>LT"
+      long_no_year_no_time: "MMM D일"
+      long_with_year: "YYYY년  MMM D일 a h:mm"
+      long_with_year_no_time: "YYYY년 MMM D일"
+      long_date_with_year: "MMM D일, 'YY년 LT"
+      long_date_without_year: "MMM D일, LT"
+      long_date_with_year_without_time: "MMM D일, 'YY년"
+      long_date_without_year_with_linebreak: "MMM D일 <br/>LT"
+      long_date_with_year_with_linebreak: "MMM D일, 'YY년 <br/>LT"
       tiny:
         half_a_minute: "< 1분"
         less_than_x_seconds:
@@ -49,8 +49,8 @@ ko:
           other: "> %{count}년"
         almost_x_years:
           other: "%{count}년"
-        date_month: "MMM D"
-        date_year: "'YY M/D"
+        date_month: "MMM D일"
+        date_year: "'YY년 M"
       medium:
         x_minutes:
           other: "%{count}분"
