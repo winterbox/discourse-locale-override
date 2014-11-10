@@ -7,14 +7,14 @@
 
 ko:
   dates:
-    short_date_no_year: "MMM D"
-    short_date: "YYYY-MMM-D"
-    long_date: "YYYY-MMM-D a h:mm"
+    short_date_no_year: "MMM D일"
+    short_date: "YYYY년 MMM D일"
+    long_date: "YYYY년 MMM D일 a h:mm"
   time:
     formats:
-      short: "%Y-%m-%d"
-      short_no_year: "%B %-d"
-      date_only: "%Y %b %-d"
+      short: "%Y년 %m %d일"
+      short_no_year: "%B %-d일"
+      date_only: "%Y년 %b %-d일"
   title: "Discourse"
   topics: "토픽들"
   posts: "게시물들"
