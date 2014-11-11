@@ -774,25 +774,25 @@ ko:
       invalid_string_min: "글자수가 %{min}자 이상이어야 합니다."
       invalid_string_max: "글자 수가 %{max}자 이상이어야 합니다."
   notification_types:
-    mentioned: "%{display_username} 사용자가 %{link} 에서 당신을 언급하였습니다."
-    liked: "%{display_username} 사용자가 %{link} 를 좋아합니다."
-    replied: "%{display_username} 사용자가 %{link} 에 당신의 게시글에 답글을 달았습니다."
-    quoted: "%{display_username} 사용자가 %{link} 에서 당신의 게시글을 인용했습니다."
-    edited: "%{display_username} 사용자가 %{link} 에서 당신의 글을 수정하였습니다."
-    posted: "%{display_username} 사용자가 %{link} 에 글을 게시 했습니다."
-    moved_post: "%{display_username} 사용자가 %{link} 에 당신의 게시글을 이동하였습니다."
-    private_message: "%{display_username} 사용자가 당신에게 개인 메시지를 보냈습니다: %{link}"
-    invited_to_private_message: "%{display_username} 사용자가 당신에게 개인 메시지로 초대하였습니다: %{link}"
-    invitee_accepted: "%{display_username} 사용자가 당신의 초대를 수락하였습니다."
+    mentioned: "%{display_username}님이 %{link}에서 당신을 언급하였습니다."
+    liked: "%{display_username}님이 %{link}에서 당신의 게시물을 좋아합니다."
+    replied: "%{display_username}님이 %{link}에서 당신의 게시물에 답글 달았습니다."
+    quoted: "%{display_username}님이 %{link}에서 당신의 게시물을 인용했습니다."
+    edited: "%{display_username}님이 %{link}에서 당신의 게시물을 수정했습니다."
+    posted: "%{display_username}님이 %{link}에서 새 게시물을 등록했습니다."
+    moved_post: "%{display_username}님이 당신의 게시물을 %{link}으로 이동시켰습니다."
+    private_message: "%{display_username}님이 당신에게 개인 메시지를 보냈습니다 : %{link}"
+    invited_to_private_message: "%{display_username}님이 당신을 개인 메시지로 초대했습니다 : %{link}"
+    invitee_accepted: "%{display_username}님이 당신의 초대를 수락했습니다."
   search:
     types:
       category: '카테고리'
       topic: '검색 결과'
       user: '사용자'
   original_poster: "원본 게시자"
-  most_posts: "최대 게시자"
+  most_posts: "최다 게시물"
   most_recent_poster: "최근 게시자"
-  frequent_poster: "빈번한 게시자"
+  frequent_poster: "최다 게시자"
   move_posts:
     new_topic_moderator_post:
       other: "%{count}개의 글을 새 토픽으로 옮겼습니다: %{topic_link}"
