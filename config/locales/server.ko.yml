@@ -1307,3 +1307,26 @@ ko:
 
   color_schemes:
     base_theme_name: "기본 테마 색상"
+
+  static:
+    search_help: |
+      <h2>유용한 팁들</h2>
+      <p>
+      <ul>
+        <li>제목 매치가 가장 우선시됩니다. 확실치 않을 땐 제목으로 찾아보세요.</li>
+        <li>고유하고, 평범하지 않은 단어를 사용한 검색이 언제나 최고의 검색결과를 낳습니다.</li>
+        <li>가능하다면 당신의 검색을 특정 카테고리, 사용자, 또는 토픽으로 좁혀 설정해보세요.</li>
+      </ul>
+      </p>
+      <h2>옵션들</h2>
+      <p>
+        <table>
+        <tr><td><code>order:views</code></td><td><code>order:latest</code></td><td colspan=3></td></tr>
+        <tr><td><code>status:open</code></td><td><code>status:closed</code></td><td><code>status:archived</code></td><td><code>status:noreplies</code></td><td><code>status:singleuser</code></td></tr>
+        <tr><td><code>category:foo</code></td><td><code>user:foo</code></td><td colspan=3></td></tr>
+        <tr><td><code>in:likes</code></td><td><code>in:posted</code></td><td><code>in:watching</code></td><td><code>in:tracking</code></td><td></td></tr>
+        </table>
+      </p>
+      <p>
+        <code>rainbows category:parks status:open order:latest</code> will search for topics containing the word "rainbows" in the category "parks" that are not closed or archived, ordered by date of last post.
+      </p>
