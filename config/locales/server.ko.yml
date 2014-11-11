@@ -37,7 +37,7 @@ ko:
   not_logged_in: "로그인된 사용자만 사용 가능합니다."
   read_only_mode_enabled: "현재 읽기 전용 모드입니다."
   too_many_replies:
-    other: "죄송합니다. 신규 가입자들은 같은 주제에 %{count}개까지만 포스트(댓글)를 작성할 수 있습니다."
+    other: "죄송합니다. 신규 멤버는 한 토픽에 %{count}개까지만 포스트(댓글)를 작성할 수 있습니다."
   embed:
     start_discussion: "토론 시작"
     continue: "토론 계속하기"
@@ -54,21 +54,21 @@ ko:
     one: "죄송합니다. 당신은 한 게시물에서 한 사용자만 언급할 수 있습니다."
     other: "죄송합니다. 당신은 한 게시물에서 %{count}명의 사용자만 언급할 수 있습니다."
   too_many_mentions_newuser:
-    zero: "죄송합니다. 신규 가입자는 다른 사용자를 언급할 수 없습니다."
-    one: "죄송합니다. 신규 가입자는 한 게시물에서 한 사용자만 언급할 수 있습니다."
-    other: "죄송합니다. 신규 가입자는 한 게시물에서 %{count}명의 사용자만 언급할 수 있습니다."
+    zero: "죄송합니다. 신규 멤버는 다른 사용자를 언급할 수 없습니다."
+    one: "죄송합니다. 신규 멤버는 한 게시물에서 한 사용자만 언급할 수 있습니다."
+    other: "죄송합니다. 신규 멤버는 한 게시물에서 %{count}명의 사용자만 언급할 수 있습니다."
   too_many_images:
-    zero: "죄송합니다. 신규 가입자는 게시물에 이미지를 넣을 수 없습니다."
-    one: "죄송합니다. 신규 가입자는 한 게시물에 하나의 이미지만 넣을 수 있습니다."
-    other: "죄송합니다. 신규 가입자는 한 게시물에 %{count}개의 이미지만 넣을 수 있습니다."
+    zero: "죄송합니다. 신규 멤버는 게시물에 이미지를 넣을 수 없습니다."
+    one: "죄송합니다. 신규 멤버는 한 게시물에 하나의 이미지만 넣을 수 있습니다."
+    other: "죄송합니다. 신규 멤버는 한 게시물에 %{count}개의 이미지만 넣을 수 있습니다."
   too_many_attachments:
-    zero: "죄송합니다. 신규 가입자는 게시물에 파일을 첨부할 수 없습니다."
-    one: "죄송합니다. 신규 가입자는 한 게시물에 하나의 파일만 첨부할 수 있습니다."
-    other: "죄송합니다. 신규 가입자는 한 게시물에 %{count}개의 파일만 첨부 하실 수 있습니다."
+    zero: "죄송합니다. 신규 멤버는 게시물에 파일을 첨부할 수 없습니다."
+    one: "죄송합니다. 신규 멤버는 한 게시물에 하나의 파일만 첨부할 수 있습니다."
+    other: "죄송합니다. 신규 멤버는 한 게시물에 %{count}개의 파일만 첨부 하실 수 있습니다."
   too_many_links:
-    zero: "죄송합니다. 신규 가입자는 게시물에 링크를 넣을 수 없습니다."
-    one: "죄송합니다. 신규 가입자는 한 게시물에 하나의 링크만 넣을 수 있습니다."
-    other: "죄송합니다. 신규 가입자는 한 게시물에 %{count}개의 링크만 넣을 수 있습니다."
+    zero: "죄송합니다. 신규 멤버는 게시물에 링크를 넣을 수 없습니다."
+    one: "죄송합니다. 신규 멤버는 한 게시물에 하나의 링크만 넣을 수 있습니다."
+    other: "죄송합니다. 신규 멤버는 한 게시물에 %{count}개의 링크만 넣을 수 있습니다."
   spamming_host: "죄송합니다. 링크를 첨부할 수 없습니다."
   user_is_suspended: "가입이 보류된 사용자는 게시물을 작성할 수 없습니다."
   just_posted_that: "당신이 최근에 작성한 게시물과 너무 비슷합니다."
@@ -98,11 +98,11 @@ ko:
       admins: "시스템 관리자"
       moderators: "운영자"
       staff: "스탭"
-      trust_level_0: "회원등급 0"
-      trust_level_1: "회원등급 1"
-      trust_level_2: "회원등급 2"
-      trust_level_3: "회원등급 3"
-      trust_level_4: "회원등급 4"
+      trust_level_0: "레벨 0 : 새내기"
+      trust_level_1: "레벨 1 : 입문자"
+      trust_level_2: "레벨 2 : 멤버"
+      trust_level_3: "레벨 3 : 시니어 멤버"
+      trust_level_4: "레벨 4 : 리더"
   education:
     until_posts:
       other: "%{count} 게시물"
@@ -197,8 +197,9 @@ ko:
     no_info_me: "<div class='missing-profile'>프로필의 내 소개란이 비어있습니다. <a href='/users/%{username_lower}/preferences/about-me'>지금 작성하시겠습니까?</a></div>"
     no_info_other: "<div class='missing-profile'>%{name}님께서는 아직 내 소개를 작성하지 않으셨습니다</div>"
   vip_category_name: "라운지"
-  vip_category_description: "회원등급 3단계 이상의 사용자만 사용할 수 있는 카테고리입니다."
+  vip_category_description: "레벨 3단계 이상의 사용자만 사용할 수 있는 카테고리입니다."
   meta_category_name: "메타"
+  meta_category_description: "사이트의 운영에 대해 건의하고 토론하는 곳입니다."
   staff_category_name: "스탭"
   staff_category_description: "스탭들을 위한 비공개 카테고리입니다. 관리자와 운영자에게만 보입니다."
   lounge_welcome:
@@ -207,30 +208,30 @@ ko:
 
       축하합니다! :confetti_ball:
 
-      당신의 레벨은 **정규 회원**(회원등급 3단계)으로 승급되었습니다.
+      당신은 **시니어 멤버**(레벨 3단계)로 승급되었습니다.
 
       이제부터 아래의 행동들을 할 수 있습니다 &hellip;
 
       * 토픽을 제목을 수정할 수 있습니다
       * 토픽의 카테고리를 수정할 수 있습니다
       * Have all your links followed ([automatic nofollow](http://en.wikipedia.org/wiki/Nofollow) is removed)
-      * 회원등급 3단계 이상인 사용자만 사용할 수 있는 비공개 라운지에 접근할 수 있습니다
+      * 회원레벨 3단계 이상인 사용자만 사용할 수 있는 비공개 라운지에 접근할 수 있습니다
       * 좋아요와 신고의 가중치가 높아집니다
 
-      [정규 회원 목록](/badges/3/regular)을 확인할 수 있습니다. 인사하는 걸 잊지마세요.
+      [시니어 멤버 리스트](/badges/3/regular)를 확인할 수 있습니다. 인사해보는 건 어떨까요?
 
-      우리 커뮤니티의 중요한 역할을 해주시는 것에 큰 감사드립니다!
+      우리 커뮤니티에서 중요한 역할을 해주시는 것에 감사드립니다!
 
-      (회원등급에 관한 더 자세한 정보를 보려면, [이 토픽을 확인하세요][trust]. 해당 요건을 지키는 사용자만 정규 회원의 자격이 유지됩니다.)
+      (회원등급에 관한 더 자세한 정보를 보려면, [이 토픽을 확인하세요][trust]. 해당 요건을 지키는 사용자만 시니어 멤버의 자격이 유지됩니다.)
 
       [trust]: https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
   category:
-    topic_prefix: "'%{category}' 카테고리의 설명"
+    topic_prefix: "'%{category}' 카테고리 설명"
     replace_paragraph: "[이 첫번째 문단을 당신의 새로운 카테고리의 짧은 설명으로 바꿔주세요. 이 지침은 카테고리 선택 화면에 나타날 것입니다. 200자 이하로 적어주세요.]"
     post_template: "%{replace_paragraph}\n\n이 공간은 긴 설명을 사용하여 주세요. 또한 카테고리 가이드라인이나 룰도 이 공간을 이용해주세요.\n\n몇 가지 답글에 관련하여 고려해봐야 할 것들:\n\n- 무엇을 위한 카테고리인가? 왜 사용자들이 이 카테고리를 필요로 하겠는가?\n\n- 이미 가지고있는 다른 카테고리와 어떻게 다른가?\n\n- 정말 이 카테고리가 필요한가?\n\n- 다른 카테고리와 합병이 필요한가 아니면 더욱 자세한 카테고리로 나눌 필요가 있는가?\n"
     errors:
       uncategorized_parent: "Uncategorized 카테고리는 부모 카테고리를 가질 수 없습니다."
-      self_parent: "하위 카테고리의 부모는 자신이 될 수 없습니다."
+      self_parent: "하위 카테고리의 부모를 자기자신으로 설정할 수 없습니다."
       depth: "하위 카테고리는 계층 구조로 사용할 수 없습니다."
     cannot_delete:
       uncategorized: "Uncategorized는 삭제할 수 없습니다."
@@ -240,17 +241,19 @@ ko:
       topic_exists_no_oldest: "%{count}개의 토픽이 이 카테고리 내에 있어 삭제할 수 없습니다."
   trust_levels:
     newuser:
-      title: "새로운 사용자"
+      title: "새내기"
     basic:
-      title: "기본 사용자"
+      title: "입문자"
     regular:
-      title: "회원"
+      title: "멤버"
     leader:
-      title: "정규 회원"
+      title: "시니어 멤버"
     elder:
-      title: "지도자"
+      title: "리더"
+    change_failed_explanation: "당신은 %{user_name} 사용자를 '%{new_trust_level}'으로 강등시키려 하였습니다. 하지만 해당 사용자의 신뢰도는 이미 '%{current_trust_level}'입니다. %{user_name} 사용자의 신뢰도는 '%{current_trust_level}'으로 유지됩니다.  - if you wish to demote user lock trust level first"
   rate_limiter:
-    too_many_requests: "지금 하시려는 행동에는 하루 제한이 있습니다. %{time_left} 동안 기다리시고 다시 시도해 주세요."
+    slow_down: "해당 작업 수행을 너무 많이 시도했습니다. 잠시 뒤에 다시 시도해보세요."
+    too_many_requests: "이 행동은 하루에 수행할 수 있는 횟수에 제한이 있습니다. %{time_left} 동안 기다리시고 다시 시도해주세요."
     hours:
       other: "%{count}시간"
     minutes:
@@ -259,13 +262,13 @@ ko:
       other: "%{count}초"
   datetime:
     distance_in_words:
-      half_a_minute: "30초 전"
+      half_a_minute: "< 1분"
       less_than_x_seconds:
-        other: "%{count}초 전"
+        other: "< %{count}초"
       x_seconds:
         other: "%{count}초"
       less_than_x_minutes:
-        other: "%{count}분 전"
+        other: "< %{count}분"
       x_minutes:
         other: "%{count}분"
       about_x_hours:
@@ -273,23 +276,23 @@ ko:
       x_days:
         other: "%{count}일"
       about_x_months:
-        other: "%{count}달"
+        other: "%{count}개월"
       x_months:
-        other: "%{count}달"
+        other: "%{count}개월"
       about_x_years:
         other: "%{count}년"
       over_x_years:
-        other: "%{count}년 보다 전"
+        other: "> %{count}년"
       almost_x_years:
-        other: "약 %{count}년"
+        other: "%{count}년"
     distance_in_words_verbose:
-      half_a_minute: "방금 전"
+      half_a_minute: "방금"
       less_than_x_seconds:
-        other: "방금 전"
+        other: "방금"
       x_seconds:
         other: "%{count}초 전"
       less_than_x_minutes:
-        other: "%{count}분 보다 이전"
+        other: "< %{count}분"
       x_minutes:
         other: "%{count}분 전"
       about_x_hours:
@@ -303,14 +306,14 @@ ko:
       about_x_years:
         other: "약 %{count}년 전"
       over_x_years:
-        other: "%{count}년 보다 이전"
+        other: "> %{count}년 전"
       almost_x_years:
-        other: "약 %{count}년 전"
+        other: "거의 %{count}년 전"
   password_reset:
-    no_token: "토큰이 만료되었습니다. 비밀번호를 초기화하여 주세요."
-    choose_new: "새로운 비밀번호를 적어주세요."
-    choose: "비밀번호를 선택해 주세요"
-    update: '비밀번호 변경'
+    no_token: "토큰이 만료되었습니다. 비밀번호 재설정을 다시 시도해주세요."
+    choose_new: "새로운 비밀번호를 입력하세요."
+    choose: "비밀번호를 입력하세요."
+    update: '비밀번호 업데이트'
     save: '비밀번호 설정'
     title: '비밀번호 초기화'
     success: "비밀번호를 성공적으로 변경하고 지금 로그인 되었습니다."
@@ -326,15 +329,15 @@ ko:
     please_continue: "계정이 활성화되었고, 로그인 되었습니다."
     continue_button: "%{site_name}으로 가기"
     welcome_to: "%{site_name}에 오신것을 환영합니다."
-    approval_required: "이 포럼을 사용하기 위해선 운영자가 수동으로 당신의 새로운 계정을 수락해야 합니다. 계정이 수락이 되면 자동으로 이메일이 발송됩니다."
+    approval_required: "이 포럼을 사용하기 위해선 운영자가 수동으로 당신의 새로운 계정을 허가해야 합니다. 계정이 허가되면 자동으로 이메일이 발송됩니다."
   post_action_types:
     off_topic:
       title: '오프 토픽'
-      description: '이 글은 현재 주제와 전혀 맞지 않습니다.'
+      description: '이 게시물은 현재 토픽과 전혀 관련이 없습니다.'
       long_form: '오프 토픽으로 신고하기'
     spam:
       title: '스팸'
-      description: '이 게시물은 광고성으로 판단되어집니다. 이 글은 현재 대화에서 유용하지도, 관련되지 않습니다.'
+      description: '이 게시물은 광고물로 판단되어집니다. 현재 토픽에 대해 아무 유용성/관련성이 없습니다.'
       long_form: '스팸으로 신고하기'
     inappropriate:
       title: '부적절함'
@@ -342,12 +345,13 @@ ko:
       long_form: '부적절함으로 신고하기'
     notify_user:
       title: '{{username}}에게 알리기'
+      description: '이 게시물에 내가 작성자와 직접 대화하고 싶은 내용이 있습니다. 신고에서 제외해주세요.'
       long_form: '신고한 사용자'
-      email_title: '"%{title}" 내의 당신의 게시글'
+      email_title: '토픽 "%{title}" 내의 당신의 게시물'
       email_body: "%{link}\n\n%{message}"
     notify_moderators:
       title: '운영자에게 알리기'
-      description: '이 게시물은 <a href="/faq">FAQ</a>, <a href="%{tos_url}">TOS</a>, 또는 다른 이유에서 운영자의 주의가 필요합니다.'
+      description: '이 게시물은 <a href="/guidelines">가이드라인</a>, <a href="%{tos_url}">이용약관</a>, 또는 다른 이유와 관련해서 운영자의 주의가 필요합니다.'
       long_form: '운영자에게 알림'
       email_title: '"%{title}" 게시물에 대한 운영자의 확인이 필요합니다'
       email_body: "%{link}\n\n%{message}"
@@ -372,11 +376,11 @@ ko:
       title: '부적절함'
       description: '이 게시물은 평균적인 사람들의 관점에서 볼 때 공격적이나 모욕적인 글을 담고 있거나,
 
-        <a href="/guidelines">커뮤니티 가이드라인</a>에 맞지 않습니다.'
-      long_form: '부적절함으로 신고하였습니다.'
+        <a href="/guidelines">가이드라인</a>에 맞지 않습니다.'
+      long_form: '부적절함으로 신고되었습니다.'
     notify_moderators:
-      title: '운영자에게 알림'
-      description: '이 게시물은 <a href="/faq">FAQ</a>, <a href="%{tos_url}">TOS</a>, 또는 기타 다른 이유에서 운영자의 주의가 필요합니다.'
+      title: '운영자에게 알리기'
+      description: '이 게시물은 <a href="/guidelines">가이드라인</a>, <a href="%{tos_url}">이용약관</a>, 또는 다른 이유와 관련해서 운영자의 주의가 필요합니다.'
       long_form: '운영자에게 알림'
       email_title: '토픽 "%{title}" 은 운영자의 확인이 필요합니다'
       email_body: "%{link}\n\n%{message}"
@@ -395,13 +399,13 @@ ko:
     description: "구독이 해지되었습니다."
     oops: "만약 실수였다면 아래를 클릭하여주세요."
     error: "구독 해지하는데 문제가 발생하였습니다."
-    preferences_link: "<a href='/my/preferences'>환경설정 페이지</a>에서 요약 메일도 구독 해지할 수 있습니다."
+    preferences_link: "<a href='/my/preferences'>환경설정 페이지</a>에서도 요약 메일을 구독 해지할 수 있습니다."
     different_user_description: "요약 메일을 받는 다른 사용자로 로그인되어 있습니다. 로그아웃 한 후 다시 시도해주세요."
-    not_found_description: "죄송합니다. 구독 해지할 수 없습니다. 이메일의 구독해지 링크 기한이 만료되었을 수도 있습니다."
+    not_found_description: "죄송합니다. 구독 해지할 수 없습니다. 이메일로 받으신 해지 링크가 만료되었을 수 있습니다."
   resubscribe:
-    action: "재구독"
-    title: "재구독 되었습니다!"
-    description: "재구독 되었습니다."
+    action: "다시 구독"
+    title: "다시 구독되었습니다!"
+    description: "다시 구독되었습니다."
   reports:
     visits:
       title: "사용자 방문"
@@ -436,11 +440,11 @@ ko:
       xaxis: "일"
       yaxis: "새로운 즐겨찾기 수"
     users_by_trust_level:
-      title: "신뢰도당 사용자 수"
+      title: "회원레벨(신뢰도)당 사용자 수"
       xaxis: "신뢰도"
       yaxis: "사용자 수"
     emails:
-      title: "이메일 보냄"
+      title: "보내진 이메일"
       xaxis: "일"
       yaxis: "이메일 수"
     user_to_user_private_messages:
@@ -558,14 +562,14 @@ ko:
     title: "title 태그에 쓰일, 이 싸이트의 짧은 제목"
     site_description: "이 사이트를 한 문장으로 설명해 주세요. meta description 태그에 사용됩니다."
     contact_email: "이 사이트에 대한 주 이메일 주소. discourse.org로부터 중요한 업데이트에 대한 정보가 이 메일 주소로 보내질 것입니다."
-    company_full_name: "정책이나 약관에 사용되는 이 사이트를 운영하는 회사의 전체 이름"
-    company_short_name: "정책이나 약관에 사용되는 이 사이트를 운영하는 회사의 축약 이름"
-    company_domain: "정책이나 약관에 사용되는 이사이트를 운영하는 회사의 도메인 이름"
-    queue_jobs: "오직 개발자만!! 주의!! By default, queue jobs in sidekiq. If disabled, your site will be broken."
-    crawl_images: "제대로된 넓이와 높이를 추가하기 위해, 원격 URL로 부터 이미지를 회수해온다."
-    download_remote_images_to_local: "이미지를 다운로드하면 원격 이미지를 로컬이미지로 변경한다. 이미지가 깨지는 것을 막을 수 있다."
+    company_full_name: "DEPRECATED. Not used anymore and will be removed. The full name of the company that runs this site, used in legal documents like /tos and /privacy"
+    company_short_name: "DEPRECATED. Not used anymore and will be removed. The full name of the company that runs this site, used in legal documents like /tos and /privacy"
+    company_domain: "DEPRECATED. Not used anymore and will be removed. The full name of the company that runs this site, used in legal documents like /tos and /privacy"
+    queue_jobs: "DEVELOPER ONLY! WARNING! By default, queue jobs in sidekiq. If disabled, your site will be broken."
+    crawl_images: "Retrieve images from remote URLs to insert the correct width and height dimensions."
+    download_remote_images_to_local: "Convert remote images to local images by downloading them; this prevents broken images."
     download_remote_images_threshold: "원격의 이미지를 로컬에 다운받기 위한 최소 디스크 공간(%)"
-    disabled_image_download_domains: "이 도메인을 통해서 원격 이미지를 다운로드 하지 않는다. ` | `를 구분자로 한 리스트"
+    disabled_image_download_domains: "이 도메인들을 통해서 원격 이미지를 다운로드 하지 않는다. ` | `를 구분자로 한 리스트"
     ninja_edit_window: "편집을 결과가 새로운 버전을 생성하지 않는 포스팅 이후에 경과할 시간(초)"
     post_edit_time_limit: "글 작성자가 해당 글을 편집하거나 삭제할 수 있도록 허용되는 시간(분). 0으로 설정하면 언제든지 편집이나 삭제가 허용됨."
     edit_history_visible_to_public: "모든 사용자가 게시글의 수정 내역을 볼 수 있도록 허용. 비활성화시 스태프 맴버만 수정 내역을 볼 수 있음."
@@ -764,7 +768,7 @@ ko:
       invalid_integer_min: "%{min}이상 이어야 합니다."
       invalid_integer_max: "%{max}이하 이어야 합니다."
       invalid_integer: "정수만 허용됩니다."
-      regex_mismatch: "해당 포멧은 허용되지 않습니다."
+      regex_mismatch: "해당 포맷은 허용되지 않습니다."
       invalid_string: "허용되는 정보가 아닙니다."
       invalid_string_min_max: "글자 수가 %{min}자 이상 %{max}자 이하이어야 합니다."
       invalid_string_min: "글자수가 %{min}자 이상이어야 합니다."
