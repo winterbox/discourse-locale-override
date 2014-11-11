@@ -16,9 +16,9 @@ ko:
       short_no_year: "%B %-d일"
       date_only: "%Y년 %b %-d일"
   title: "Discourse"
-  topics: "토픽들"
-  posts: "게시물들"
-  loading: "로딩중"
+  topics: "토픽"
+  posts: "포스트"
+  loading: "로딩 중"
   powered_by_html: 'Powered by <a href="http://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled'
   log_in: "로그인"
   via: "%{site_name}의 %{username}"
@@ -31,21 +31,21 @@ ko:
   bulk_invite:
     file_should_be_csv: "CSV 또는 TXT형식의 파일을 업로드해야 합니다."
   backup:
-    operation_already_running: "현재 %{operation} 작업중입니다. %{operation} 작업을 지금 시작할 수 없습니다."
+    operation_already_running: "현재 %{operation} 작업 중입니다. %{operation} 작업을 지금 시작할 수 없습니다."
     backup_file_should_be_tar_gz: "백업 파일은 .tar.gz형식의 파일이어야 합니다."
     not_enough_space_on_disk: "백업을 업로드할 디스크 공간이 충분하지 않습니다."
   not_logged_in: "로그인된 사용자만 사용 가능합니다."
   read_only_mode_enabled: "현재 읽기 전용 모드입니다."
   too_many_replies:
-    other: "죄송합니다. 신규 사용자들은 같은 주제에 %{count}개까지만 댓글을 달 수 있습니다."
+    other: "죄송합니다. 신규 가입자들은 같은 주제에 %{count}개까지만 포스트(댓글)를 작성할 수 있습니다."
   embed:
     start_discussion: "토론 시작"
     continue: "토론 계속하기"
     more_replies:
       other: "추가 %{count} 개 댓글"
     loading: "토론 불러오는 중..."
-    permalink: "Permalink"
-    imported_from: "%{link}에 있는 원글과 유사한 주제를 가진 토론 주제입니다."
+    permalink: "고유주소"
+    imported_from: "%{link}의 원글과 유사한 주제의 토론입니다."
     in_reply_to: "▶ %{username}"
     replies:
       other: "댓글 %{count}개"
@@ -54,59 +54,60 @@ ko:
     one: "죄송합니다. 당신은 한 게시물에서 한 사용자만 언급할 수 있습니다."
     other: "죄송합니다. 당신은 한 게시물에서 %{count}명의 사용자만 언급할 수 있습니다."
   too_many_mentions_newuser:
-    zero: "죄송합니다. 새로운 사용자는 다른 사용자를 언급할 수 없습니다."
-    one: "죄송합니다. 새로운 사용자는 한 게시물에서 한 사용자만 언급할 수 있습니다."
-    other: "죄송합니다. 새로운 사용자는 한 게시물에서 %{count}명의 사용자만 언급할 수 있습니다."
+    zero: "죄송합니다. 신규 가입자는 다른 사용자를 언급할 수 없습니다."
+    one: "죄송합니다. 신규 가입자는 한 게시물에서 한 사용자만 언급할 수 있습니다."
+    other: "죄송합니다. 신규 가입자는 한 게시물에서 %{count}명의 사용자만 언급할 수 있습니다."
   too_many_images:
-    zero: "죄송합니다. 새로운 사용자는 게시물에 이미지를 넣을 수 없습니다."
-    one: "죄송합니다. 새로운 사용자는 한 게시물에 하나의 이미지만 넣을 수 있습니다."
-    other: "죄송합니다. 새로운 사용자는 한 게시물에 %{count}개의 이미지만 넣을 수 있습니다."
+    zero: "죄송합니다. 신규 가입자는 게시물에 이미지를 넣을 수 없습니다."
+    one: "죄송합니다. 신규 가입자는 한 게시물에 하나의 이미지만 넣을 수 있습니다."
+    other: "죄송합니다. 신규 가입자는 한 게시물에 %{count}개의 이미지만 넣을 수 있습니다."
   too_many_attachments:
-    zero: "죄송합니다. 새로운 사용자는 게시물에 파일을 첨부 하실 수 없습니다."
-    one: "죄송합니다. 새로운 사용자는 한 게시물에 하나의 파일만 첨부 하실 수 있습니다."
-    other: "죄송합니다. 새로운 사용자는 한 게시물에 %{count}개의 파일만 첨부 하실 수 있습니다."
+    zero: "죄송합니다. 신규 가입자는 게시물에 파일을 첨부할 수 없습니다."
+    one: "죄송합니다. 신규 가입자는 한 게시물에 하나의 파일만 첨부할 수 있습니다."
+    other: "죄송합니다. 신규 가입자는 한 게시물에 %{count}개의 파일만 첨부 하실 수 있습니다."
   too_many_links:
-    zero: "죄송합니다. 새로운 사용자는 게시물에 링크를 넣을 수 없습니다."
-    one: "죄송합니다. 새로운 사용자는 한 게시물에 하나의 링크만 넣을 수 있습니다."
-    other: "죄송합니다. 새로운 사용자는 한 게시물에 %{count}개의 링크만 넣을 수 있습니다."
-  spamming_host: "죄송합니다. 링크를 첨부 하실 수 없습니다."
-  just_posted_that: "당신이 이전에 게시한 것과 너무 비슷합니다."
+    zero: "죄송합니다. 신규 가입자는 게시물에 링크를 넣을 수 없습니다."
+    one: "죄송합니다. 신규 가입자는 한 게시물에 하나의 링크만 넣을 수 있습니다."
+    other: "죄송합니다. 신규 가입자는 한 게시물에 %{count}개의 링크만 넣을 수 있습니다."
+  spamming_host: "죄송합니다. 링크를 첨부할 수 없습니다."
+  user_is_suspended: "가입이 보류된 사용자는 게시물을 작성할 수 없습니다."
+  just_posted_that: "당신이 최근에 작성한 게시물과 너무 비슷합니다."
   has_already_been_used: "이미 사용되었습니다."
   invalid_characters: "사용할 수 없는 문자를 포함하고 있습니다."
-  is_invalid: "사용할 수 없습니다. 조금더 자세하게 적어주세요."
+  is_invalid: "사용할 수 없습니다. 조금 더 자세히 적어주세요."
   next_page: "다음 페이지 →"
   prev_page: "← 이전 페이지"
   page_num: "%{num}페이지 "
   topics_in_category: "'%{category}' 카테고리의 토픽들"
   rss_posts_in_topic: "'%{topic}' 의 RSS 피드"
   rss_topics_in_category: "'%{category}' 카테고리의 RSS 피드 "
-  author_wrote: "%{author} 게시:"
-  num_posts: "게시글 수:"
+  author_wrote: "%{author} 작성:"
+  num_posts: "게시물:"
   num_participants: "참여자:"
   read_full_topic: "전체 토픽 읽기"
   private_message_abbrev: "개인 메시지"
   rss_description:
-    latest: "최신 토픽"
-    hot: "인기 토픽들"
-  too_late_to_edit: "이 글은 작성된 지 너무 오랜 기간이 지났습니다. 수정 또는 삭제할 수 없습니다."
+    latest: "최근 토픽"
+    hot: "인기 토픽"
+  too_late_to_edit: "이 게시물은 작성된 지 너무 오랜 기간이 지났습니다. 수정 또는 삭제할 수 없습니다."
   groups:
     errors:
       can_not_modify_automatic: "자동 그룹은 수정 하실 수 없습니다."
     default_names:
-      everyone: "모든 사람"
-      admins: "운영자들"
+      everyone: "모든 사용자"
+      admins: "시스템 관리자"
       moderators: "운영자"
-      staff: "스태프"
-      trust_level_0: "신뢰도_0"
-      trust_level_1: "신뢰도 1"
-      trust_level_2: "신뢰도 2"
-      trust_level_3: "신뢰도 3"
-      trust_level_4: "신뢰도 4"
+      staff: "스탭"
+      trust_level_0: "회원등급 0"
+      trust_level_1: "회원등급 1"
+      trust_level_2: "회원등급 2"
+      trust_level_3: "회원등급 3"
+      trust_level_4: "회원등급 4"
   education:
     until_posts:
-      other: "%{count} 글"
+      other: "%{count} 게시물"
     new-topic: |
-      %{site_name}에서 새로운 대화를 시작하여 주셔서 감사합니다. 토픽을 생성하시기 전에 이것들을 주의하여 주세요.
+      %{site_name}에서 새로운 대화를 시작해주셔서 감사합니다! 토픽을 생성하시기 전에 다음 사항을 주의해주세요.
 
       - 제목이 토픽을 잘 설명하고 있나요? 다른 사용자들의 관심을 끌기에 충분한가요?
 
@@ -168,54 +169,59 @@ ko:
         name: "카테고리 이름"
       post:
         raw: "본문"
+      user_profile:
+        bio_raw: "내 소개"
     errors:
       messages:
         is_invalid: "사용할 수 없습니다. 조금 더 자세하게 적어주세요."
-        has_already_been_used: "이미 사용 중."
+        has_already_been_used: "이미 사용 중입니다."
       models:
         topic:
           attributes:
+            base:
+              warning_requires_pm: "개인 메시지를 통해서만 경고를 보낼 수 있습니다."
+              too_many_users: "한 번에 한 명의 사용자에게 경고 메시지를 보낼 수 있습니다."
             archetype:
-              cant_send_pm: "그 사용자에게 개인 메세지를 보낼 수 없습니다."
+              cant_send_pm: "죄송합니다. 당신은 해당 사용자에게 개인 메세지를 보낼 수 없습니다."
         user:
           attributes:
             password:
-              common: "가장 자주 사용되는 10000개의 비밀번호 중 하나압니다. 보다 안전한 비밀번호를 사용하세요."
+              common: "흔하게 사용되는 비밀번호입니다. 보다 안전한 비밀번호를 사용하세요."
             ip_address:
-              signup_not_allowed: "이 계정에서는 가입 하실 수 없습니다."
+              signup_not_allowed: "해당 계정으로는 가입할 수 없습니다."
         color_scheme_color:
           attributes:
             hex:
               invalid: "유효한 색상이 아닙니다."
   user_profile:
-    no_info_me: "<div class='missing-profile'>프로필이 현재 비어있습니다. <a href='/users/%{username_lower}/preferences/about-me'>지금 작성하시겠습니까?</a></div>"
-    no_info_other: "<div class='missing-profile'>%{name}님께서는 아직 프로필을 작성하지 않으셨습니다</div>"
+    no_info_me: "<div class='missing-profile'>프로필의 내 소개란이 비어있습니다. <a href='/users/%{username_lower}/preferences/about-me'>지금 작성하시겠습니까?</a></div>"
+    no_info_other: "<div class='missing-profile'>%{name}님께서는 아직 내 소개를 작성하지 않으셨습니다</div>"
   vip_category_name: "라운지"
-  vip_category_description: "신뢰 등급 3 혹은 그 이상의 회원만 입장가능한 카테고리"
+  vip_category_description: "회원등급 3단계 이상의 사용자만 사용할 수 있는 카테고리입니다."
   meta_category_name: "메타"
-  staff_category_name: "스태프"
-  staff_category_description: "스태프들의 논의를 위한 비공개 카테고리입니다. 관리자 및 운영자에게만 보입니다."
+  staff_category_name: "스탭"
+  staff_category_description: "스탭들을 위한 비공개 카테고리입니다. 관리자와 운영자에게만 보입니다."
   lounge_welcome:
     title: "라운지에 오신 것을 환영합니다."
     body: |2
 
       축하합니다! :confetti_ball:
 
-      당신의 신뢰도가 **지도자** (신뢰도 3등급)로 올라갔기 때문에 이 토픽을 볼 수 있게 되었습니다.
+      당신의 레벨은 **정규 회원**(회원등급 3단계)으로 승급되었습니다.
 
       이제부터 아래의 행동들을 할 수 있습니다 &hellip;
 
       * 토픽을 제목을 수정할 수 있습니다
       * 토픽의 카테고리를 수정할 수 있습니다
-      * 링크가 follow로 처리됩니다 ([automatic nofollow](http://en.wikipedia.org/wiki/Nofollow) 가 제거됩니다)
-      * 신뢰도 3 이상인 사용자가 접근할 수 있는 비공개 카테고리인 라운지에 접근할 수 있습니다
+      * Have all your links followed ([automatic nofollow](http://en.wikipedia.org/wiki/Nofollow) is removed)
+      * 회원등급 3단계 이상인 사용자만 사용할 수 있는 비공개 라운지에 접근할 수 있습니다
       * 좋아요와 신고의 가중치가 높아집니다
 
-      [정규 멤버 목록](/badges/3/regular)을 확인할 수 있습니다. 인사하는 것을 잊지마세요.
+      [정규 회원 목록](/badges/3/regular)을 확인할 수 있습니다. 인사하는 걸 잊지마세요.
 
-      이 커뮤니티의 중요한 역할을 해주신 것에 감사드립니다!
+      우리 커뮤니티의 중요한 역할을 해주시는 것에 큰 감사드립니다!
 
-      (신뢰도에 관한 더 자세한 정보를 보시려면, [이 토픽을 확인하세요][trust]. 기준에 맞는 사람만 정규 회원으로 자격이 유지됩니다.)
+      (회원등급에 관한 더 자세한 정보를 보려면, [이 토픽을 확인하세요][trust]. 해당 요건을 지키는 사용자만 정규 회원의 자격이 유지됩니다.)
 
       [trust]: https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
   category:
