@@ -843,46 +843,135 @@ ko:
     visible_disabled: "이 토픽은 이제 리스트에서 해제되었습니다. 토픽 리스트에 유지되지 않습니다. 직접 링크를 통해서만 접근할 수 있게 됩니다.."
     
   login:
-    not_approved: "당신의 계정은 아직 활성화되지 않았습니다. 이메일을 확인하시고 로그인 해주세요."
-    incorrect_username_email_or_password: "계정 아이디, 이메일 또는 패스워드가 다릅니다."
-    wait_approval: "가입해주셔서 감사합니다. 곧 활성화 메일이 도착할 것 입니다."
+    not_approved: "당신의 계정은 아직 활성화되지 않았습니다. 계정이 활성화되면 이메일이 발송됩니다."
+    incorrect_username_email_or_password: "계정 이름, 이메일 또는 패스워드가 맞지 않습니다."
+    wait_approval: "가입해주셔서 감사합니다. 당신의 계정이 승인되면 알려드리겠습니다."
     active: "당신의 계정이 활성화되었습니다."
-    not_activated: "당신은 아직 로그인 할 수 없습니다. 계정 활성화 이메일을 보냈습니다. 계정을 활성화하기 위해 지침을 따라주세요."
+    activate_email: "<p>거의 다 되었습니다! 활성화 메일을 <b>%{email}</b>으로 보냈습니다. 계정을 활성화하기 위해 이메일 본문의 가이드를 따라주세요.</p><p>만약 이메일을 받지 못하셨다면, 스팸함을 확인해보시거나, 또는 다시 로그인하여 활성화 메일을 발송해보시기 바랍니다.</p>"
+    not_activated: "당신은 아직 로그인 할 수 없습니다. 당신에게 계정 활성화 이메일을 보냈습니다. 계정을 활성화하기 위해 이메일 본문의 가이드를 따라주세요."
     suspended: "당신은 %{date} 까지 로그인할 수 없습니다. "
-    suspended_with_reason: "당신은 %{date} 까지 로그인할 수 없습니다. 이유: %{reason}"
+    suspended_with_reason: "당신은 %{date} 까지 로그인할 수 없습니다. 이유 : %{reason}"
     errors: "%{errors}"
-    not_available: "불가능합니다. %{suggestion}"
+    not_available: "불가능합니다. 다음을 시도해보시겠어요? %{suggestion}"
     something_already_taken: "뭔가가 이상합니다. 아마도 계정의 아이디 또는 이메일이 이미 등록된것 같습니다. 비밀번호 찾기 링크를 이용해주세요."
-    omniauth_error: "죄송합니다, 당신의 계정을 인증하는데 문제가 있습니다. 이미 인증이 되었나요?"
-    omniauth_error_unknown: "로그인에 문제가 있습니다. 다시 시도해주세요."
+    omniauth_error: "죄송합니다, 당신의 %{strategy} 계정을 인증하는데 오류가 발생했습니다. 혹시 인증을 동의하지 않으셨나요?"
+    omniauth_error_unknown: "로그인 과정 중에 문제가 발생했습니다. 다시 시도해주세요."
+    new_registrations_disabled: "현재 신규 가입은 잠시 중단되어 있는 상태입니다."
+    password_too_long: "패스워드가 너무 깁니다. 200자까지 가능합니다."
+    missing_user_field: "입력란을 다 채우지 않으셨습니다."
+    close_window: "인증이 완료되었습니다. 계속하기 위해 이 창을 닫아주세요."
+
   user:
+    no_accounts_associated: "관련된 계정이 없습니다."
     username:
       short: "최소 %{min}자 이상이어야 합니다."
-      long: "%{max}자 이상 사용할 수 없습니다."
-      characters: "문자나 숫자만 사용해야 합니다."
-      unique: "이미 사용중입니다."
+      long: "%{max}자 이상은 사용할 수 없습니다."
+      characters: "문자, 숫자, 언더바(_)만 포함 가능합니다."
+      unique: "이미 사용 중입니다."
       blank: "공백이 없어야 합니다."
-      must_begin_with_alphanumeric: "첫글자는 문자나 숫자로 시작해야 합니다."
+      must_begin_with_alphanumeric: "첫 글자는 문자나 숫자로 시작해야 합니다."
     email:
-      not_allowed: "이 이메일 제공업체는 허용되지 않습니다. 다른 이메일 제공 업체를 사용하세요."
-      blocked: "는 허용되지 않습니다"
+      not_allowed: "해당 이메일 제공 업체는 허용되지 않습니다. 다른 이메일 제공 업체를 입력해주세요."
+      blocked: "은 허용되지 않습니다"
     ip_address:
-      blocked: "는 블락되었습니다."
+      blocked: "은 차단되었습니다."
+      
+  invite_mailer:
+    subject_template: "%{invitee_name}님이 당신을  %{site_domain_name}의 토론'%{topic_title}'에 초대했습니다."
+    text_body_template: |
+      %{invitee_name}님이 당신을 토론에 초대했습니다.
+      > **%{topic_title}**
+      >
+      > %{topic_excerpt}
+      
+      at
+
+      > %{site_title} -- %{site_description}
+
+      관심이 있으시다면, 다음 링크를 클릭해주세요 :
+
+      %{invite_link}
+
+      이 초대는 높은 등급의 멤버로부터 발송되었습니다. 때문에 당신에게 해당 토론에 답글을 달 수 있는 권한이 즉시 부여됩니다.
+
+  
+  invite_forum_mailer:
+    subject_template: "%{invitee_name}님이 당신을 %{site_domain_name}에 가입하도록 초대했습니다."
+    text_body_template: |
+      %{invitee_name}님이 당신이 가입하도록 초대합니다.
+      > **%{site_title}**
+      >
+      > %{site_description}
+
+      관심이 있으시다면, 다음 링크를 클릭해주세요 :
+
+      %{invite_link}
+
+
+  invite_password_instructions:
+    subject_template: "%{site_name} 계정의 패스워드를 설정하세요."
+    text_body_template: |
+      %{site_name}에의 초대에 응해주셔서 고맙습니다. 환영합니다!
+      로그인하기 위해서, 다음 링크를 클릭하시고 패스워드를 설정하세요 :
+      %{base_url}/users/password-reset/%{email_token}
+
+    
   test_mailer:
-    subject_template: "[%{site_name}] Email Deliverability Test"
+    subject_template: "[%{site_name}] 이메일 발송 테스트"
+    text_body_template: |
+      [**%{base_url}**][0]에서 발송된 테스트 이메일입니다.
+      Email deliverability is complicated. Here are a few important things you should check first:
+      - Be *sure* to set the `notification email` from: address correctly in your site settings. **The domain specified in the "from" address of the emails you send is the domain your email will be validated against**.
+      - Know how to view the raw source of the email in your mail client, so you can examine email headers for important clues. in Gmail, it is the "show original" option in the drop-down menu at the top right of each mail.
+      - **IMPORTANT:** Does your ISP have a reverse DNS record entered to associate the domain names and IP addresses you send mail from? [Test your Reverse PTR record][2] here. If your ISP does not enter the proper reverse DNS pointer record, it's very unlikely any of your email will be delivered.
+
+      - Is your domain's [SPF record][8] correct? [Test your SPF record][1] here. Note that TXT is the correct official record type for SPF.
+
+      - Is your domain's [DKIM record][3] correct? This will significantly improve email deliverability. [Test your DKIM record][7] here.
+
+      - If you run your own mail server, check to make sure the IPs of your mail server are [not on any email blacklists][4]. Also verify that it is definitely sending a fully-qualified hostname that resolves in DNS in its HELO message. If not, this will cause your email to be rejected by many mail services.
+
+      (The *easy* way is to create a free account on [Mandrill][md] or [Mailgun][mg] or [Mailjet][mj], which have free generous free mailing plans and will be fine for small communities. You'll still need to set up the SPF and DKIM records in your DNS, though!)
+
+      We hope you received this email deliverability test OK!
+
+      Good luck,
+
+      Your friends at [Discourse](http://www.discourse.org)
+
+      [0]: %{base_url}
+      [1]: http://www.kitterman.com/spf/validate.html
+      [2]: http://mxtoolbox.com/ReverseLookup.aspx
+      [3]: http://www.dkim.org/
+      [4]: http://whatismyipaddress.com/blacklist-check
+      [5]: %{base_url}/unsubscribe
+      [7]: http://dkimcore.org/tools/dkimrecordcheck.html
+      [8]: http://www.openspf.org/SPF_Record_Syntax
+      [md]: http://mandrill.com
+      [mg]: http://www.mailgun.com/
+      [mj]: http://www.mailjet.com/pricing
+
+      ----
+
+      <small>There should be an unsubscribe footer on every email you send, so let's mock one up. This email was sent by Name of Company, 55 Main Street, Anytown, USA 12345. If you would like to opt out of future emails, [click here to unsubscribe][5].</small>
+
+
+    
   system_messages:
     post_hidden:
-      subject_template: "포럼 신고로 인한 게시글 숨김"
+      subject_template: "회원 신고로 인한 게시물 숨김처리"
+      
     welcome_user:
-      subject_template: "%{site_name} 사이트에 오신것을 환영합니다!"
+      subject_template: "%{site_name} 사이트에 오신 것을 환영합니다!"
       text_body_template: |
-        %{site_name} 사이트에 오신것을 환영합니다!
+        %{site_name} 사이트에 오신 것을 환영합니다!
 
         %{new_user_tips}
 
-        저희는 [커뮤니티 행동 방침](%{base_url}/guidelines)을 잘 따라주실 것을 믿습니다.
+        우리는 당신이 [커뮤니티 가이드라인](%{base_url}/guidelines)을 잘 따라주실 것이라 믿습니다.
 
-        다시한번 환영합니다!
+        커뮤니티를 즐겨보세요!
+        
     welcome_invite:
       subject_template: "%{site_name} 사이트에 오신것을 환영합니다!"
     export_succeeded:
