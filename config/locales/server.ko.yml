@@ -764,15 +764,15 @@ ko:
     errors:
       invalid_email: "유효하지 않은 이메일 주소입니다."
       invalid_username: "해당 이름의 사용자가 없습니다."
-      invalid_integer_min_max: "%{min}이상 %{max}이하이어야 합니다."
-      invalid_integer_min: "%{min}이상 이어야 합니다."
-      invalid_integer_max: "%{max}이하 이어야 합니다."
+      invalid_integer_min_max: "%{min}이상 %{max}이하가 되어야합니다."
+      invalid_integer_min: "%{min}이상이 되어야합니다."
+      invalid_integer_max: "%{max}이하가 되어야합니다."
       invalid_integer: "정수만 허용됩니다."
       regex_mismatch: "해당 포맷은 허용되지 않습니다."
       invalid_string: "허용되는 정보가 아닙니다."
-      invalid_string_min_max: "글자 수가 %{min}자 이상 %{max}자 이하이어야 합니다."
-      invalid_string_min: "글자수가 %{min}자 이상이어야 합니다."
-      invalid_string_max: "글자 수가 %{max}자 이상이어야 합니다."
+      invalid_string_min_max: "글자 수가 %{min}자 이상 %{max}자 이하가 되어야합니다."
+      invalid_string_min: "글자수가 %{min}자 이상이 되어야합니다."
+      invalid_string_max: "글자 수가 %{max}자 이하가 되어야합니다."
   notification_types:
     mentioned: "%{display_username}님이 %{link}에서 당신을 언급하였습니다."
     liked: "%{display_username}님이 %{link}에서 당신의 게시물을 좋아합니다."
@@ -784,7 +784,10 @@ ko:
     private_message: "%{display_username}님이 당신에게 개인 메시지를 보냈습니다 : %{link}"
     invited_to_private_message: "%{display_username}님이 당신을 개인 메시지로 초대했습니다 : %{link}"
     invitee_accepted: "%{display_username}님이 당신의 초대를 수락했습니다."
+    linked: "%{display_username} 사용자가 %{link} 에서 당신을 링크했습니다."
+    granted_badge: "당신은 %{link} 뱃지를 획득했습니다."
   search:
+    within_post: "#%{post_number} by %{username}"
     types:
       category: '카테고리'
       topic: '검색 결과'
@@ -793,34 +796,56 @@ ko:
   most_posts: "최다 게시물"
   most_recent_poster: "최근 게시자"
   frequent_poster: "최다 게시자"
+  redirected_to_top_reasons:
+    new_user: "커뮤니티에 오신 것을 환영합니다! 다음은 우리 사이트에서 최근 가장 인기 많은 토픽들입니다."
+    not_seen_in_a_month: "잘 돌아오셨습니다! 한동안 안 오셨네요. 그동안 가장 인기 있던 토픽들을 알려드립니다."
   move_posts:
     new_topic_moderator_post:
-      other: "%{count}개의 글을 새 토픽으로 옮겼습니다: %{topic_link}"
+      other: "%{count}개의 게시물을 새 토픽으로 옮겼습니다: %{topic_link}"
     existing_topic_moderator_post:
-      other: "%{count}개의 글을 기존 토픽으로 옮겼습니다: %{topic_link}"
+      other: "%{count}개의 게시물을 기존 토픽으로 옮겼습니다: %{topic_link}"
+  
+  change_owner:
+    post_revision_text: "소유권이 %{old_user}에서 %{new_user}으로 이전되었습니다."
+  
   topic_statuses:
-    archived_enabled: "이 토픽은 보관되었고 더이상 변경하실 수 없습니다."
-    archived_disabled: "이 토픽의 보관이 풀렸고 이제 변경하실 수 있습니다."
-    closed_enabled: "이 토픽은 이제 닫혔습니다. 새로운 답글을 다실 수 없습니다."
-    closed_disabled: "이 토픽은 이제 열렸습니다. 새로운 답글을 다실 수 있습니다."
+    archived_enabled: "이 토픽은 보관되어, 더 이상 변경할 수 없습니다."
+    archived_disabled: "이 토픽의 보관이 해제되었고, 이제 변경할 수 있습니다."
+    closed_enabled: "이 토픽은 닫혔습니다. 새로운 답글을 달 수 없습니다."
+    closed_disabled: "이 토픽은 다시 열렸습니다. 새로운 답글을 달 수 있습니다."
     autoclosed_enabled_days:
-      zero: "이 토픽은 하루 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
-      one: "이 토픽은 하루 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
-      other: "이 토픽은 %{count}일 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
+      one: "이 토픽은 하루 만에 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+      other: "이 토픽은 %{count}일 만에 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
     autoclosed_enabled_hours:
-      zero: "이 토픽은 한 시간 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
-      one: "이 토픽은 한 시간 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
-      other: "이 토픽은 %{count} 시간 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
+      one: "이 토픽은 1시간 만에 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+      other: "이 토픽은 %{count}시간 만에 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
     autoclosed_enabled_minutes:
-      zero: "이 토픽은 1분 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
-      one: "이 토픽은 1분 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
-      other: "이 토픽은 %{count} 분 뒤 자동으로 닫혔습니다. 더이상 답글을 달 수 없습니다."
-    autoclosed_disabled: "이 토픽은 이제 열렸습니다. 새로운 답글을 허용합니다."
-    pinned_disabled: "이 토픽은 이제 고정이 풀렸습니다. 더이상 카테고리 상단에 보이지 않을 것입니다."
+      one: "이 토픽은 1분 만에 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+      other: "이 토픽은 %{count}분 만에 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+    autoclosed_enabled_lastpost_days:
+      one: "이 토픽은 마지막 답글이 달리고 1일 뒤 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+      other: "이 토픽은 마지막 답글이 달리고 %{count}일 뒤 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+    autoclosed_enabled_lastpost_hours:
+      one: "이 토픽은 마지막 답글이 달리고 1시간 뒤 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+      other: "이 토픽은 마지막 답글이 달리고 %{count}시간 뒤 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+    autoclosed_enabled_lastpost_minutes:
+      one: "이 토픽은 마지막 답글이 달리고 1분 뒤 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+      other: "이 토픽은 마지막 답글이 달리고 %{count}분 뒤 자동으로 닫혔습니다. 더 이상 답글을 달 수 없습니다."
+      
+    autoclosed_disabled: "이 토픽은 이제 다시 열렸습니다. 새로운 답글을 달 수 있습니다."
+    autoclosed_disabled_lastpost: "이 토픽은 이제 다시 열렸습니다. 새로운 답글을 달 수 있습니다."
+    
+    pinned_enabled: "이 토픽은 이제 고정되었습니다. 해당 카테고리의 상단에 유지됩니다.(스탭이 고정을 해제하거나, 유저들이 자신의 화면에서만 해제할 수도 있습니다.)"
+    pinned_disabled: "이 토픽은 이제 고정이 해제되었습니다. 더 이상 카테고리의 상단에 유지되지 않습니다."
+    pinned_globally_enabled: "이 토픽은 이제 전역적으로 고정되었습니다. 카테고리와 토픽 리스트에서 상단에 유지됩니다.(스탭이 고정을 해제하거나, 유저들이 자신의 화면에서만 해제할 수도 있습니다.)"
+    pinned_globally_disabled: "이 토픽은 이제 고정이 해제되었습니다. 더 이상 카테고리와 토픽 리스트 상단에 유지되지 않습니다."
+    visible_enabled: "이 토픽은 이제 리스트에 추가되었습니다. 토픽 리스트에 유지됩니다."
+    visible_disabled: "이 토픽은 이제 리스트에서 해제되었습니다. 토픽 리스트에 유지되지 않습니다. 직접 링크를 통해서만 접근할 수 있게 됩니다.."
+    
   login:
     not_approved: "당신의 계정은 아직 활성화되지 않았습니다. 이메일을 확인하시고 로그인 해주세요."
     incorrect_username_email_or_password: "계정 아이디, 이메일 또는 패스워드가 다릅니다."
-    wait_approval: "가입해 주셔서 감사합니다. 곧 활성화 메일이 도착할 것 입니다."
+    wait_approval: "가입해주셔서 감사합니다. 곧 활성화 메일이 도착할 것 입니다."
     active: "당신의 계정이 활성화되었습니다."
     not_activated: "당신은 아직 로그인 할 수 없습니다. 계정 활성화 이메일을 보냈습니다. 계정을 활성화하기 위해 지침을 따라주세요."
     suspended: "당신은 %{date} 까지 로그인할 수 없습니다. "
