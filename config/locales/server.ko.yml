@@ -102,7 +102,7 @@ ko:
       trust_level_1: "레벨 1 : 입문자"
       trust_level_2: "레벨 2 : 멤버"
       trust_level_3: "레벨 3 : 시니어 멤버"
-      trust_level_4: "레벨 4 : 리더"
+      trust_level_4: "레벨 4 : 베스트 멤버"
   education:
     until_posts:
       other: "%{count} 게시물"
