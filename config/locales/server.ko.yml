@@ -19,7 +19,7 @@ ko:
   topics: "토픽"
   posts: "포스트"
   loading: "로딩 중"
-  powered_by_html: 'Powered by <a href="http://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled'
+  powered_by_html: 'Best viewed with JavaScript enabled'
   log_in: "로그인"
   via: "%{site_name}의 %{username}"
   is_reserved: "예약됨"
@@ -332,9 +332,9 @@ ko:
     approval_required: "이 포럼을 사용하기 위해선 운영자가 수동으로 당신의 새로운 계정을 허가해야 합니다. 계정이 허가되면 자동으로 이메일이 발송됩니다."
   post_action_types:
     off_topic:
-      title: '오프 토픽'
+      title: '주제에서 벗어남'
       description: '이 게시물은 현재 토픽과 전혀 관련이 없습니다.'
-      long_form: '오프 토픽으로 신고하기'
+      long_form: '주제에서 벗어남으로 신고하기'
     spam:
       title: '스팸'
       description: '이 게시물은 광고물로 판단되어집니다. 현재 토픽에 대해 아무 유용성/관련성이 없습니다.'
