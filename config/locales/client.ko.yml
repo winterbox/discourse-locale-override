@@ -958,48 +958,58 @@ ko:
           other: "<b>{{count}}</b>개의 게시물을 선택했습니다."
           
     post:
-      reply: "{{replyAvatar}} {{username}}님의 글에 답글 작성"
+      reply: "{{replyAvatar}} {{username}}님의 {{link}}에 답글 작성"
       reply_topic: "{{link}}에 답글 작성"
-      quote_reply: "인용한 답글"
-      edit: "{{replyAvatar}} {{username}}님의 글에 답글 편집"
-      edit_reason: "Reason: "
-      post_number: "{{number}}번째 게시물"
+      quote_reply: "답글 인용하기"
+      edit: "{{replyAvatar}} {{username}}님의 {{link}} 편집"
+      edit_reason: "사유 : "
+      post_number: "{{number}}번 게시물"
       in_reply_to: "답글 to"
-      last_edited_on: "마지막으로 편집:"
-      reply_as_new_topic: "링크된 토픽으로 답글 작성하기"
-      continue_discussion: "{{postLink}}에서 토론을 계속:"
-      follow_quote: "인용 글로 이동"
-      show_full: "전체 글 보기"
-      show_hidden: '숨겨진 내용을 표시'
+      last_edited_on: "마지막으로 수정됨 : "
+      reply_as_new_topic: "새로운 토픽으로 답글 작성하기(링크 연동)"
+      continue_discussion: "{{postLink}} 에서 이어지는 토론입니다."
+      follow_quote: "인용된 게시물로 이동"
+      show_full: "전체 게시물 보기"
+      show_hidden: '숨겨진 내용 표시'
       deleted_by_author:
-        other: "(작성자에 의해 취소된 글입니다. 신고당한 글이 아니면 %{count} 시간 뒤에 자동으로 삭제됩니다)"
+        one: "(작성자에 의해 취소된 글입니다. 신고된 글이 아니라면 %{count}시간 뒤에 자동으로 삭제됩니다)"
+        other: "(작성자에 의해 취소된 글입니다. 신고된 글이 아니라면 %{count}시간 뒤에 자동으로 삭제됩니다)"
       expand_collapse: "확장/축소"
       gap:
-        other: "{{count}}개의 게시글이 숨겨져있어요."
+        one: "숨겨진 게시물 1개"
+        other: "숨겨진 게시물 {{count}}개"
       more_links: "{{count}}개 더..."
-      unread: "읽지 않은 포스트"
+      
+      unread: "읽지 않은 게시물"
       has_replies:
+        one: "답글"
         other: "답글"
+        
       errors:
-        create: "죄송합니다. 게시물을 만드는 동안 오류가 발생했습니다. 다시 시도하십시오."
-        edit: "죄송합니다. 게시물을 수정하는 중에 오류가 발생했습니다. 다시 시도하십시오."
-        upload: "죄송합니다. 파일을 업로드하는 동안 오류가 발생했습니다. 다시 시도하십시오."
+        create: "죄송합니다. 게시물을 생성하는 동안 에러가 발생했습니다. 다시 시도해주세요."
+        edit: "죄송합니다. 게시물을 수정하는 동안 에러가 발생했습니다. 다시 시도해주세요."
+        upload: "죄송합니다. 파일을 업로드하는 동안 에러가 발생했습니다. 다시 시도해주세요."
         attachment_too_large: "업로드하려는 파일의 크기가 너무 큽니다. 최대 크기는 {{max_size_kb}}kb 입니다."
         image_too_large: "업로드하려는 이미지의 크기가 너무 큽니다. 최대 크기는 {{max_size_kb}}kb 입니다. 사이즈를 조정하고 다시 시도해보세요."
-        too_many_uploads: "한번에 한 파일만 업로드 하실 수 있습니다."
-        upload_not_authorized: "업로드 하시려는 파일 확장자는 사용이 불가능합니다 (사용가능 확장자: {{authorized_extensions}})."
-        image_upload_not_allowed_for_new_user: "죄송합니다. 새로운 유저는 이미지를 업로드 하실 수 없습니다."
-        attachment_upload_not_allowed_for_new_user: "죄송합니다. 새로운 유저는 파일 첨부를 업로드 하실 수 없습니다."
-        attachment_download_requires_login: "죄송합니다. 첨부 파일을 받으려면 로그인이 필요합니다."
+        too_many_uploads: "한번에 한 파일만 업로드 할 수 있습니다."
+        upload_not_authorized: "업로드하려는 파일 확장자는 사용이 불가능합니다 (사용가능 확장자: {{authorized_extensions}})."
+        image_upload_not_allowed_for_new_user: "죄송합니다. 신규 가입자는 이미지를 업로드 할 수 없습니다."
+        attachment_upload_not_allowed_for_new_user: "죄송합니다. 신규 가입자는 첨부파일을 업로드 할 수 없습니다."
+        attachment_download_requires_login: "죄송합니다. 첨부파일을 받으려면 로그인이 필요합니다."
+      
       abandon:
-        confirm: "게시물 작성을 취소 하시겠습니까?"
-        no_value: "아니오"
-        yes_value: "예"
-      via_email: "이 토픽은 이메일을 통해 등록되었습니다."
+        confirm: "작성하시던 내용을 버릴까요?"
+        no_value: "아니요. 유지합니다."
+        yes_value: "네. 버립니다."
+        
+      via_email: "이 게시물은 이메일을 통해 등록되었습니다."
+      
       wiki:
-        about: "이 게시글은 위키입니다. 누구나 수정할 수 있습니다."
+        about: "이 게시물은 위키입니다. 입문자 레벨 이상이면 편집이 가능합니다."
+        
       archetypes:
         save: '옵션 저장'
+        
       controls:
         reply: "이 게시물에 대한 답글을 작성합니다."
         like: "이 게시물을 좋아합니다."
