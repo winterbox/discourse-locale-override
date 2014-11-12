@@ -659,77 +659,85 @@ ko:
       granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p>뱃지 획득 '{{description}}'</p>"
       
     upload_selector:
-      title: "이미지 추가하기"
+      title: "이미지 추가"
       title_with_attachments: "이미지 또는 파일 추가하기"
       from_my_computer: "컴퓨터에서 가져오기"
       from_the_web: "인터넷에서 가져오기"
       remote_tip: "http://example.com/image.jpg 형식으로 이미지 주소를 입력"
-      remote_tip_with_attachments: "http://example.com/file.ext 형식으로 이미지나 파일의 주소를 입력 (사용 가능한 확장자: {{authorized_extensions}})"
+      remote_tip_with_attachments: "http://example.com/file.ext 형식으로 이미지나 파일의 주소를 입력 (사용 가능한 확장자 : {{authorized_extensions}})"
       local_tip: "내 컴퓨터에서 이미지를 가져오기"
-      local_tip_with_attachments: "내 컴퓨터에서 이미지나 파일 가져오기 (사용 가능한 확장자: {{authorized_extensions}})"
-      hint: "(드래그&드랍으로 업로드 가능)"
-      hint_for_supported_browsers: "(이미지 파일을 드래그&드랍하거나 붙여넣기하여 업로드 할 수 있습니다.)"
-      uploading: "업로드 중입니다..."
+      local_tip_with_attachments: "내 컴퓨터에서 이미지나 파일 가져오기 (사용 가능한 확장자 : {{authorized_extensions}})"
+      hint: "(드래그 & 드랍으로 업로드 가능)"
+      hint_for_supported_browsers: "(이미지 파일을 드래그 & 드랍하거나 붙여넣기하여 업로드 할 수 있습니다.)"
+      uploading: "업로드 중"
       image_link: "이 이미지를 누르면 이동할 링크"
+      
     search:
-      title: "토픽, 게시글, 사용자, 카테고리 검색"
+      title: "토픽, 게시물, 사용자, 카테고리 검색"
       no_results: "검색 결과가 없습니다"
-      searching: "검색중..."
+      searching: "검색 중..."
       post_format: "#{{post_number}} by {{username}}"
+      
       context:
         user: "@{{username}}의 글 검색"
         category: "\"{{category}}\" 카테고리 검색"
-        topic: "이 토픽을 검색"
-    site_map: "다른 토픽이나 카테고리로 이동"
+        topic: "이 토픽 안에서 검색"
+        
+    site_map: "다른 토픽 리스트나 카테고리로 이동"
     go_back: '돌아가기'
-    not_logged_in_user: 'user page with summary of current activity and preferences'
+    not_logged_in_user: '현재 활동과 설정에 대한 요약이 담긴 사용자 페이지'
     current_user: '사용자 페이지로 이동'
+    
     starred:
       title: '즐겨찾기'
       help:
-        star: '즐겨찾기로 이 토픽을 추가'
-        unstar: '즐겨찾기에서 이 토픽을 제거'
+        star: '이 토픽을 즐겨찾기 목록에 추가'
+        unstar: '이 토픽을 즐겨찾기 목록에서 제거'
+        
     topics:
       bulk:
-        reset_read: "읽기 초기화"
-        delete: "토픽 삭제"
-        dismiss_posts: "게시글 닫기"
-        dismiss_posts_tooltip: "이 토픽들의 '읽지 않은' 표시를 없애고 새 토픽이 발생하면 내 '읽지 않은' 목록에 표시하기"
-        dismiss_topics: "토픽 닫기"
-        dismiss_topics_tooltip: "새글이 발생할 때 내 '읽지 않은' 목록에 표시하지 않기"
-        dismiss_new: "새글 제거"
-        toggle: "복수토픽 선택 기능"
+        reset_read: "읽음 처리"
+        delete: "토픽 제거"
+        dismiss_posts: "카운트 해산"
+        dismiss_posts_tooltip: "이 토픽들에 지금까지 누적된 '읽지 않음 카운트'를 제거합니다. 하지만 새로운 게시물이 작성되면 내 '읽지 않음' 목록에 다시 나타납니다."
+        dismiss_topics: "토픽 해산"
+        dismiss_topics_tooltip: "이 토픽들에 새로운 게시물이 작성되어도 내 '읽지 않음' 목록에 표시하지 않습니다."
+        dismiss_new: "새로운 토픽 해산"
+        toggle: "토픽 일괄 선택 기능"
         actions: "일괄 적용"
         change_category: "카테고리 변경"
         close_topics: "토픽 닫기"
-        archive_topics: "토픽 보관하기"
-        notification_level: "알림 설정 변경"
+        archive_topics: "토픽 보관"
+        notification_level: "알림 레벨 변경"
         selected:
+          one: "<b>1</b>개의 토픽이 선택되었습니다."
           other: "<b>{{count}}</b>개의 토픽이 선택되었습니다."
+          
       none:
-        starred: "별을 받은 토픽이 없습니다."
+        starred: "즐겨찾기한 토픽이 없습니다."
         unread: "읽지 않은 토픽이 없습니다."
-        new: "읽을 새로운 토픽이 없습니다."
-        read: "아직 어떠한 토픽도 읽지 않았습니다."
-        posted: "아직 어떠한 토픽도 작성되지 않았습니다."
-        latest: "최신 토픽이 없습니다."
-        hot: "인기있는 토픽이 없습니다."
+        new: "새로운 토픽이 없습니다."
+        read: "아직 읽은 토픽이 없습니다."
+        posted: "아직 작성한 토픽이 없습니다."
+        latest: "최근 토픽이 없습니다."
+        hot: "인기 토픽이 없습니다."
         category: "{{category}}에 토픽이 없습니다."
-        top: "Top 토픽이 없습니다."
+        top: "베스트 토픽이 없습니다."
         educate:
-          new: '<p>새로운 토픽은 여기에서 볼 수 있습니다.</p><p>기본 설정으로 2일 이내에 생성된 토픽은 새로운 것으로 간주되며 <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">new</span> 표시가 나타납니다.</p><p><a href="%{userPrefsUrl}">환경설정</a>에서 설정을 변경 할 수 있습니다.</p>'
-          unread: '<p>읽지 않은 토픽은 여기에서 볼 수 있습니다.</p><p>기본 설정으로 다음과 같은 경우 토픽은 읽지 않은 것으로 간주되며 읽지 않은 개수 <span class="badge new-posts badge-notification">1</span> 가 표시됩니다.</p><ul><li>토픽을 만든 경우</li><li>토픽에 리플을 단 경우</li><li>토픽을 4분 이상 읽은 경우</li></ul><p>또는 각 토픽 아래에 있는 알림 설정에서 해당 토픽을 추적하거나 지켜보도록 설정한 경우</p><p><a href="%{userPrefsUrl}">환경설정</a>에서 설정을 변경 할 수 있습니다.</p>'
-          starred: '<p>즐겨찾기한 토픽은 여기에서 볼 수 있습니다.</p><p>즐겨찾기를 하거나 취소하는 방법 :</p><ul><li>토픽 주제 옆에 <i class="fa fa-star"></i>를 누른다.</li><li>각 토픽 아래에 표시된 별표 버튼을 누른다.</li></ul>'
+          new: '<p>새로운 토픽을 여기에서 볼 수 있습니다.</p><p>기본 설정으로 2일 이내에 생성된 토픽은 새로운 것으로 간주되며 <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">new</span> 표시가 나타납니다.</p><p><a href="%{userPrefsUrl}">환경설정</a>에서 설정을 변경 할 수 있습니다.</p>'
+          unread: '<p>읽지 않은 토픽을 여기에서 볼 수 있습니다.</p><p>기본 설정으로 다음과 같은 경우 토픽은 읽지 않은 것으로 간주되며 읽지 않은 개수 <span class="badge new-posts badge-notification">1</span> 가 표시됩니다.</p><ul><li>당신이 토픽을 작성한 경우</li><li>당신이 토픽에 리플을 단 경우</li><li>당신이 특정 토픽을 4분 이상 읽은 경우</li></ul><p>또는 각 토픽 아래에 있는 알림 설정에서 해당 토픽을 주시하거나 추적하도록 설정한 경우</p><p>이 설정은 당신의 <a href="%{userPrefsUrl}">환경설정</a>에서 변경할 수 있습니다.</p>'
+          starred: '<p>즐겨찾기한 토픽을 여기에서 볼 수 있습니다.</p><p>즐겨찾기를 하거나 취소하는 방법 :</p><ul><li>토픽 주제 옆에 <i class="fa fa-star"></i>를 누른다.</li><li>각 토픽 아래에 표시된 별표 버튼을 누른다.</li></ul>'
       bottom:
-        latest: "더 이상 읽을 최신 토픽이 없습니다"
-        hot: "더 이상 읽을 인기있는 토픽이 없습니다"
+        latest: "더 이상 최근 토픽이 없습니다"
+        hot: "더 이상 인기 토픽이 없습니다"
         posted: "더 이상 작성된 토픽이 없습니다"
-        read: "더 이상 읽을 토픽이 없습니다"
-        new: "더 이상 읽을 새로운 토픽이 없습니다."
+        read: "더 이상 읽은 토픽이 없습니다"
+        new: "더 이상 새로운 토픽이 없습니다."
         unread: "더 이상 읽지 않은 토픽이 없습니다"
-        starred: "더 이상 읽을 즐겨찾기 토픽이 없습니다"
+        starred: "더 이상 즐겨찾기 토픽이 없습니다"
         category: "더 이상 {{category}}에 토픽이 없습니다"
-        top: "더 이상 인기 토픽이 없습니다."
+        top: "더 이상 베스트 토픽이 없습니다."
+        
     topic:
       filter_to: "이 토픽에서 {{username}}님의 {{post_count}}건의 게시물만 보기"
       create: '토픽 만들기'
