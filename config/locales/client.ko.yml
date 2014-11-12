@@ -34,15 +34,15 @@ ko:
         less_than_x_seconds:
           other: "< %{count}초"
         x_seconds:
-          other: "%{count}초 전"
+          other: "%{count}초"
         less_than_x_minutes:
           other: "< %{count}분"
         x_minutes:
-          other: "%{count}분 전"
+          other: "%{count}분"
         about_x_hours:
           other: "%{count}시간"
         x_days:
-          other: "%{count}일 전"
+          other: "%{count}일"
         about_x_years:
           other: "%{count}년"
         over_x_years:
@@ -58,7 +58,7 @@ ko:
           other: "%{count}시간"
         x_days:
           other: "%{count}일"
-        date_year: "MMM D, 'YY"
+        date_year: "MMM D일, 'YY년"
       medium_with_ago:
         x_minutes:
           other: "%{count}분 전"
@@ -67,14 +67,14 @@ ko:
         x_days:
           other: "%{count}일 전"
     share:
-      topic: '토픽을 공유합니다.'
-      post: '#%{postNumber} 게시물을 공유합니다.'
+      topic: '이 토픽의 링크를 공유합니다.'
+      post: '#%{postNumber} 게시물의 링크를 공유합니다.'
       close: '닫기'
-      twitter: 'twitter로 공유'
+      twitter: 'Twitter로 공유'
       facebook: 'Facebook으로 공유'
       google+: 'Google+로 공유'
       email: '이메일로 공유'
-    edit: '제목과 카테고리를 편집하기'
+    edit: '제목과 카테고리 편집하기'
     not_implemented: "죄송합니다. 아직 이용할 수 없는 기능입니다."
     no_value: "아니오"
     yes_value: "예"
@@ -82,8 +82,8 @@ ko:
     generic_error_with_reason: "오류가 발생하였습니다: %{error}"
     sign_up: "회원가입"
     log_in: "로그인"
-    age: "생성"
-    joined: "가입함"
+    age: "나이"
+    joined: "가입"
     admin_title: "관리자"
     flags_title: "신고"
     show_more: "더 보기"
@@ -107,8 +107,10 @@ ko:
     weekly: "매주"
     every_two_weeks: "격주"
     max: "최대"
+    max_of_count: "최대 {{count}}글자"
     character_count:
-      other: "{{count}} 자"
+      one: "{{count}}글자"
+      other: "{{count}}글자"
     in_n_seconds:
       other: "in {{count}}초"
     in_n_minutes:
@@ -128,20 +130,20 @@ ko:
       stat:
         all_time: "전체"
         last_7_days: "지난 7일"
-      like_count: "'좋아요' 횟수"
+      like_count: "좋아요"
       topic_count: "토픽"
-      post_count: "게시글"
+      post_count: "게시물"
       user_count: "사용자"
     bookmarks:
-      not_logged_in: "죄송합니다. 게시물을 즐겨찾기에 추가하려면 로그인을 해야 합니다."
+      not_logged_in: "게시물을 북마크하려면 로그인해야 합니다."
       created: "이 게시글을 북마크 하였습니다."
-      not_bookmarked: "이 게시물을 읽으셨습니다. 즐겨찾기에 추가하려면 클릭하세요."
-      last_read: "마지막으로 읽으신 게시물입니다. 즐겨찾기에 추가하려면 클릭하세요."
-      remove: "북마크 삭제"
+      not_bookmarked: "이미 이 게시물을 읽으셨습니다. 북마크하려면 클릭하세요."
+      last_read: "마지막으로 읽으신 게시물입니다. 북마크하려면 클릭하세요."
+      remove: "북마크 제거"
     topic_count_latest:
-      other: "{{count}} 새 토픽 혹은 업데이트된 토픽"
+      other: "{{count}}개의 새로운 또는 업데이트된 토픽"
     topic_count_unread:
-      other: "{{count}} 읽지 않은 토픽"
+      other: "{{count}}개의 읽지 않은 관심 토픽"
     topic_count_new:
       other: "{{count}}개의 새로운 토픽"
     click_to_show: "보려면 클릭하세요."
@@ -161,43 +163,43 @@ ko:
     banner:
       close: "배너 닫기"
     choose_topic:
-      none_found: "토픽을 찾을 수 없습니다."
+      none_found: "아무 토픽도 발견되지 않았습니다."
       title:
         search: "이름, url, ID로 토픽 검색"
         placeholder: "여기에 토픽 제목을 입력하세요"
     user_action:
-      user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a>가 게시한 <a href='{{topicUrl}}'>토픽</a>"
+      user_posted_topic: "<a href='{{userUrl}}'>{{user}}</a>님이 게시한 <a href='{{topicUrl}}'>토픽</a>"
       you_posted_topic: "<a href='{{userUrl}}'>당신</a>이 게시한 <a href='{{topicUrl}}'>토픽</a>"
-      user_replied_to_post: "<a href='{{userUrl}}'>{{user}}</a>가 게시한 답글 <a href='{{postUrl}}'>{{post_number}}</a>개"
+      user_replied_to_post: "<a href='{{userUrl}}'>{{user}}</a>님이 게시한 답글 <a href='{{postUrl}}'>{{post_number}}</a>개"
       you_replied_to_post: "<a href='{{userUrl}}'>당신</a>이 게시한 답글 <a href='{{postUrl}}'>{{post_number}}</a>개"
-      user_replied_to_topic: "<a href='{{userUrl}}'>{{user}}</a>가 <a href='{{topicUrl}}'>토픽</a>에 게시한 답글"
+      user_replied_to_topic: "<a href='{{userUrl}}'>{{user}}</a>님이 <a href='{{topicUrl}}'>토픽</a>에 게시한 답글"
       you_replied_to_topic: "<a href='{{userUrl}}'>당신</a>이 <a href='{{topicUrl}}'>토픽</a>에 게시한 답글"
-      user_mentioned_user: "<a href='{{user1Url}}'>{{user}}가</a> <a href='{{user2Url}}'>{{another_user}}</a>를 언급"
-      user_mentioned_you: "<a href='{{user1Url}}'>{{user}}가</a> <a href='{{user2Url}}'>당신</a>을 언급"
-      you_mentioned_user: "<a href='{{user1Url}}'>당신은</a> <a href='{{user2Url}}'>{{another_user}}</a>를 언급"
-      posted_by_user: "<a href='{{userUrl}}'>{{user}}</a>에 의해 게시됨"
+      user_mentioned_user: "<a href='{{user1Url}}'>{{user}}</a>님이 <a href='{{user2Url}}'>{{another_user}}</a>를 언급"
+      user_mentioned_you: "<a href='{{user1Url}}'>{{user}}</a>님이 <a href='{{user2Url}}'>당신</a>을 언급"
+      you_mentioned_user: "<a href='{{user1Url}}'>당신</a>이 <a href='{{user2Url}}'>{{another_user}}</a>님을 언급"
+      posted_by_user: "<a href='{{userUrl}}'>{{user}}</a>님에 의해 게시됨"
       posted_by_you: "<a href='{{userUrl}}'>당신</a>이 게시함"
-      sent_by_user: "<a href='{{userUrl}}'>{{user}}</a>가 보냄"
+      sent_by_user: "<a href='{{userUrl}}'>{{user}}</a>님이 보냄"
       sent_by_you: "<a href='{{userUrl}}'>당신</a>이 보냄"
     groups:
       visible: "모든 사용자에게 보이는 그룹입니다."
       title:
         other: "그룹"
       members: "멤버"
-      posts: "게시글"
+      posts: "게시물"
       alias_levels:
-        title: "누가 이 그룹을 가명으로 사용할 수 있는가"
+        title: "누가 이 그룹을 별명으로 사용할 수 있나요?"
         nobody: "0명"
-        only_admins: "관리자만"
-        mods_and_admins: "운영자 및 관리자만"
-        members_mods_and_admins: "그룹 멤버, 운영자, 관리자만"
+        only_admins: "시스템 관리자만"
+        mods_and_admins: "운영자와 시스템 관리자만"
+        members_mods_and_admins: "그룹 멤버, 운영자, 시스템 관리자만"
         everyone: "모두"
     user_action_groups:
-      '1': "선사한 '좋아요'"
-      '2': "받은 '좋아요'"
+      '1': "준 좋아요"
+      '2': "받은 좋아요"
       '3': "북마크"
       '4': "토픽"
-      '5': "게시글"
+      '5': "게시물"
       '6': "답글"
       '7': "언급"
       '9': "인용"
@@ -210,21 +212,21 @@ ko:
       all_subcategories: "모든 하위 카테고리"
       no_subcategory: "없음"
       category: "카테고리"
-      posts: "게시글"
+      posts: "게시물"
       topics: "토픽"
       latest: "최근"
-      latest_by: "가장 최근"
+      latest_by: "latest by"
       toggle_ordering: "정렬 컨트롤 토글"
       subcategories: "하위 카테고리"
-      topic_stats: "새 토픽의 수"
+      topic_stats: "새로운 토픽의 수"
       topic_stat_sentence:
-        other: "지난 %{unit} 동안 %{count}개의 새로운 토픽이 있습니다."
-      post_stats: "The number of new posts."
+        other: "지난 %{unit}동안 %{count}개의 새로운 토픽이 있습니다."
+      post_stats: "새로운 게시물의 수"
       post_stat_sentence:
-        other: "지난 %{unit} 동안 %{count}개의 새로운 게시글이 있습니다."
+        other: "지난 %{unit}동안 %{count}개의 새로운 게시물이 있습니다."
     ip_lookup:
       title: IP Address Lookup
-      hostname: Hostname
+      hostname: 호스트네임
       location: 위치
       location_not_found: (알수없음)
       organisation: 소속
@@ -235,16 +237,16 @@ ko:
       said: "{{username}}:"
       profile: "프로필"
       mute: "알림 끄기"
-      edit: "환경 설정 편집"
+      edit: "환경설정 편집"
       download_archive: "내 게시물을 아카이브로 다운로드"
       private_message: "개인 메시지"
       private_messages: "메시지"
       activity_stream: "활동"
-      preferences: "환경 설정"
+      preferences: "환경설정"
       bookmarks: "북마크"
       bio: "내 소개"
-      invited_by: "에 의해 초대되었습니다."
-      trust_level: "신뢰도"
+      invited_by: "초대 받음"
+      trust_level: "회원레벨"
       notifications: "알림"
       disable_jump_reply: "댓글을 작성했을 때, 새로 작성한 댓글로 화면을 이동하지 않습니다."
       dynamic_favicon: "새로운 메시지 알림을 Favicon으로 보여줍니다. (실험적 기능)"
