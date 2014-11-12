@@ -739,55 +739,66 @@ ko:
         top: "더 이상 베스트 토픽이 없습니다."
         
     topic:
-      filter_to: "이 토픽에서 {{username}}님의 {{post_count}}건의 게시물만 보기"
+      filter_to: "이 토픽의 {{post_count}}개 게시물"
       create: '토픽 만들기'
-      create_long: '새로운 토픽을 개설'
-      private_message: '개인 메시지를 작성'
+      create_long: '새로운 토픽을 개설합니다'
+      private_message: '개인 메시지 작성'
       list: '토픽 목록'
       new: '새로운 토픽'
       unread: '읽지 않은'
       new_topics:
-        other: '{{count}}개의 새로운 토픽'
+        one: '새로운 토픽 1개'
+        other: '새로운 토픽 {{count}}개'
       unread_topics:
-        other: '{{count}}개의 읽지 않은 토픽'
+        one: '읽지 않은 토픽 1개'
+        other: '읽지 않은 토픽 {{count}}개'
       title: '토픽'
-      loading_more: "더 많은 토픽을 로딩 중..."
-      loading: '토픽을 로딩 중...'
+      loading: '토픽 로딩 중...'
       invalid_access:
-        title: "이 토픽은 비공개입니다"
-        description: "죄송합니다. 그 토픽에 접근 할 수 없습니다!"
+        title: "이 토픽은 비공개입니다."
+        description: "당신은 해당 토픽에 접근할 수 없습니다."
         login_required: "해당 토픽을 보려면 로그인이 필요합니다."
       server_error:
-        title: "토픽을 불러오지 못했습니다"
-        description: "죄송합니다. 연결 문제로 인해 해당 토픽을 불러올 수 없습니다. 다시 시도하십시오. 문제가 지속되면 문의해 주시기 바랍니다"
+        title: "토픽을 불러오지 못했습니다."
+        description: "죄송합니다. 연결 문제로 인해 해당 토픽을 불러올 수 없습니다. 다시 시도해보세요. 문제가 지속되면 문의해주시기 바랍니다"
       not_found:
-        title: "토픽을 찾을 수 없습니다"
-        description: "죄송합니다. 토픽을 찾을 수 없습니다. 아마도 운영자에 의해 삭제된 것 같습니다."
+        title: "토픽을 찾을 수 없습니다."
+        description: "토픽을 찾을 수 없습니다. 어쩌면 운영자에 의해 이동되었을 수도 있습니다."
       total_unread_posts:
-        other: "이 토픽에 {{count}}개의 읽지 않을 게시 글이 있습니다."
+        one: "이 토픽에서 1개의 읽지 않은 게시물이 있습니다."
+        other: "이 토픽에서 {{count}}개의 읽지 않은 게시물이 있습니다."
       unread_posts:
-        other: "이 토픽에 {{count}}개의 읽지 않을 게시 글이 있습니다."
+        one: "이 토픽에서 1개의 읽지 않은 오래된 게시물이 있습니다."
+        other: "이 토픽에서 {{count}}개의 읽지 않은 오래된 게시물이 있습니다."
       new_posts:
-        other: "최근 읽은 이후 {{count}}개 글이 이 토픽 작성되었습니다."
+        one: "지난 번 이 토픽을 읽은 뒤로 1개의 읽지 않은 게시물이 있습니다."
+        other: "지난 번 이 토픽을 읽은 뒤로 {{count}}개의 읽지 않은 게시물이 있습니다."
+
       likes:
+        one: "이 토픽에 1개의 '좋아요'가 있습니다."
         other: "이 토픽에 {{count}}개의 '좋아요'가 있습니다."
-      back_to_list: "토픽 리스트로 돌아갑니다."
+      back_to_list: "토픽 목록으로 돌아갑니다."
       options: "토픽 옵션"
-      show_links: "이 토픽에서 링크를 표시합니다."
+      show_links: "이 토픽 내의 링크를 표시합니다."
       toggle_information: "토픽의 세부 정보를 토글합니다."
-      read_more_in_category: "더 많은 토픽들은 {{catLink}} 또는 {{latestLink}}에서 찾으실 수 있습니다"
-      read_more: "{{catLink}} 또는 {{latestLink}}에서 더 많은 토픽들을 찾으실 수 있습니다"
-      read_more_MF: "이 카테고리에 { UNREAD, plural, =0 {} one { is <a href='/unread'>1개의 안 읽은</a> } other { are <a href='/unread'>#개의 안 읽은</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1개의 새로운</a> 토픽이} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># 새로운</a> 토픽이} } 남아 있고, {CATEGORY, select, true {{catLink} 토픽도 확인해보세요.} false {{latestLink}} other {}} "
-      browse_all_categories: 모든 카테고리 보기
+      read_more_in_category: "더 많은 토픽들을 {{catLink}} 또는 {{latestLink}}에서 찾으실 수 있습니다"
+      read_more: "더 많은 토픽들을 {{catLink}} 또는 {{latestLink}}에서 찾으실 수 있습니다"
+      read_more_MF: "이 카테고리에 { UNREAD, plural, =0 {} one { is <a href='/unread'>1개의 읽지 않은</a> } other { are <a href='/unread'>#개의 읽지 않은</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1개의 새로운</a> 토픽이} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># 새로운</a> 토픽이} } 남아 있고, {CATEGORY, select, true {{catLink} 토픽도 확인해보세요.} false {{latestLink}} other {}} "
+      
+      browse_all_categories: 모든 카테고리 살펴보기
+      
       view_latest_topics: 최근 토픽 보기
-      suggest_create_topic: 토픽(글)을 작성 해 보실래요?
+      suggest_create_topic: 새로운 토픽을 작성해보세요!
       jump_reply_up: 이전 답글로 이동
-      jump_reply_down: 이후 답글로 이동
-      deleted: "토픽이 삭제되었습니다"
-      auto_close_notice: "이 토픽은 곧 자동으로 닫힙니다. %{timeLeft}."
-      auto_close_title: '자동으로 닫기 설정'
+      jump_reply_down: 다음 답글로 이동
+      deleted: "이 토픽은 삭제되었습니다"
+      
+      auto_close_notice: "이 토픽은 %{timeLeft} 자동으로 닫힙니다."
+      auto_close_notice_based_on_last_post: "이 토픽은 마지막 답글이 달린 후 %{duration} 자동으로 닫힙니다."
+      auto_close_title: '자동 닫힘 설정'
       auto_close_save: "저장"
       auto_close_remove: "이 토픽을 자동으로 닫지 않기"
+      
       progress:
         title: 진행 중인 토픽
         go_top: "맨위"
