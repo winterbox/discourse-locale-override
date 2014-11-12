@@ -1957,7 +1957,7 @@ ko:
         display_name: 표시 이름
         description: 설명
         badge_type: 뱃지 종류
-        badge_grouping: 그룹
+        badge_grouping: 뱃지 그룹핑
         badge_groupings:
           modal_title: 뱃지 그룹으로 나누기
         granted_by: 훈장 부여자
@@ -2067,7 +2067,8 @@ ko:
         other: "+%{count} More"
       granted:
         other: "%{count} 개 부여"
-      select_badge_for_title: 칭호로 사용할 뱃지를 선택하세요
+      select_badge_for_title: 호칭으로 사용할 뱃지를 선택하세요
+      none: "<없음>"
       no_title: "호칭 없음"
       badge_grouping:
         getting_started:
