@@ -1039,89 +1039,110 @@ ko:
       actions:
         flag: '신고'
         defer_flags:
-          other: "신고 연기"
+          one: "신고 스킵"
+          other: "신고 스킵"
         it_too:
-          off_topic: "Flag it too"
-          spam: "저도 신고합니다"
-          inappropriate: "저도 신고합니다"
-          custom_flag: "신고 추가하기"
-          bookmark: "Bookmark it too"
-          like: "저도 '좋아요' 줄래요"
-          vote: "Vote for it too"
+          off_topic: "나도 신고하기"
+          spam: "나도 신고하기"
+          inappropriate: "나도 신고하기"
+          custom_flag: "나도 신고하기"
+          bookmark: "나도 북마크"
+          like: "나도 좋아요"
+          vote: "나도 한표"
         undo:
-          off_topic: "X"
+          off_topic: "신고 취소"
           spam: "신고 취소"
           inappropriate: "신고 취소"
-          bookmark: "X"
-          like: "'좋아요' 취소하기"
-          vote: "X"
+          bookmark: "북마크 취소"
+          like: "좋아요 취소"
+          vote: "한표 취소"
         people:
-          off_topic: "{{icons}}님이 이 게시물을 토픽에서 제외했습니다."
-          spam: "{{icons}} 스팸으로 신고되었습니다"
-          inappropriate: "{{icons}} 부적절하다고 신고했습니다"
-          notify_moderators: "{{icons}}님은 이 게시물을 운영자에게 보고했습니다."
-          notify_moderators_with_url: "{{icons}}님은 이 <a href='{{postUrl}}'>게시물</a>을 운영자에게 보고했습니다."
-          notify_user: "{{icons}}님은 작성자에게 개인 메시지를 보냈습니다."
-          notify_user_with_url: "{{icons}}님은 작성자에게 <a href='{{postUrl}}'>개인 메세지</a>를 보냈습니다."
-          bookmark: "{{icons}}님이 북마크했습니다."
-          like: "{{icons}}님이 좋아합니다."
-          vote: "{{icons}}님이 투표했습니다."
+          off_topic: "{{icons}}님이 주제에서 벗어남으로 신고함"
+          spam: "{{icons}}님이 스팸으로 신고함"
+          inappropriate: "{{icons}}님이 부적절함으로 신고함"
+          notify_moderators: "{{icons}}님이 조정 신청함"
+          notify_moderators_with_url: "{{icons}}님이 <a href='{{postUrl}}'>게시물 조정 신청함</a>"
+          notify_user: "{{icons}}님이 작성자에게 개인 메시지 발송함"
+          notify_user_with_url: "{{icons}}님이 작성자에게 <a href='{{postUrl}}'>개인 메세지 발송함</a>"
+          bookmark: "{{icons}}님이 북마크함"
+          like: "{{icons}}님이 좋아함"
+          vote: "{{icons}}님이 투표함"
         by_you:
-          off_topic: "당신은 이 게시물을 토픽에서 벗어남으로 신고했습니다."
-          spam: "당신은 이 게시물을 스팸으로 신고했습니다."
-          inappropriate: "당신은 이 게시물을 부적절하다고 신고했습니다"
-          notify_moderators: "당신은 이 게시물을 운영자에게 보고했습니다."
-          notify_user: "당신은 작성자에게 개인 메시지를 보냈습니다."
-          bookmark: "당신은 이 게시물을 북마크했습니다."
-          like: "'좋아요' 했습니다"
-          vote: "당신은 이 게시물을 위해 투표했습니다."
+          off_topic: "당신이 주제에서 벗어남으로 신고함"
+          spam: "당신이 스팸으로 신고함"
+          inappropriate: "당신이 부적절함으로 신고함"
+          notify_moderators: "당신이 조정 신청함"
+          notify_user: "당신이 작성자에게 개인 메시지 발송함"
+          bookmark: "당신이 북마크함"
+          like: "당신이 좋아함"
+          vote: "당신이 투표함"
         by_you_and_others:
           off_topic:
-            other: "당신과 {{count}}명의 다른 사용자가 이 게시물을 토픽에서 제외했습니다."
+            one: "당신 외 1명이 주제에서 벗어남으로 신고함"
+            other: "당신 외 {{count}}명이 주제에서 벗어남으로 신고함"
           spam:
-            other: "당신과 {{count}}명의 다른 사람들이 스팸이라고 신고했습니다"
+            one: "당신 외 1명이 스팸으로 신고함"
+            other: "당신 외 {{count}}명이 스팸으로 신고함"
           inappropriate:
-            other: "당신과 {{count}}명의 다른 사람들이 부적절하다고 신고했습니다"
+            one: "당신 외 1명이 부적절함으로 신고함"
+            other: "당신 외 {{count}}명이 부적절함으로 신고함"
           notify_moderators:
-            other: "당신과 {{count}}명의 다른 사람들이 적당하다고 표시했습니다."
+            one: "당신 외 1명이 조정 신청함"
+            other: "당신 외 {{count}}명이 조정 신청함"
           notify_user:
-            other: "당신과 {{count}}명의 사용자가 작성자에게 개인 메시지를 보냈습니다."
+            one: "당신 외 1명이 작성자에게 개인 메시지 발송함"
+            other: "당신 외 {{count}}명이 작성자에게 개인 메시지 발송함"
           bookmark:
-            other: "당신과 {{count}}명의 다른 사람들이 북마크 했습니다."
+            one: "당신 외 1명이 북마크함"
+            other: "당신 외 {{count}}명이 북마크함"
           like:
-            other: "당신과 {{count}}명의 다른 사람들이 좋아합니다."
+            one: "당신 외 1명이 좋아함"
+            other: "당신 외 {{count}}명이 좋아함"
           vote:
-            other: "당신과 {{count}}명의 다른 사람들이 이 포스트에 투표했습니다."
+            one: "당신 외 1명이 투표함"
+            other: "당신 외 {{count}}명이 투표함"
         by_others:
           off_topic:
-            other: "{{count}}명의 사용자가 이 게시물을 토픽에서 제외했습니다."
+            one: "1명이 주제에서 벗어남으로 신고함"
+            other: "{{count}}명이 주제에서 벗어남으로 신고함"
           spam:
-            other: "{{count}}명의 사람들이 스팸이라고 신고했습니다"
+            one: "1명이 스팸으로 신고함"
+            other: "{{count}}명이 스팸으로 신고함"
           inappropriate:
-            other: "{{count}}명의 사람들이 부적절하다고 신고했습니다"
+            one: "1명이 부적절함으로 신고함"
+            other: "{{count}}명이 부적절함으로 신고함"
           notify_moderators:
-            other: "{{count}}명의 사람들이 이 게시물을 운영자에게 신고했습니다"
+            one: "1명이 조정 신청함"
+            other: "{{count}}명이 조정 신청함"
           notify_user:
-            other: "{{count}}명이 이 사용자에게 개인 메시지를 보냈습니다."
+            one: "1명이 작성자에게 개인 메시지 발송함"
+            other: "{{count}}명이 작성자에게 개인 메시지 발송함"
           bookmark:
-            other: "{{count}}명의 사용자가 이 게시물을 북마크했습니다."
+            one: "1명이 북마크함"
+            other: "{{count}}명이 북마크함"
           like:
-            other: "{{count}}명이 이 글을 좋아합니다"
+            one: "1명이 좋아함"
+            other: "{{count}}명이 좋아함"
           vote:
-            other: "{{count}}명의 사용자가 이 게시물을 추천했습니다."
+            one: "1명이 투표함"
+            other: "{{count}}명이 투표함"
+            
       edits:
-        one: 하나 편집
-        other: "{{count}}개 편집"
-        zero: 편집 안함
+        one: 수정 1회
+        other: "수정 {{count}}회"
+        zero: 수정 없음
+        
       delete:
         confirm:
-          other: "모든 게시물들을 삭제하시겠습니까?"
+          one: "해당 게시물을 삭제할까요?"
+          other: "해당 게시물들을 전부 삭제할까요?"
+          
       revisions:
         controls:
-          first: "First revision"
-          previous: "Previous revision"
-          next: "Next revision"
-          last: "Last revision"
+          first: "첫 수정"
+          previous: "이전 수정"
+          next: "다음 수정"
+          last: "마지막 수정"
           comparing_previous_to_current_out_of_total: "<strong>{{previous}}</strong> vs <strong>{{current}}</strong> / {{total}}"
         displays:
           inline:
