@@ -1562,31 +1562,32 @@ ko:
             confirm: "정말로 이전 작업 상태로 데이터베이스를 롤백하시겠습니까?"
       export_csv:
         users:
-          text: "사용자 내보내기"
+          text: "사용자 목록 내보내기"
           title: "CSV 파일로 사용자 목록 내보내기"
-        success: "내보내기가 시작되었습니다. 곧 진행사항을 알려드릴께요."
+        success: "내보내기가 시작되었습니다. 곧 진행사항을 알려드릴게요."
         failed: "내보내기가 실패했습니다. 로그를 확인해주세요"
       customize:
-        title: "사용자 지정"
-        long_title: "사이트 사용자 지정"
-        header: "헤더"
-        css: "스타일"
-        mobile_header: "모바일 헤더"
-        mobile_css: "모바일 스타일시트"
+        title: "커스터마이즈"
+        long_title: "사이트 커스터마이즈"
+        css: "CSS"
+        header: "Header"
+        footer: "Footer"
+        mobile_header: "모바일 Header"
+        mobile_css: "모바일 CSS"
         override_default: "표준 스타일 시트를 포함하지 마십시오"
-        enabled: "사용가능?"
-        preview: "미리 보기"
+        enabled: "적용?"
+        preview: "미리보기"
         undo_preview: "미리보기 삭제"
         rescue_preview: "기본 스타일"
         explain_preview: "이 커스텀 스타일시트를 적용한 상태로 사이트를 봅니다."
-        explain_undo_preview: "현재 적용되어 있는 커스톰 스타일시트로 돌아갑니다."
+        explain_undo_preview: "현재 적용되어 있는 커스xja 스타일시트로 돌아갑니다."
         explain_rescue_preview: "기본 스타일시트를 적용한 상태로 사이트를 봅니다."
         save: "저장"
-        new: "새 사용자 지정"
-        new_style: "새로운 스타일"
+        new: "New"
+        new_style: "New Style"
         delete: "삭제"
-        delete_confirm: "이 정의를 삭제 하시겠습니까?"
-        about: "사이트 Customization은 사이트의 스타일시트와 해더를 수정할 수 있게 해줍니다. 새로운 것을 추가하거나 기존 것을 선택해서 편집하세요."
+        delete_confirm: "이 Customization을 삭제 하시겠습니까?"
+        about: "Modify CSS stylesheets and HTML headers on the site. Add a customization to start."
         color: "색"
         opacity: "투명도"
         copy: "복사"
@@ -1603,7 +1604,7 @@ ko:
           undo: "실행 복귀"
           undo_title: "마지막 저장 상태로 색상 변경상태를 되돌리기"
           revert: "되돌리기"
-          revert_title: "이 색상을 Dicsourse의 기본 색 스키마로 초기화"
+          revert_title: "이 색상을 디스커스 기본 색 스킴으로 초기화"
           primary:
             name: '주요'
             description: '대부분의 글, 아이콘 및 테두리'
@@ -1638,11 +1639,11 @@ ko:
         title: "이메일"
         settings: "설정"
         all: "전체"
-        sending_test: "테스트 메일 발송중..."
+        sending_test: "테스트 메일 발송 중..."
         test_error: "테스트 메일을 전송하는데 문제가 있습니다. 메일 설정을 다시한번 체크해보고 메일 전송이 정상인지 다시 확인하고 시도해주세요."
-        sent: "보낸 메일"
-        skipped: "생략"
-        sent_at: "보냄"
+        sent: "Sent"
+        skipped: "Skipped"
+        sent_at: "Sent At"
         time: "시간"
         user: "사용자"
         email_type: "이메일 타입"
@@ -1652,132 +1653,140 @@ ko:
         sent_test: "전송됨!"
         delivery_method: "전달 방법"
         preview_digest: "요약 미리보기"
-        preview_digest_desc: "포럼에서 전송되는 요약 메일 미리보기 도구"
+        preview_digest_desc: "포럼에서 전송되는 요약본 이메일 미리보기 도구"
         refresh: "새로고침"
         format: "형식"
         html: "html"
-        text: "문장"
-        last_seen_user: "마지막으로 본 사용자"
-        reply_key: "답글 단축키"
-        skipped_reason: "생략 이유"
+        text: "text"
+        last_seen_user: "Last Seen User:"
+        reply_key: "Reply Key"
+        skipped_reason: "Skip Reason"
         logs:
           none: "로그가 없습니다."
           filters:
             title: "필터"
-            user_placeholder: "사용자명"
+            user_placeholder: "사용자 아이디(username)"
             address_placeholder: "name@example.com"
-            type_placeholder: "다이제스트, 가입..."
-            reply_key_placeholder: "답글 키"
-            skipped_reason_placeholder: "이유"
+            type_placeholder: "요약본, 가입..."
+            reply_key_placeholder: "reply key"
+            skipped_reason_placeholder: "reason"
       logs:
         title: "로그"
-        action: "허용여부"
-        created_at: "생성된"
-        last_match_at: "마지막 방문"
-        match_count: "방문"
+        action: "Action"
+        created_at: "Created"
+        last_match_at: "Last Matched"
+        match_count: "Matches"
         ip_address: "IP"
-        delete: '삭제'
-        edit: '편집'
-        save: '저장'
+        topic_id: "Topic ID"
+        post_id: "Post ID"
+        delete: 'Delete'
+        edit: 'Edit'
+        save: 'Save'
         screened_actions:
-          block: "블락"
-          do_nothing: "아무것도 하지 않음"
+          block: "차단"
+          do_nothing: "do nothing"
         staff_actions:
-          title: "스태프 기록"
-          instructions: "사용자 이름을 클릭하고 리스트를 필터링하세요. 아바타를 클릭하여 사용자 페이지로 이동합니다."
+          title: "Staff Actions"
+          instructions: "Click usernames and actions to filter the list. Click avatars to go to user pages."
           clear_filters: "전체 보기"
-          staff_user: "스태프 사용자"
+          staff_user: "스탭 사용자"
           target_user: "타겟 사용자"
           subject: "제목"
-          when: "언제"
-          context: "상황"
-          details: "상세"
-          previous_value: "이전값"
-          new_value: "새값"
-          diff: "차이점"
-          show: "보기"
-          modal_title: "상세"
-          no_previous: "이전 값이 없습니다."
+          when: "When"
+          context: "Context"
+          details: "Details"
+          previous_value: "Previous"
+          new_value: "New"
+          diff: "Diff"
+          show: "Show"
+          modal_title: "Details"
+          no_previous: "There is no previous value."
           deleted: "새로운 값이 없습니다. 기록이 삭제되었습니다."
           actions:
             delete_user: "사용자 삭제"
-            change_trust_level: "신뢰도 변경"
+            change_trust_level: "신뢰도(회원레벨) 변경"
             change_site_setting: "사이트 설정 변경"
-            change_site_customization: "사이트 커스텀화 변경"
-            delete_site_customization: "사이트 커스텀화 삭제"
-            suspend_user: "suspend user"
-            unsuspend_user: "unsuspend user"
+            change_site_customization: "사이트 커스터마이제이션 변경"
+            delete_site_customization: "사이트 커스터마이제이션 삭제"
+            suspend_user: "사용자 정지"
+            unsuspend_user: "사용자 정지해제"
             grant_badge: "뱃지 부여"
             revoke_badge: "뱃지 회수"
             check_email: "이메일 확인"
         screened_emails:
-          title: "블락된 이메일들"
-          description: "누군가가 새로운 계정을 만들면 아래 이메일 주소는 체크되고 등록은 블락됩니다, 또는 다른 조치가 취해집니다."
+          title: "Screened Emails"
+          description: "누군가가 새로운 계정을 만들 때, 다음 이메일 주소들은 사용이 금지됨.  또는 다른 조치가 취해집니다."
           email: "이메일 주소"
           actions:
             allow: "허용"
         screened_urls:
-          title: "블락된 URL들"
-          description: "이 목록은 사용자에 의해 스팸으로 알려진 URL 목록입니다."
+          title: "Screened URLs"
+          description: "이 URL 목록은 스패머로 판명된 유저들이 게시물에서 사용했던 URL들입니다."
           url: "URL"
           domain: "도메인"
         screened_ips:
-          title: "블락된 IP들"
-          description: 'IP 주소는 감시됩니다. "허용"으로 Whitelist에 등록해주세요.'
-          delete_confirm: "%{ip_address}를 규칙에 의해 삭제할까요?"
+          title: "Screened IPs"
+          description: '감시되는 IP 주소 리스트. "허용"을 통해 감시 목록에서 해제합니다.'
+          delete_confirm: "Are you sure you want to remove the rule for %{ip_address}?"
           actions:
-            block: "블락"
-            do_nothing: "허용"
-            allow_admin: "관리자 허용하기"
+            block: "Block(차단)"
+            do_nothing: "Allow(허용)"
+            allow_admin: "Allow Admin"
           form:
-            label: "새 IP:"
+            label: "New:"
             ip_address: "IP 주소"
             add: "추가"
         logster:
           title: "에러 로그"
       impersonate:
-        title: "이 사용자 행세하기"
-        help: "디버깅 목적으로 사용자 계정으로 로그인 할 수 있습니다. 사용이 끝나면 로그아웃하여야 합니다."
+        title: "Impersonate(대역 사용)"
+        help: "디버깅 목적으로 특정 사용자 계정으로 로그인 할 수 있습니다. 사용이 끝나면 로그아웃하여야 합니다."
       users:
         title: '사용자'
-        create: '관리자 사용자 추가'
-        last_emailed: "마지막 이메일"
-        not_found: "죄송합니다, 그 이름은 시스템에 존재하지 않습니다."
-        active: "활동"
-        nav:
-          new: "새로운 사용자"
-          active: "활성화 사용자"
-          pending: "보류된 사용자"
-          admins: '관리자 목록'
-          moderators: '운영자'
-          suspended: '접근 금지 사용자'
-          blocked: '블락된 사용자'
-        approved: "승인?"
+        create: 'Add Admin User'
+        last_emailed: "Last Emailed"
+        not_found: "죄송합니다, 그 아이디(Username)는 우리 시스템에 존재하지 않습니다."
+        active: "Activate"
+        show_emails: "Show Emails"
+       nav:
+          new: "New"
+          active: "Active"
+          pending: "Pending"
+          admins: 'Admins'
+          moderators: 'Mods'
+          suspended: 'Suspended'
+          blocked: 'Blocked'
+        approved: "Approved?"
         approved_selected:
-          other: "승인한 사용자 ({{count}}명)"
+          one: "approve user"
+          other: "approve users ({{count}})"
         reject_selected:
-          other: "거부한 사용자 ({{count}}명)"
+          one: "reject user"
+          other: "reject users ({{count}})"
         titles:
           active: '활성화된 사용자'
           new: '새로운 사용자'
           pending: '검토가 필요한 사용자'
-          newuser: '사용자 신뢰도 0 (새로운 사용자)'
-          basic: '사용자 신뢰도 1 (초보 사용자)'
-          regular: '사용자 신뢰도 2 (회원)'
-          leader: '사용자 신뢰도 3 (정규)'
-          elder: '사용자 신뢰도 4 (지도자)'
-          admins: '관리자 사용자 목록'
-          moderators: '운영자'
-          blocked: '블락된 사용자들'
-          suspended: '접근 금지된 사용자들'
+          newuser: '사용자 신뢰도 0 (새내기)'
+          basic: '사용자 신뢰도 1 (입문자)'
+          regular: '사용자 신뢰도 2 (멤버)'
+          leader: '사용자 신뢰도 3 (시니어 멤버)'
+          elder: '사용자 신뢰도 4 (베스트 멤버)'
+          admins: 'Admin Users'
+          moderators: 'Moderators'
+          blocked: '차단된 사용자'
+          suspended: '정지된 사용자'
         reject_successful:
-          other: "성공적으로 ${count}명의 사용자를 거절하였습니다."
+          one: "Successfully rejected 1 user."
+          other: "Successfully rejected %{count} users."
         reject_failures:
-          other: "%{count}명의 사용자를 거부하는데 실패했습니다."
-        not_verified: "확인되지 않은"
+          one: "Failed to reject 1 user."
+          other: "Failed to reject %{count} users."
+        not_verified: "Not verified"
         check_email:
-          title: "사용자의 이메일 주소 표시"
-          text: "이메일 보기"
+          title: "Reveal this user's email address"
+          text: "Show"
+
       user:
         suspend_failed: "이 사용자를 접근 금지하는데 오류 발생 {{error}}"
         unsuspend_failed: "이 사용자를 접근 허용 하는데 오류 발생 {{error}}"
