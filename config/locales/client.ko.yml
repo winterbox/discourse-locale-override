@@ -870,7 +870,7 @@ ko:
         
       reply:
         title: '답글'
-        help: '이 토픽에 대한 답글 구성 시작'
+        help: '이 토픽에 대한 답글 작성 시작'
         
       clear_pin:
         title: "고정 취소"
@@ -1012,28 +1012,30 @@ ko:
         
       controls:
         reply: "이 게시물에 대한 답글을 작성합니다."
-        like: "이 게시물을 좋아합니다."
-        has_liked: "이 게시글을 좋아합니다."
+        like: "이 게시물 좋아하기"
+        has_liked: "당신은 이 게시물을 좋아합니다."
         undo_like: "'좋아요' 취소하기"
         edit: "이 게시물을 편집합니다."
-        edit_anonymous: "이 토픽을 수정하려면 먼저 로그인을 해야합니다."
+        edit_anonymous: "이 게시물을 수정하려면 로그인이 필요합니다."
         flag: "운영자에게 이 글을 신고합니다."
         delete: "이 게시물을 삭제합니다."
         undelete: "이 게시물 삭제를 취소합니다."
-        share: "이 게시물에 대한 링크를 공유합니다."
-        more: "더"
+        share: "이 게시물의 주소를 공유합니다."
+        more: "more"
         delete_replies:
           confirm:
-            other: "이 게시글에 작성된 {{count}}개의 댓글도 삭제하시겠습니까?"
-          yes_value: "예, 답글도 삭제합니다."
-          no_value: "아니오, 게시글만 삭제합니다."
+            one: "이 게시물에 달린 답글도 삭제할까요?"
+            other: "이 게시물에 달린 {{count}}개의 답글도 삭제할까요?"
+          yes_value: "네. 관련 답글도 삭제합니다."
+          no_value: "아니요. 해당 게시물만 삭제합니다."
         admin: "관리자 기능"
         wiki: "위키 만들기"
-        unwiki: "위키 제거하기"
-        convert_to_moderator: "스태프 색상 추가하기"
-        revert_to_regular: "스태프 색상 제거하기"
+        unwiki: "위키 취소하기"
+        convert_to_moderator: "스탭 색상 추가하기"
+        revert_to_regular: "스탭 색상 제거하기"
         rebake: "HTML 다시 빌드하기"
         unhide: "숨기지 않기"
+        
       actions:
         flag: '신고'
         defer_flags:
