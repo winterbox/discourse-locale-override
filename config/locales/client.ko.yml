@@ -1867,65 +1867,79 @@ ko:
         block_explanation: "차단된 사용자는 답글을 작성하거나 토픽을 생성할 수 없습니다."
         trust_level_change_failed: "신뢰도(회원레벨) 변경에 문제가 있습니다."
         suspend_modal_title: "Suspend User"
-        trust_level_2_users: "신뢰도 2 사용자들"
-        trust_level_3_requirements: "사용자 신뢰도 3 이상이 필요"
-        trust_level_locked_tip: "신뢰도 시스템이 잠겼습니다. 시스템이 사용자를 승급이나 강등시키지 않을 것 입니다."
-        trust_level_unlocked_tip: "신뢰도 시스템이 잠금이 해제되었습니다. 시스템은 사용자를 승급이나 강등 시킬 것입니다."
-        lock_trust_level: "신뢰도 시스템 잠금"
-        unlock_trust_level: "신뢰도 시스템 잠금 해제"
+        trust_level_2_users: "회원레벨2(멤버) 사용자들"
+        trust_level_3_requirements: "회원레벨3(시니어 멤버) 이상이 필요"
+        trust_level_locked_tip: "회원레벨(TL) 시스템이 잠겼습니다. 시스템이 사용자를 승급이나 강등시키지 않을 것입니다."
+        trust_level_unlocked_tip: "회원레벨(TL) 시스템 잠금이 해제되었습니다. 시스템이 사용자를 승급이나 강등 시킬 것입니다."
+        lock_trust_level: "회원레벨(TL) 시스템 잠금"
+        unlock_trust_level: "회원레벨(TL) 시스템 잠금 해제"
         tl3_requirements:
-          title: "레벨 3 권한이 필요합니다."
-          table_title: "최근 100일 간:"
+          title: "회원레벨3 권한 획득 조건"
+          table_title: "지난 100일 간:"
           value_heading: "값"
           requirement_heading: "필수"
           visits: "방문수"
           days: "일"
-          topics_replied_to: "답글 달린 토픽"
+          topics_replied_to: "Topics Replied To"
           topics_viewed: "읽은 토픽 수"
           topics_viewed_all_time: "읽은 토픽 수 (전체 기간)"
-          posts_read: "읽은 글 수"
-          posts_read_all_time: "읽은 글 수 (전체 기간)"
-          flagged_posts: "신고된 글"
+          posts_read: "읽은 게시물 수"
+          posts_read_all_time: "읽은 게시물 수 (전체 기간)"
+          flagged_posts: "신고된 게시물"
           flagged_by_users: "신고한 사용자들"
-          likes_given: "선사한  '좋아요'"
-          likes_received: "받은 '좋아요'"
-          qualifies: "신뢰 등급 3의 조건에 부합합니다."
-          does_not_qualify: "신뢰 등급 3의 조건에 부합하지 않습니다."
+          likes_given: "'좋아요' 준 횟수"
+          likes_received: "'좋아요' 받은 횟수"
+          likes_received_days: "Likes Received: unique days"
+          likes_received_users: "Likes Received: unique users"
+          qualifies: "회원레벨3(시니어 멤버)의 조건에 부합합니다."
+          does_not_qualify: "회원레벨3(시니어 멤버)의 조건에 부합하지 않습니다."
           will_be_promoted: "곧 승급 됩니다."
-          will_be_demoted: "곧 강등됩니다."
+          will_be_demoted: "곧 강등 됩니다."
           on_grace_period: "현재 승급 유예 기간이므로 강등되지 않습니다."
-          locked_will_not_be_promoted: "신뢰도 시스템이 잠겼습니다. 승급되지 않습니다."
-          locked_will_not_be_demoted: "신뢰도 시스템이 잠겼습니다. 강등되지 않습니다."
+          locked_will_not_be_promoted: "회원레벨(TL) 시스템이 잠겼습니다. 절대 승급되지 않습니다."
+          locked_will_not_be_demoted: "회원레벨(TL) 시스템이 잠겼습니다. 절대 강등되지 않습니다."
         sso:
           title: "Single Sign On"
           external_id: "External ID"
-          external_username: "아이디"
+          external_username: "Username(아이디)"
           external_name: "Name"
           external_email: "Email"
           external_avatar_url: "Avatar URL"
       user_fields:
-        title: "사용자 필드"
-        description: "사용자가 가입할 때 입력하여야 하는 필드를 여기에 추가하세요."
-        create: "사용자 필드 생성하기"
+        title: "사용자 입력란(User Fields)"
+        description: "사용자가 가입할 때 입력해야 하는 필드를 여기에 추가하세요."
+        create: "사용자 입력란 생성하기"
         untitled: "무제"
         name: "필드명"
-        type: "필드 속성"
+        type: "필드 타입"
+        description: "필드 설명"
         save: "저장"
         edit: "편집"
         delete: "삭제"
         cancel: "취소"
-        delete_confirm: "사용자 필드를 삭제할까요?"
+        delete_confirm: "사용자 입력란을 삭제할까요?"
+        required:
+          title: "가입시 입력 필수?"
+          enabled: "필수"
+          disabled: "필수가 아님"
+        editable:
+          title: "가입후 수정 가능??"
+          enabled: "가능"
+          disabled: "불가능"
+        
         field_types:
           text: '텍스트 필드'
           confirm: '확인'
+          
       site_text:
         none: "편집할 콘텐츠 유형을 선택하세요."
         title: '텍스트 콘텐츠'
+        
       site_settings:
         show_overriden: '수정된 것만 표시'
         title: '사이트 설정'
         reset: '기본값으로 재설정'
-        none: '없음'
+        none: 'none'
         no_results: "No results found."
         clear_filter: "Clear"
         categories:
@@ -1936,32 +1950,33 @@ ko:
           posting: '게시물'
           email: '이메일'
           files: '파일'
-          trust: '신뢰도'
+          trust: '신뢰도(회원레벨)'
           security: '보안'
           onebox: "Onebox"
           seo: 'SEO'
           spam: '스팸'
-          rate_limits: '제한'
+          rate_limits: 'Rate Limits'
           developer: '개발자'
           embedding: "Embedding"
-          legal: "합법적인"
-          uncategorized: '카테고리 없음'
+          legal: "Legal"
+          uncategorized: 'Other'
           backups: "백업"
           login: "로그인"
+          
       badges:
         title: 뱃지
         new_badge: 새로운 뱃지
-        new: 새 훈장
+        new: New
         name: 이름
         badge: 뱃지
         display_name: 표시 이름
         description: 설명
         badge_type: 뱃지 종류
-        badge_grouping: 뱃지 그룹핑
+        badge_grouping: 뱃지 그룹
         badge_groupings:
-          modal_title: 뱃지 그룹으로 나누기
-        granted_by: 훈장 부여자
-        granted_at: 훈장 수여일
+          modal_title: 뱃지 그룹화
+        granted_by: 뱃지 부여자
+        granted_at: 뱃지 수여일
         save: 저장
         delete: 삭제
         delete_confirm: 정말로 이 뱃지를 삭제하시겠습니까?
@@ -1971,37 +1986,38 @@ ko:
         grant_badge: 뱃지 부여
         granted_badges: 부여된 뱃지
         grant: 부여
-        no_user_badges: "%{name}님은 수여받은 뱃지가 없습니다."
-        no_badges: 받을 수 있는 뱃지가 없습니다.
-        allow_title: 뱃지를 칭호로 사용 가능하도록 허용
-        multiple_grant: 중복 부여할 수 있도록 허용
-        listable: 공개 뱃지 페이지에 표시되는 뱃지입니다.
+        no_user_badges: "%{name}님은 부여받은 뱃지가 없습니다."
+        no_badges: 부여받을 수 있는 뱃지가 없습니다.
+        none_selected: "Select a badge to get started"
+        allow_title: 뱃지를 호칭으로 사용 가능하도록 허용
+        multiple_grant: 여러번 중복 부여될 수 있도록 허용
+        listable: 공개 뱃지 페이지에서 뱃지 보여주기
         enabled: 뱃지 기능 사용
         icon: 아이콘
-        query: 뱃지 Query(SQL)
-        target_posts: 포스트들을 타겟으로 하는 query
-        auto_revoke: 매일 회수 query를 실행한다.
-        show_posts: 뱃지 페이지에서 뱃지를 받게한 게시글을 보여줍니다.
+        query: 뱃지 Query (SQL)
+        target_posts: 게시물을 타겟으로 하는 query
+        auto_revoke: 매일 뱃지 회수 query를 실행합니다
+        show_posts: 뱃지 페이지에서 뱃지를 받게한 게시물을 보여줍니다
         trigger: Trigger
         trigger_type:
           none: "매일 업데이트"
-          post_action: "사용자가 포스트에 액션을 했을 때"
-          post_revision: "사용자가 포스트를 수정거나 작성했을 때"
-          trust_level_change: "사용자의 신뢰도가 변했을 떄"
+          post_action: "사용자가 게시물에 액션을 했을 때"
+          post_revision: "사용자가 게시물을 수정거나 작성했을 때"
+          trust_level_change: "사용자의 신뢰도(회원레벨)가 변했을 때"
           user_change: "사용자가 수정되거나 생성되었을 때"
         preview:
           link_text: "수여된 뱃지 미리보기"
-          plan_text: "Query plan 미리보기"
+          plan_text: "Preview with query plan"
           modal_title: "뱃지 Query 미리보기"
           sql_error_header: "Query에 오류가 있습니다."
           error_help: "뱃지 query의 도움말을 보려면 다음의 링크를 확인하세요."
           bad_count_warning:
             header: "주의!"
-            text: "사라진 뱃지 샘플이 있습니다. 뱃지 query가 존재하지 않는 user ID나 post ID를 반환할 경우 발생합니다. 예상하지 못한 결과를 일으킬 수 있으니 query를 다시 한번 확인하세요."
+            text: "There are missing grant samples. 이는 뱃지 query가 존재하지 않는 user ID나 post ID를 반환할 경우 발생합니다. 예상하지 못한 결과를 일으킬 수 있으니 query 규칙을 다시 한번 확인하세요."
           grant_count:
-            zero: "할당된 뱃지가 없습니다."
-            one: "<b>1</b>개의 뱃지가 할당됨."
-            other: "<b>%{count}</b>개의 뱃지가 할당됨."
+            zero: "No badges to be assigned."
+            one: "<b>1</b> badge to be assigned."
+            other: "<b>%{count}</b> badges to be assigned."
           sample: "샘플:"
           grant:
             with: <span class="username">%{username}</span>
@@ -2009,18 +2025,21 @@ ko:
             with_post_time: <span class="username">%{username}</span> for post in %{link} at <span class="time">%{time}</span>
             with_time: <span class="username">%{username}</span> at <span class="time">%{time}</span>
     lightbox:
-      download: "download"
+      download: "다운로드"
+    search_help:
+      title: '검색 도움말'
+      
     keyboard_shortcuts_help:
       title: '키보드 단축키'
       jump_to:
-        title: 'Jump To'
+        title: '이동 단축키'
         home: '<b>g</b>, <b>h</b> 홈 (Latest)'
-        latest: '<b>g</b>, <b>l</b> 최신'
-        new: '<b>g</b>, <b>n</b> 새로운'
-        unread: '<b>g</b>, <b>u</b> 읽지 않은'
+        latest: '<b>g</b>, <b>l</b> 최근 토픽'
+        new: '<b>g</b>, <b>n</b> 새로운 토픽'
+        unread: '<b>g</b>, <b>u</b> 읽지 않음'
         starred: '<b>g</b>, <b>f</b> 즐겨찾기'
         categories: '<b>g</b>, <b>c</b> 카테고리'
-        top: '<b>g</b>, <b>t</b> 인기'
+        top: '<b>g</b>, <b>t</b> 인기 토픽'
       navigation:
         title: 'Navigation'
         jump: '<b>#</b> 게시글 번호로'
