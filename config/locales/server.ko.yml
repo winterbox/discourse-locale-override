@@ -374,9 +374,7 @@ ko:
       long_form: '스팸으로 신고하였습니다.'
     inappropriate:
       title: '부적절함'
-      description: '이 게시물은 평균적인 사람들의 관점에서 볼 때 공격적이나 모욕적인 글을 담고 있거나,
-
-        <a href="/guidelines">가이드라인</a>에 맞지 않습니다.'
+      description: '이 게시물은 평균적인 사람들의 관점에서 볼 때 공격적이나 모욕적인 글을 담고 있거나, <a href="/guidelines">가이드라인</a>에 맞지 않습니다.'
       long_form: '부적절함으로 신고되었습니다.'
     notify_moderators:
       title: '운영자에게 알리기'
