@@ -698,11 +698,11 @@ ko:
       bulk:
         reset_read: "읽음 처리"
         delete: "토픽 제거"
-        dismiss_posts: "카운트 해산"
+        dismiss_posts: "읽음 처리"
         dismiss_posts_tooltip: "이 토픽들에 지금까지 누적된 '읽지 않음 카운트'를 제거합니다. 하지만 새로운 게시물이 작성되면 내 '읽지 않음' 목록에 다시 나타납니다."
-        dismiss_topics: "토픽 해산"
+        dismiss_topics: "토픽 읽음 처리"
         dismiss_topics_tooltip: "이 토픽들에 새로운 게시물이 작성되어도 내 '읽지 않음' 목록에 표시하지 않습니다."
-        dismiss_new: "새로운 토픽 해산"
+        dismiss_new: "새 토픽 읽음 처리"
         toggle: "토픽 일괄 선택 기능"
         actions: "일괄 적용"
         change_category: "카테고리 변경"
@@ -800,7 +800,7 @@ ko:
       auto_close_remove: "이 토픽을 자동으로 닫지 않기"
       
       progress:
-        title: 토픽 네비게이션
+        title: 토픽 진행바
         go_top: "맨 위"
         go_bottom: "맨 아래"
         go: "이동"
@@ -2018,7 +2018,7 @@ ko:
             zero: "No badges to be assigned."
             one: "<b>1</b> badge to be assigned."
             other: "<b>%{count}</b> badges to be assigned."
-          sample: "샘플:"
+          sample: "샘플 :"
           grant:
             with: <span class="username">%{username}</span>
             with_post: <span class="username">%{username}</span> for post in %{link}
@@ -2041,132 +2041,135 @@ ko:
         categories: '<b>g</b>, <b>c</b> 카테고리'
         top: '<b>g</b>, <b>t</b> 인기 토픽'
       navigation:
-        title: 'Navigation'
-        jump: '<b>#</b> 게시글 번호로'
-        back: '<b>u</b> Back'
-        up_down: '<b>k</b>/<b>j</b> 선택된 게시글 이동 &uarr; &darr;'
-        open: '<b>o</b> or <b>Enter</b> 선택한 토픽에 들어갑니다.'
+        title: '네비게이션'
+        jump: '<b>#</b> 게시물 #으로'
+        back: '<b>u</b> 뒤로'
+        up_down: '<b>k</b>/<b>j</b> 선택 조절 &uarr; &darr;'
+        open: '<b>o</b> or <b>Enter</b> 선택한 토픽 읽기'
         next_prev: '<b>shift j</b>/<b>shift k</b> 다음/이전 섹션'
       application:
-        title: 'Application'
-        create: '<b>c</b> 새 토픽을 만듭니다.'
-        notifications: '<b>n</b> Open notifications'
+        title: '어플리케이션'
+        create: '<b>c</b> 새로운 토픽 작성'
+        notifications: '<b>n</b> 알림창 열기'
         site_map_menu: '<b>=</b> 사이트 메뉴 열기'
         user_profile_menu: '<b>p</b> 사용자 메뉴 열기'
         show_incoming_updated_topics: '<b>.</b> 갱신된 토픽 보기'
-        search: '<b>/</b> Search'
+        search: '<b>/</b> 검색'
         help: '<b>?</b> 키보드 도움말 열기'
-        dismiss_new_posts: '<b>x</b>, <b>r</b> 새글을 읽은 상태로 표시하기'
-        dismiss_topics: '<b>x</b>, <b>t</b> 토픽 무시하기'
+        dismiss_new_posts: '<b>x</b>, <b>r</b> 게시물 읽음 처리'
+        dismiss_topics: '<b>x</b>, <b>t</b> 토픽 읽음 처리'
       actions:
-        title: 'Actions'
-        star: '<b>f</b> 별표시 토픽'
+        title: '행동'
+        star: '<b>f</b> 즐겨찾기 등록'
         share_topic: '<b>shift s</b> 토픽 공유'
-        share_post: '<b>s</b> 게시글 공유'
-        reply_as_new_topic: '<b>t</b> 링크된 토픽으로 답글 작성하기'
-        reply_topic: '<b>shift r</b> 토픽에 답변 달기'
-        reply_post: '<b>r</b> 게시글에 답글 달기'
-        quote_post: '<b>q</b> 인용 글'
-        like: '<b>l</b> Like post'
-        flag: '<b>!</b> Flag post'
-        bookmark: '<b>b</b> Bookmark post'
-        edit: '<b>e</b> Edit post'
-        delete: '<b>d</b> Delete post'
-        mark_muted: '<b>m</b>, <b>m</b> 토픽 알림: 끔'
-        mark_regular: '<b>m</b>, <b>r</b> 토픽 알림: 일반'
-        mark_tracking: '<b>m</b>, <b>t</b> 토픽 알림: 업데이트 표시'
-        mark_watching: '<b>m</b>, <b>w</b> 토픽 알림: 팔로잉'
+        share_post: '<b>s</b> 게시물 공유'
+        reply_as_new_topic: '<b>t</b> 새로운 토픽으로 답글 작성하기(링크 연동)'
+        reply_topic: '<b>shift r</b> 토픽에 답글 작성'
+        reply_post: '<b>r</b> 게시물에 답글 작성'
+        quote_post: '<b>q</b> 게시물 인용'
+        like: '<b>l</b> 게시물 좋아하기'
+        flag: '<b>!</b> 게시물 신고'
+        bookmark: '<b>b</b> 게시물 북마크'
+        edit: '<b>e</b> 게시물 수정'
+        delete: '<b>d</b> 게시물 삭제'
+        mark_muted: '<b>m</b>, <b>m</b> 토픽 음소거'
+        mark_regular: '<b>m</b>, <b>r</b> 토픽 일반'
+        mark_tracking: '<b>m</b>, <b>t</b> 토픽 추적'
+        mark_watching: '<b>m</b>, <b>w</b> 토픽 주시'
     badges:
       title: 뱃지
-      allow_title: "뱃지를 칭호로 사용 가능하도록 허용할까요?"
-      multiple_grant: "중복해서 부여할 수 있나요?"
+      allow_title: "호칭으로 사용가능?"
+      multiple_grant: "여러 번 받을 수 있나요?"
       badge_count:
+        one: "뱃지 1개"
         other: "뱃지 %{count}개"
       more_badges:
+        one: "+1 More"
         other: "+%{count} More"
       granted:
-        other: "%{count} 개 부여"
+        one: "1개 부여됨"
+        other: "%{count}개 부여됨"
       select_badge_for_title: 호칭으로 사용할 뱃지를 선택하세요
       none: "<없음>"
       no_title: "호칭 없음"
       badge_grouping:
         getting_started:
-          name: 교육용 훈장
+          name: 시작하기
         community:
-          name: 커뮤니티 훈장
+          name: 커뮤니티 활동
         trust_level:
-          name: 신뢰 등급 훈장
+          name: 회원레벨
         other:
-          name: 기타 훈장
+          name: 기타
         posting:
-          name: 글 관련 훈장
+          name: 포스팅
       badge:
         editor:
           name: 편집자
-          description: 첫 포스트 편집
+          description: 처음으로 글을 편집
         basic_user:
-          name: 기본
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">부여되면</a> 커뮤니티의 기본 기능 수행 가능
+          name: 입문자
+          description: 커뮤니티의 기본 기능 수행 가능
         member:
           name: 멤버
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/5">Granted</a> invitations
+          description: 초대장 발송 가능
         regular:
-          name: 일반
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/6">Granted</a> recategorize, rename, followed links and lounge
+          name: 시니어 멤버
+          description: 카테고리 재설정, 이름 변경, 비공개 라운지 접근 가능
         leader:
-          name: 중견
-          description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">Granted</a> global edit, pin, close, archive, split and merge
+          name: 베스트 멤버
+          description: 토픽 일괄 수정, 토픽 고정, 토픽 닫기, 토픽 보관, 토픽 분할/통합 가능
         welcome:
-          name: 환영합니다
+          name: 환영해요
           description: 좋아요 받음
         autobiographer:
-          name: 자서전 작가
+          name: 프로필 작가
           description: 사용자의 <a href="/my/preferences">프로필</a> 정보를 작성함
         nice_post:
-          name: 괜찮은 글
-          description: 작성한 글이 좋아요를 10개 받았습니다. 이 뱃지는 중복 수여 가능합니다.
+          name: 괜찮은 게시물
+          description: 작성한 게시물이 좋아요를 10개 받았습니다. 이 뱃지는 여러 번 받을 수 있습니다.
         good_post:
-          name: 좋은 글
-          description: 작성한 글이 좋아요를 25개 받았습니다. 이 뱃지는 중복 수여 가능합니다.
+          name: 좋은 게시물
+          description: 작성한 게시물이 좋아요를 25개 받았습니다. 이 뱃지는 여러 번 받을 수 있습니다.
         great_post:
-          name: 굉장히 좋은 글
-          description: 작성한 글이 좋아요를 50개 받았습니다. 이 뱃지는 중복 수여 가능합니다.
+          name: 훌륭한 게시물
+          description: 작성한 게시물이 좋아요를 50개 받았습니다. 이 뱃지는 여러 번 받을 수 있습니다.
         nice_topic:
-          name: Nice 토픽
-          description: 10개의 '좋아요'를 받았습니다. 이 뱃지는 여러번 받을 수 있습니다.
+          name: 괜찮은 토픽
+          description: 작성한 토픽이 10개의 '좋아요'를 받았습니다. 이 뱃지는 여러 번 받을 수 있습니다.
         good_topic:
-          name: Good 토픽
-          description: 25개의 '좋아요'를 받았습니다. 이 뱃지는 여러번 받을 수 있습니다.
+          name: 좋은 토픽
+          description: 작성한 토픽이 25개의 '좋아요'를 받았습니다. 이 뱃지는 여러 번 받을 수 있습니다.
         great_topic:
-          name: Great 토픽
-          description: 50개의 '좋아요'를 받았습니다. 이 뱃지는 여러번 받을 수 있습니다.
+          name: 훌륭한 토픽
+          description: 작성한 토픽이 50개의 '좋아요'를 받았습니다. 이 뱃지는 여러 번 받을 수 있습니다.
         nice_share:
-          name: Nice 공유
-          description: 25명의 사용자로부터 공유되었습니다
+          name: 괜찮은 공유
+          description: 공유한 게시물에 25명의 고유 사용자가 방문했습니다.
         good_share:
-          name: Good 공유
-          description: 300명의 사용자로부터 공유되었습니다
+          name: 좋은 공유
+          description: 공유한 게시물에 300명의 고유 사용자가 방문했습니다.
         great_share:
-          name: Great 공유
-          description: 1000명의 사용자로부터 공유되었습니다
+          name: 공유 유발자
+          description: 공유한 게시물에 1000명의 고유 사용자가 방문했습니다.
         first_like:
           name: 첫 좋아요
-          description: 처음으로 글에 '좋아요'를 했습니다.
+          description: 처음으로 좋아요를 눌렀습니다.
         first_flag:
           name: 첫 신고
-          description: 글을 처음으로 신고하였습니다.
+          description: 처음으로 신고했습니다.
         first_share:
           name: 첫 공유
-          description: 처음으로 글을 공유했습니다.
+          description: 처음으로 게시물을 공유했습니다.
         first_link:
           name: 첫 링크
-          description: 글 작성시, 다른 토픽으로 가는 링크를 처음으로 추가하였습니다.
+          description: 다른 토픽으로 연결되는 내부링크를 추가했습니다.
         first_quote:
           name: 첫 인용
-          description: 글 작성시 다른 사용자의 글을 인용하였습니다.
+          description: 글 작성시 다른 사용자의 글을 인용했습니다.
         read_guidelines:
-          name: 가이드라인 읽음
-          description: <a href="/guidelines">커뮤니티 가이드라인</a> 을 읽었습니다.
+          name: 가이드라인 숙지
+          description: <a href="/guidelines">커뮤니티 가이드라인</a>을 읽었습니다.
         reader:
-          name: 독서가
-          description: 100개가 넘는 댓글이 달린 토픽의 댓글을 모두 읽었습니다.
+          name: 애독자
+          description: 100개가 넘는 답글이 달린 토픽을 처음부터 끝까지 정독했습니다.
