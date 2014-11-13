@@ -2145,13 +2145,13 @@ ko:
           description: 작성한 토픽이 50개의 '좋아요'를 받았습니다. 이 뱃지는 여러 번 받을 수 있습니다.
         nice_share:
           name: 괜찮은 공유
-          description: 공유한 게시물에 25명의 고유 사용자가 방문했습니다.
+          description: 공유한 게시물로 25명의 고유 사용자가 방문했습니다.
         good_share:
           name: 좋은 공유
-          description: 공유한 게시물에 300명의 고유 사용자가 방문했습니다.
+          description: 공유한 게시물로 300명의 고유 사용자가 방문했습니다.
         great_share:
           name: 훌륭한 공유
-          description: 공유한 게시물에 1000명의 고유 사용자가 방문했습니다.
+          description: 공유한 게시물로 1000명의 고유 사용자가 방문했습니다.
         first_like:
           name: 첫 좋아요
           description: 처음으로 좋아요를 눌렀습니다.
