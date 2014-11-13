@@ -2150,7 +2150,7 @@ ko:
           name: 좋은 공유
           description: 공유한 게시물에 300명의 고유 사용자가 방문했습니다.
         great_share:
-          name: 공유 유발자
+          name: 훌륭한 공유
           description: 공유한 게시물에 1000명의 고유 사용자가 방문했습니다.
         first_like:
           name: 첫 좋아요
