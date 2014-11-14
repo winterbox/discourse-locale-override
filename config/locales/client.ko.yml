@@ -1287,7 +1287,7 @@ ko:
     views_lowercase: "조회수"
     replies: "답글"
     views_long: "이 토픽은 {{number}}회 조회되었습니다."
-    activity: "활동내역"
+    activity: "업데이트"
     likes: "좋아요"
     likes_lowercase: "좋아요"
     likes_long: "이 토픽에 {{number}}개의 '좋아요'가 있습니다."
