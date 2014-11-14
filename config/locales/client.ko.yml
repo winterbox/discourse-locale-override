@@ -241,7 +241,7 @@ ko:
       download_archive: "내 게시물을 아카이브로 다운로드"
       private_message: "개인 메시지"
       private_messages: "메시지"
-      activity_stream: "활동"
+      activity_stream: "활동내역"
       preferences: "환경설정"
       bookmarks: "북마크"
       bio: "내 소개"
@@ -460,7 +460,7 @@ ko:
         again: "다시 시도"
         fixed: "페이지 로드"
     close: "닫기"
-    assets_changed_confirm: "커뮤니티 활동이 업데이트 되었습니다. 새로고침 하시겠습니까?"
+    assets_changed_confirm: "새로운 활동이 업데이트 되었습니다. 새로고침 하시겠습니까?"
     read_only_mode:
       enabled: "관리자가 읽기 전용 모드를 활성화했습니다. 컨텐츠를 읽을 수는 있지만 기타 행동은 제한됩니다."
       login_disabled: "사이트가 읽기 전용 모드로 되면서 로그인이 비활성화되었습니다."
@@ -685,7 +685,7 @@ ko:
         
     site_map: "다른 토픽 리스트나 카테고리로 이동"
     go_back: '돌아가기'
-    not_logged_in_user: '현재 활동과 설정에 대한 요약이 담긴 사용자 페이지'
+    not_logged_in_user: '활동내역과 설정에 대한 요약이 담긴 사용자 페이지'
     current_user: '사용자 페이지로 이동'
     
     starred:
@@ -1287,7 +1287,7 @@ ko:
     views_lowercase: "조회수"
     replies: "답글"
     views_long: "이 토픽은 {{number}}회 조회되었습니다."
-    activity: "활동"
+    activity: "활동내역"
     likes: "좋아요"
     likes_lowercase: "좋아요"
     likes_long: "이 토픽에 {{number}}개의 '좋아요'가 있습니다."
@@ -1821,7 +1821,7 @@ ko:
         block: 'Block'
         reputation: 평판
         permissions: 권한
-        activity: 활동
+        activity: 활동내역
         like_count: Likes Given / Received
         last_100_days: '지난 100일간'
         private_topics_count: Private Topics
