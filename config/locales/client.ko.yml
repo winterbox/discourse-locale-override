@@ -1307,44 +1307,44 @@ ko:
       with_topics: "%{filter} 토픽"
       with_category: "%{filter} %{category} 토픽"
       latest:
-        title: "최근"
+        title: "최근 대화"
         help: "최근 답글이 달린 토픽"
       hot:
         title: "인기"
         help: "인기 토픽 모음"
       starred:
         title: "즐겨찾기"
-        help: "즐겨찾기한 토픽"
+        help: "즐겨찾기 설정한 토픽"
       read:
         title: "읽은 토픽"
         help: "최근 읽은 토픽 (읽은 순서대로 표시)"
       categories:
         title: "카테고리"
         title_in: "카테고리 - {{categoryName}}"
-        help: "카테고리별 토픽"
+        help: "카테고리별 전체 토픽 보기"
       unread:
         title:
-          zero: "읽지 않음"
-          one: "읽지 않음 (1)"
-          other: "읽지 않음 ({{count}})"
-        help: "주시하거나 추적하는 토픽 중에서 새로 답글이 달린 토픽"
+          zero: "읽을거리"
+          one: "읽을거리 (1)"
+          other: "읽을거리 ({{count}})"
+        help: "주시하거나 추적하는 토픽 중에서 새 답글이 달린 목록"
         lower_title_with_count:
           zero: ""
-          one: "1개 읽지 않음"
-          other: "{{count}}개 읽지 않음"
+          one: "읽을거리 1"
+          other: "읽을거리 {{count}}"
       new:
         lower_title_with_count:
-          one: "1 새 토픽"
-          other: "{{count}} 새 토픽"
+          one: "1 신규 토픽"
+          other: "{{count}} 신규 토픽"
         lower_title: "새 토픽"
         title:
-          zero: "새 토픽"
-          one: "새 토픽 (1)"
-          other: "새 토픽 ({{count}})"
+          zero: "신규 토픽"
+          one: "신규 토픽 (1)"
+          other: "신규 토픽 ({{count}})"
         help: "최근 새롭게 생성된 토픽"
       posted:
         title: "내 게시물"
-        help: "당신의 게시물"
+        help: "당신이 작성한 게시물"
       category:
         title:
           zero: "{{categoryName}}"
