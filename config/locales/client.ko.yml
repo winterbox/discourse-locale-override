@@ -268,7 +268,7 @@ ko:
       tracked_categories: "추적"
       tracked_categories_instructions: "이 카테고리에서 작성되는 모든 새로운 토픽을 추적합니다. 읽지 않은 글과 새로운 글의 수가 토픽 리스트 옆에 표시됩니다."
       muted_categories: "음소거"
-      muted_categories_instructions: "이 카테고리에서 작성되는 모든 새로운 토픽을 무시합니다. '읽지 않음' 탭에도 나타나지 않게 됩니다."
+      muted_categories_instructions: "이 카테고리에서 작성되는 모든 새로운 토픽을 무시합니다. '읽을거리' 탭에도 나타나지 않게 됩니다."
       delete_account: "내 계정 삭제"
       delete_account_confirm: "영구적으로 당신의 계정을 삭제해도 되겠습니까? 이 작업은 되돌릴 수 없습니다."
       deleted_yourself: "당신의 계정이 삭제되었습니다."
@@ -283,7 +283,7 @@ ko:
       messages:
         all: "전체"
         mine: "내가 보낸 메세지"
-        unread: "읽지 않음"
+        unread: "읽을거리"
       change_password:
         success: "(이메일 전송 됨)"
         in_progress: "(이메일 전송 중)"
@@ -699,9 +699,9 @@ ko:
         reset_read: "읽음 처리"
         delete: "토픽 제거"
         dismiss_posts: "읽음 처리"
-        dismiss_posts_tooltip: "이 토픽들에 지금까지 누적된 '읽지 않음 카운트'를 제거합니다. 하지만 새로운 게시물이 작성되면 내 '읽지 않음' 목록에 다시 나타납니다."
+        dismiss_posts_tooltip: "이 토픽들에 지금까지 누적된 '읽을거리 카운트'를 제거합니다. 하지만 새로운 게시물이 작성되면 내 '읽을거리' 목록에 다시 나타납니다."
         dismiss_topics: "토픽 읽음 처리"
-        dismiss_topics_tooltip: "이 토픽들에 새로운 게시물이 작성되어도 내 '읽지 않음' 목록에 표시하지 않습니다."
+        dismiss_topics_tooltip: "이 토픽들에 새로운 게시물이 작성되어도 내 '읽을거리' 목록에 표시하지 않습니다."
         dismiss_new: "새 토픽 읽음 처리"
         toggle: "토픽 일괄 선택 기능"
         actions: "일괄 적용"
@@ -848,7 +848,7 @@ ko:
           description: "이 개인 메시지에 관한 어떤 알림도 받지 않지 않습니다."
         muted:
           title: "음소거"
-          description: "이 토픽에 관한 어떤 알림도 받지 않겠습니다. '읽지 않음' 탭에도 나타나지 않습니다."
+          description: "이 토픽에 관한 어떤 알림도 받지 않겠습니다. '읽을거리' 탭에도 나타나지 않습니다."
           
       actions:
         recover: "토픽 삭제 취소"
@@ -1216,7 +1216,7 @@ ko:
           description: "누군가 당신의 @아이디를 언급하거나 당신에게 답글을 달 경우 알림을 받게 됩니다."
         muted:
           title: "음소거"
-          description: "이 카테고리에 관한 모든 알림을 무시합니다. '읽지 않음' 탭에도 표시되지 않습니다."
+          description: "이 카테고리에 관한 모든 알림을 무시합니다. '읽을거리' 탭에도 표시되지 않습니다."
     
     flagging:
       title: '게시물을 신고하는 이유를 알려주세요.'
@@ -2036,7 +2036,7 @@ ko:
         home: '<b>g</b>, <b>h</b> 홈 (Latest)'
         latest: '<b>g</b>, <b>l</b> 최근 토픽'
         new: '<b>g</b>, <b>n</b> 새로운 토픽'
-        unread: '<b>g</b>, <b>u</b> 읽지 않음'
+        unread: '<b>g</b>, <b>u</b> 읽을거리'
         starred: '<b>g</b>, <b>f</b> 즐겨찾기'
         categories: '<b>g</b>, <b>c</b> 카테고리'
         top: '<b>g</b>, <b>t</b> 인기 토픽'
