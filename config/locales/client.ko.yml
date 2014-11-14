@@ -352,9 +352,9 @@ ko:
         default: "(기본)"
       password_confirmation:
         title: "패스워드를 재입력해주세요."
-      last_posted: "마지막 게시물"
-      last_emailed: "마지막 이메일"
-      last_seen: "마지막 접속"
+      last_posted: "최근 게시"
+      last_emailed: "최근 이메일"
+      last_seen: "최근 접속"
       created: "가입일"
       log_out: "로그아웃"
       location: "위치"
@@ -1414,7 +1414,7 @@ ko:
           view_table: "테이블로 보기"
           view_chart: "차트로 보기"
       commits:
-        latest_changes: "최근 변경 사항: 자주 업데이트하십시오!"
+        latest_changes: "최근 변경 사항: 자주 업데이트하세요!"
         by: "by"
       flags:
         title: "신고"
