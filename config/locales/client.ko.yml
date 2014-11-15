@@ -960,7 +960,7 @@ ko:
     post:
       reply: "{{replyAvatar}} {{username}}님의 {{link}}에 답글 작성"
       reply_topic: "{{link}}에 답글 작성"
-      quote_reply: "답글 인용하기"
+      quote_reply: "인용하기"
       edit: "{{replyAvatar}} {{username}}님의 {{link}} 편집"
       edit_reason: "사유 : "
       post_number: "{{number}}번 게시물"
