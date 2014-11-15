@@ -1963,6 +1963,7 @@ ko:
           uncategorized: 'Other'
           backups: "백업"
           login: "로그인"
+          pugins: "플러그인"
           
       badges:
         title: 뱃지
