@@ -715,17 +715,17 @@ ko:
           
       none:
         starred: "즐겨찾기한 토픽이 없습니다."
-        unread: "읽지 않은 토픽이 없습니다."
+        unread: "읽을거리 토픽이 없습니다."
         new: "새로운 토픽이 없습니다."
         read: "아직 읽은 토픽이 없습니다."
         posted: "아직 작성한 토픽이 없습니다."
-        latest: "최근 토픽이 없습니다."
+        latest: "최근 대화가 없습니다."
         hot: "인기 토픽이 없습니다."
         category: "{{category}}에 토픽이 없습니다."
         top: "베스트 토픽이 없습니다."
         educate:
-          new: '<p>새로운 토픽을 여기에서 볼 수 있습니다.</p><p>기본 설정으로 2일 이내에 생성된 토픽은 새로운 것으로 간주되며 <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">new</span> 표시가 나타납니다.</p><p><a href="%{userPrefsUrl}">환경설정</a>에서 설정을 변경 할 수 있습니다.</p>'
-          unread: '<p>읽지 않은 토픽을 여기에서 볼 수 있습니다.</p><p>기본 설정으로 다음과 같은 경우 토픽은 읽지 않은 것으로 간주되며 읽지 않은 개수 <span class="badge new-posts badge-notification">1</span> 가 표시됩니다.</p><ul><li>당신이 토픽을 작성한 경우</li><li>당신이 토픽에 리플을 단 경우</li><li>당신이 특정 토픽을 4분 이상 읽은 경우</li></ul><p>또는 각 토픽 아래에 있는 알림 설정에서 해당 토픽을 주시하거나 추적하도록 설정한 경우</p><p>이 설정은 당신의 <a href="%{userPrefsUrl}">환경설정</a>에서 변경할 수 있습니다.</p>'
+          new: '<p>새로운 토픽을 여기에서 볼 수 있습니다.</p><p>기본 설정으로 2일 이내에 생성된 토픽은 새로운 것으로 간주되며 <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;">new</span> 표시가 나타납니다. 이 설정은 당신의 </p><p><a href="%{userPrefsUrl}">환경설정</a>에서 변경할 수 있습니다.</p>'
+          unread: '<p>읽을거리 토픽을 여기에서 볼 수 있습니다.</p><p>기본 설정으로 다음과 같은 경우 토픽은 읽지 않은 것으로 간주되어, 읽지 않은 개수 <span class="badge new-posts badge-notification">1</span> 가 표시됩니다.</p><ul><li>당신이 토픽을 작성한 경우</li><li>당신이 토픽에 리플을 단 경우</li><li>당신이 특정 토픽을 4분 이상 읽은 경우</li></ul><p>또는 각 토픽 아래에 있는 알림 설정에서 해당 토픽을 주시하거나 추적하도록 설정한 경우</p><p>이 설정은 당신의 <a href="%{userPrefsUrl}">환경설정</a>에서 변경할 수 있습니다.</p>'
           starred: '<p>즐겨찾기한 토픽을 여기에서 볼 수 있습니다.</p><p>즐겨찾기를 하거나 취소하는 방법 :</p><ul><li>토픽 주제 옆에 <i class="fa fa-star"></i>를 누른다.</li><li>각 토픽 아래에 표시된 별표 버튼을 누른다.</li></ul>'
       bottom:
         latest: "더 이상 최근 토픽이 없습니다"
@@ -733,7 +733,7 @@ ko:
         posted: "더 이상 작성된 토픽이 없습니다"
         read: "더 이상 읽은 토픽이 없습니다"
         new: "더 이상 새로운 토픽이 없습니다."
-        unread: "더 이상 읽지 않은 토픽이 없습니다"
+        unread: "더 이상 읽을거리 토픽이 없습니다"
         starred: "더 이상 즐겨찾기 토픽이 없습니다"
         category: "더 이상 {{category}}에 토픽이 없습니다"
         top: "더 이상 베스트 토픽이 없습니다."
