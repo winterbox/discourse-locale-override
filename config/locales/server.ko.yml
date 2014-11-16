@@ -508,13 +508,14 @@ ko:
     notification_email_warning: "notification_email 설정이 공백입니다. <a href='/admin/site_settings'>사이트 설정</a>에서 업데이트 해주세요."
   content_types:
     education_new_reply:
-      title: "새로운 사용자 교육: 첫번째 답글들"
-      description: "새로운 사용자가 첫 두개의 답글을 작성하면 자동 팝업됩니다."
+      title: "신규 가입자를 위한 안내 : 답글 작성하기"
+      description: "신규 가입자가 답글을 작성할 때 팝업됩니다(맨 처음과 두번째까지만)."
     education_new_topic:
-      title: "새로운 사용자 교육: 첫번째 토픽들"
-      description: "새로운 사용자가 첫 두개의 토픽을 작성하면 자동 팝업됩니다."
+      title: "신규 가입자를 위한 안내 : 토픽 작성하기"
+      description: "신규 가입자가 토픽을 작성할 때 팝업됩니다(맨 처음과 두번째까지만).""
     usage_tips:
-      title: "새로운 사용자 가이드"
+      title: "포럼 기능 설명서"
+      description: "신규 가입자를 위한 포럼 사용 기본 가이드"
     welcome_user:
       title: "환영: 새로운 사용자"
       description: "새로운 사용자가 가입하면 자동으로 개인 메시지를 보냅니다."
