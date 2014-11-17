@@ -512,7 +512,7 @@ ko:
       description: "신규 가입자가 답글을 작성할 때 팝업됩니다(맨 처음과 두번째까지만)."
     education_new_topic:
       title: "신규 가입자를 위한 안내 : 토픽 작성하기"
-      description: "신규 가입자가 토픽을 작성할 때 팝업됩니다(맨 처음과 두번째까지만).""
+      description: "신규 가입자가 토픽을 작성할 때 팝업됩니다(맨 처음과 두번째까지만)."
     usage_tips:
       title: "포럼 기능 설명서"
       description: "신규 가입자를 위한 포럼 사용 기본 가이드"
