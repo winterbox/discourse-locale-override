@@ -783,7 +783,7 @@ ko:
       toggle_information: "토픽의 세부 정보를 토글합니다."
       read_more_in_category: "더 많은 토픽들을 {{catLink}} 또는 {{latestLink}}에서 찾으실 수 있습니다"
       read_more: "더 많은 토픽들을 {{catLink}} 또는 {{latestLink}}에서 찾으실 수 있습니다"
-      read_more_MF: "이 카테고리에 { UNREAD, plural, =0 {} one { is <a href='/unread'>1개의 읽지 않은</a> } other { are <a href='/unread'>#개의 읽지 않은</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1개의 새로운</a> 토픽이} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># 새로운</a> 토픽이} } 남아 있고, {CATEGORY, select, true {{catLink} 토픽도 확인해보세요.} false {{latestLink}} other {}} "
+      read_more_MF: "이 카테고리에 { UNREAD, plural, =0 {} one { <a href='/unread'>1개의 읽지 않은</a> } other { <a href='/unread'>#개의 읽지 않은</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1개의 새로운</a> 토픽이} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># 새로운</a> 토픽이} } 남아 있고, {CATEGORY, select, true {{catLink} 토픽도 확인해보세요.} false {{latestLink}} other {}} "
       
       browse_all_categories: 모든 카테고리 살펴보기
       
