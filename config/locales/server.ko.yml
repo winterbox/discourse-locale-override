@@ -1331,3 +1331,9 @@ ko:
       <p>
         <code>rainbows category:parks status:open order:latest</code> will search for topics containing the word "rainbows" in the category "parks" that are not closed or archived, ordered by date of last post.
       </p>
+      
+        
+  guidelines_topic:
+    title: "커뮤니티 가이드라인"
+  guidelines: "커뮤니티 가이드라인"
+  privacy: "개인정보 취급방침"
