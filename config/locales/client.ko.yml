@@ -590,10 +590,10 @@ ko:
       title: "또는 Ctrl + Enter를 누름"
       
       users_placeholder: "사용자 추가"
-      title_placeholder: "이 토론 내용을 한 문장으로 요약한다면?"
+      title_placeholder: "토픽 제목을 입력하세요 (한 문장으로 요약한다면?)"
       edit_reason_placeholder: "왜 편집하시죠?"
       show_edit_reason: "(편집하는 이유를 남기세요)"
-      reply_placeholder: "여기에 입력하세요. Markdown 또는 BBCode 형식을 사용하세요. 드래그 & 드랍 이미지 업로드가 가능합니다."
+      reply_placeholder: "내용을 입력하세요. Markdown 또는 BBCode 형식을 사용하세요. 드래그 & 드랍 이미지 업로드가 가능합니다."
       view_new_post: "당신이 새로 작성한 게시물을 확인하세요."
       saving: "저장 중..."
       saved: "저장 완료!"
@@ -741,7 +741,7 @@ ko:
     topic:
       filter_to: "이 토픽의 {{post_count}}개 게시물"
       create: '토픽 만들기'
-      create_long: '새로운 토픽을 개설합니다'
+      create_long: '새로운 토픽을 개설합니다 '
       private_message: '개인 메시지 작성'
       list: '토픽 목록'
       new: '새로운 토픽'
