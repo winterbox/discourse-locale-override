@@ -344,8 +344,8 @@ ko:
       description: '이 게시물은 다른 사용자들에게 공격적이나 모욕적 또는 침해적인 글을 담고 있습니다.'
       long_form: '부적절함으로 신고하기'
     notify_user:
-      title: '@{{username}}에게 알리기'
-      description: '이 게시물에 내가 작성자와 직접 대화하고 싶은 내용이 있습니다. 신고에서 제외해주세요.'
+      title: '@{{username}}에게 직접 경고하기'
+      description: '이 게시물에 내가 작성자와 직접 대화하고 싶은 내용이 있습니다. 신고 깃발 개수에서는 제외해주세요.'
       long_form: '신고한 사용자'
       email_title: '토픽 "%{title}" 내의 당신의 게시물'
       email_body: "%{link}\n\n%{message}"
