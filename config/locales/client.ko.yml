@@ -739,7 +739,7 @@ ko:
         top: "더 이상 베스트 토픽이 없습니다."
         
     topic:
-      filter_to: "이 토픽의 {{post_count}}개 게시물"
+      filter_to: "이 토픽에서 게시물 {{post_count}}개"
       create: '토픽 만들기'
       create_long: '새로운 토픽을 개설합니다'
       private_message: '개인 메시지 작성'
