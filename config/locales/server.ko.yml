@@ -337,7 +337,7 @@ ko:
       long_form: '주제에서 벗어남으로 신고하기'
     spam:
       title: '스팸'
-      description: '이 게시물은 광고물로 판단되어집니다. 현재 토픽에 대해 아무 유용성/관련성이 없습니다.'
+      description: '이 게시물은 광고물로 판단되어집니다. 현재 토픽과 아무 관련성이 없습니다.'
       long_form: '스팸으로 신고하기'
     inappropriate:
       title: '부적절함'
