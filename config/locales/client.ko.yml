@@ -781,9 +781,25 @@ ko:
       options: "토픽 옵션"
       show_links: "이 토픽 내의 링크를 표시합니다."
       toggle_information: "토픽의 세부 정보를 토글합니다."
-      read_more_in_category: "더 많은 토픽들을 {{catLink}} 또는 {{latestLink}}에서 찾으실 수 있습니다"
-      read_more: "더 많은 토픽들을 {{catLink}} 또는 {{latestLink}}에서 찾으실 수 있습니다"
-      read_more_MF: "이 카테고리에 { UNREAD, plural, =0 {} one { <a href='/unread'>1개의 읽지 않은</a> } other { <a href='/unread'>#개의 읽지 않은</a> } } { NEW, plural, =0 {} one { {BOTH, select, true{and } false {is } other{}} <a href='/new'>1개의 새로운</a> 토픽이} other { {BOTH, select, true{and } false {are } other{}} <a href='/new'># 새로운</a> 토픽이} } 남아 있고, {CATEGORY, select, true {{catLink} 토픽도 확인해보세요.} false {{latestLink}} other {}} "
+      read_more_in_category: "더 많은 토픽들을 {{catLink}} 또는 {{latestLink}}에서 확인할 수 있습니다"
+      read_more: "더 많은 토픽들을 {{catLink}} 또는 {{latestLink}}에서 확인할 수 있습니다"
+      
+      # keys ending with _MF use message format, see /spec/components/js_local_helper_spec.rb for samples
+      read_more_MF: "{
+        UNREAD, plural,
+        =0 {}
+        one {
+          <a href='/unread'>읽을거리 1개</a>
+        } other {
+          <a href='/unread'>읽을거리 #개</a>
+        }
+        } {
+          NEW, plural,
+            =0 {}
+            one { {BOTH, select, true{& } false {} other{}} <a href='/new'>신규토픽 1개</a>}
+            other { {BOTH, select, true{& } false {} other{}} <a href='/new'>신규토픽 #개</a>}
+        } 있음. 또는 {CATEGORY, select, true {{catLink} 확인하기} false {{latestLink}} other {}}."
+
       
       browse_all_categories: 모든 카테고리 살펴보기
       
