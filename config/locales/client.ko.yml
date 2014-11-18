@@ -2120,4 +2120,73 @@ ko:
           name: 기타
         posting:
           name: 포스팅
-      
+      badge:
+        editor:
+          name: 편집자
+          description: 처음으로 글을 수정했습니다.
+        basic_user:
+          name: 입문자
+          description: 입문자는 포럼의 기본적인 기능들을 사용할 수 있습니다.
+        member:
+          name: 멤버
+          description: 멤버는 우리 포럼의 주요 기능들을 사용할 수 있습니다.
+        regular:
+          name: 시니어 멤버
+          description: 시니어 멤버는 우리 포럼에서 특별한 권한을 갖고 있습니다. 비밀 라운지에 접근 가능합니다.
+        leader:
+          name: 베스트 멤버
+          description: 베스트 멤버는 포럼에서 매우 큰 권한을 갖고 있습니다. 운영자에 의해 선정됩니다.
+        welcome:
+          name: 굿!
+          description: 좋아요를 받았습니다.
+        autobiographer:
+          name: 프로필 작가
+          description: 사용자의 <a href="/my/preferences">개인 프로필 정보</a>를 작성했습니다.
+        nice_post:
+          name: 괜찮은 게시물
+          description: 작성한 게시물이 '좋아요'를 10개 받았습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        good_post:
+          name: 좋은 게시물
+          description: 작성한 게시물이 '좋아요'를 25개 받았습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        great_post:
+          name: 훌륭한 게시물
+          description: 작성한 게시물이 '좋아요'를 50개 받았습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        nice_topic:
+          name: 괜찮은 토픽
+          description: 작성한 토픽이 '좋아요'를 10개 받았습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        good_topic:
+          name: 좋은 토픽
+          description: 작성한 토픽이 '좋아요'를 25개 받았습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        great_topic:
+          name: 훌륭한 토픽
+          description: 작성한 토픽이 '좋아요'를 50개 받았습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        nice_share:
+          name: 괜찮은 공유
+          description: 공유한 게시물로 25명의 고유 방문자가 발생했습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        good_share:
+          name: 좋은 공유
+          description: 공유한 게시물로 300명의 고유 방문자가 발생했습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        great_share:
+          name: 훌륭한 공유
+          description: 공유한 게시물로 1000명의 고유 방문자가 발생했습니다. (이 뱃지는 여러번 받을 수 있습니다.)
+        first_like:
+          name: 첫 좋아요
+          description: 처음으로 '좋아요'를 눌렀습니다.
+        first_flag:
+          name: 첫 신고
+          description: 처음으로 신고했습니다.
+        first_share:
+          name: 첫 공유
+          description: 처음으로 게시물을 공유했습니다.
+        first_link:
+          name: 첫 링크
+          description: 다른 토픽으로 연결되는 내부링크를 추가했습니다.
+        first_quote:
+          name: 첫 인용
+          description: 글 작성시 다른 사용자의 글을 인용했습니다.
+        read_guidelines:
+          name: 가이드라인 숙지
+          description: <a href="/guidelines">커뮤니티 가이드라인</a>을 읽었습니다.
+        reader:
+          name: 애독자
+          description: 100개가 넘는 답글이 달린 토픽을 처음부터 끝까지 정독했습니다.
