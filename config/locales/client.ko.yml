@@ -983,7 +983,7 @@ ko:
       in_reply_to: "답글 to"
       last_edited_on: "마지막으로 수정됨 : "
       reply_as_new_topic: "새로운 토픽으로 답글 작성하기"
-      continue_discussion: "다음 토픽에서 이어지는 토론입니다. {{postLink}}:"
+      continue_discussion: "{{postLink}}에서 이어지는 토론입니다 :"
       follow_quote: "인용된 게시물로 이동"
       show_full: "전체 게시물 보기"
       show_hidden: '숨겨진 내용 표시'
