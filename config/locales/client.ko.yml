@@ -1350,9 +1350,10 @@ ko:
           other: "읽을거리 {{count}}"
       new:
         lower_title_with_count:
+          zero: ""
           one: "1 신규 토픽"
           other: "{{count}} 신규 토픽"
-        lower_title: "새 토픽"
+        lower_title: "new"
         title:
           zero: "신규 토픽"
           one: "신규 토픽 (1)"
