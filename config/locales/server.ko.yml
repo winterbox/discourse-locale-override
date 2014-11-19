@@ -956,11 +956,47 @@ ko:
 
       <small>There should be an unsubscribe footer on every email you send, so let's mock one up. This email was sent by Name of Company, 55 Main Street, Anytown, USA 12345. If you would like to opt out of future emails, [click here to unsubscribe][5].</small>
 
+  flags_reminder:
+    flags_were_submitted:
+      one: "1시간 전에 접수된 신고들입니다."
+      other: "%{count}시간 전에 접수된 신고들입니다."
+    please_review: "Please review them."
+    post_number: "게시물"
+    how_to_disable: 'You can disable or change the frequency of this email reminder via the "notify about flags after" setting.'
+    subject_template:
+      one: "1개의 신고가 처분을 기다리고 있습니다."
+      other: "%{count}개의 신고들이 처분을 기다리고 있습니다."
 
-    
+  flag_reasons:
+    off_topic: "당신의 게시물은 **주제에서 벗어남**으로 신고되었습니다 : 포럼 사용자들이 해당 게시물을 주제에 맞지 않다고 생각합니다."
+    inappropriate: "당신의 게시물은 **부적절함**으로 신고되었습니다 : 포럼 사용자들이 해당 게시물이 공격적이며, [커뮤니티 가이드라인](/guidelines)을 어기고 있다고 생각합니다."
+    spam: "당신의 게시물은 **스팸**으로 신고되었습니다 : 포럼 사용자들이 해당 게시물을 광고라고 생각합니다."
+    notify_moderators: "당신의 게시물은 **운영자의 주의 필요**로 신고되었습니다 : 포럼 사용자들이 해당 게시물은 운영자의 중재가 필요하다고 생각합니다."
+
+  flags_dispositions:
+    agreed: "알려주셔서 감사합니다. 해당 게시물을 살펴볼 필요가 있다는 것에 동의합니다."
+    agreed_and_deleted: "알려주셔서 감사합니다. 살펴볼 필요가 충분히 있었으며, 해당 게시물을 삭제했습니다."
+    disagreed: "알려주셔서 감사합니다. 해당 내용을 검토해보겠습니다."
+    deferred: "알려주셔서 감사합니다. 해당 내용을 검토해보겠습니다."
+    deferred_and_deleted: "알려주셔서 감사합니다. 해당 게시물을 삭제했습니다."
+  
   system_messages:
     post_hidden:
       subject_template: "회원 신고로 인한 게시물 숨김처리"
+      text_body_template: |
+        안녕하세요.
+        이 메시지는 %{site_name}에서 당신의 게시물이 숨김처리 되었음을 알리기 위해 자동으로 발송되었습니다.
+
+        %{base_url}%{url}
+
+        %{flag_reason}
+
+        다수의 포럼 사용자들이 해당 게시물을 신고했습니다. 어떻게 수정해야할지 생각해보세요. **%{edit_delay}분 후에 해당 게시물을 수정하실 수 있으며, 자동적으로 숨김해제 될 것입니다.** 이는 당신이 회원레벨을 올리는데 영향을 미칩니다.
+
+        그런데 만약, 해당 게시물이 사용자들에 의해 다시 한 번 숨김처리 된다면 운영자에 의해 검토되기 전까지 숨김이 해제되지 않으며, 계정 정지 등의 조치가 취해질 수도 있습니다.
+
+        기타 궁금한 내용은 우리 포럼의 [커뮤니티 가이드라인](%{base_url}/guidelines)을 참고해주시기 바랍니다.
+
       
     welcome_user:
       subject_template: "%{site_name} 사이트에 오신 것을 환영합니다!"
@@ -984,7 +1020,7 @@ ko:
         
         1. 초대받은 이메일과 **동일한 이메일 주소**를 사용해야합니다.
         
-        2. [프로필 설정][prefs]에서 패스워드를 만들어 로그인해주세요.
+        2. [프로필 설정][prefs]에서 패스워드를 만들어 로그인에 사용해주세요.
         
         %{new_user_tips}
         
@@ -1044,7 +1080,7 @@ ko:
         
         %{post_error}
         
-        문제를 해결할 수 있으시다면, 다시 시도해보세요.
+        직접 문제를 해결할 수 있다면, 다시 시도해보세요.
         
     email_reject_reply_key:
       subject_template: "이메일 문제 : 답글 Key 불명"
@@ -1090,7 +1126,7 @@ ko:
       
       
     too_many_spam_flags:
-      subject_template: "새로운 계정은 블락되었습니다."
+      subject_template: "새로운 계정이 블락되었습니다."
       text_body_template: |
         안녕하세요.
         
