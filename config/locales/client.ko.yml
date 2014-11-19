@@ -274,6 +274,7 @@ ko:
       deleted_yourself: "당신의 계정이 삭제되었습니다."
       delete_yourself_not_allowed: "지금은 당신의 계정을 삭제할 수 없습니다. 시스템 관리자에게 당신의 계정을 삭제해달라고 연락해보세요."
       unread_message_count: "메시지"
+      admin_delete: "삭제"      
       staff_counters:
         flags_given: "유용한 신고"
         flagged_posts: "신고된 게시물"
