@@ -141,7 +141,7 @@ ko:
       last_read: "마지막으로 읽으신 게시물입니다. 북마크하려면 클릭하세요."
       remove: "북마크 제거"
     topic_count_latest:
-      other: "{{count}}개의 새로운 또는 업데이트된 토픽"
+      other: "{{count}}개의 새로운 토픽 or 업데이트된 토픽을"
     topic_count_unread:
       other: "{{count}}개의 읽지 않은 관심 토픽"
     topic_count_new:
