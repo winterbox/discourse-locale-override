@@ -2052,7 +2052,7 @@ ko:
       title: '키보드 단축키'
       jump_to:
         title: '이동 단축키'
-        home: '<b>g</b>, <b>h</b> 홈 (Latest)'
+        home: '<b>g</b>, <b>h</b> Home (최근 대화)'
         latest: '<b>g</b>, <b>l</b> 최근 토픽'
         new: '<b>g</b>, <b>n</b> 새로운 토픽'
         unread: '<b>g</b>, <b>u</b> 읽을거리'
@@ -2061,9 +2061,9 @@ ko:
         top: '<b>g</b>, <b>t</b> 인기 토픽'
       navigation:
         title: '네비게이션'
-        jump: '<b>#</b> 게시물 #으로'
+        jump: '<b>#</b> 게시물 #으로 이동'
         back: '<b>u</b> 뒤로'
-        up_down: '<b>k</b>/<b>j</b> 선택 조절 &uarr; &darr;'
+        up_down: '<b>k</b>/<b>j</b> 위&uarr; 아래&darr 이동;'
         open: '<b>o</b> or <b>Enter</b> 선택한 토픽 읽기'
         next_prev: '<b>shift j</b>/<b>shift k</b> 다음/이전 섹션'
       application:
@@ -2080,6 +2080,7 @@ ko:
       actions:
         title: '행동'
         star: '<b>f</b> 즐겨찾기 등록'
+        pin_unpin_topic: '<b>shift p</b> 토픽 고정/해제'
         share_topic: '<b>shift s</b> 토픽 공유'
         share_post: '<b>s</b> 게시물 공유'
         reply_as_new_topic: '<b>t</b> 새로운 토픽으로 답글 작성하기'
