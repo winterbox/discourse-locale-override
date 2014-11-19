@@ -1411,7 +1411,7 @@ ko:
         version_check_pending: "최근에 업데이트 되었군요! 환상적입니다!!"
         installed_version: "설치됨"
         latest_version: "최신 버전"
-        problems_found: "몇 몇의 문제들은 Disocouse 설치 과정에서 나타납니다."
+        problems_found: "설치과정에서 몇몇 문제가 발생했습니다:"
         last_checked: "마지막으로 확인"
         refresh_problems: "새로고침"
         no_problems: "아무런 문제가 발견되지 않았습니다."
@@ -1623,7 +1623,7 @@ ko:
           undo: "실행 복귀"
           undo_title: "마지막 저장 상태로 색상 변경상태를 되돌리기"
           revert: "되돌리기"
-          revert_title: "이 색상을 디스커스 기본 색 스킴으로 초기화"
+          revert_title: "이 색상을 기본 색 스킴으로 초기화"
           primary:
             name: '주요'
             description: '대부분의 글, 아이콘 및 테두리'
