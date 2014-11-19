@@ -335,7 +335,7 @@ ko:
         ok: "사용 가능한 이름입니다."
       username:
         title: "아이디"
-        instructions: "중복될 수 없으며 띄어쓰기 사용이 불가합니다. (짧을 수록 좋아요)"
+        instructions: "영어와 숫자로 입력하며, 띄어쓰기는 안 됩니다. (트위터처럼 '@ID'를 사용해 언급 가능)"
         short_instructions: "다른 사람들이 @{{username}}으로 당신을 언급할 수 있습니다. (트위터처럼)"
         available: "아이디\x1D로 사용가능합니다."
         global_match: "이메일이 등록된 아이디와 일치합니다."
