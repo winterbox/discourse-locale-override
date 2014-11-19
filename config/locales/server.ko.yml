@@ -1172,7 +1172,7 @@ ko:
       title: "구독해지"
       description: "이런 이메일들을 받아보는 것에 관심이 없으신가요? 그럼 아래 구독해지를 눌러주세요!"
       
-    reply_by_email: "응답하시려면 %{base_url}%{url}에 방문하시거나 이메일에 답장하세요."
+    reply_by_email: "응답하시려면 %{base_url}%{url} 에 방문하시거나 이메일에 답장하세요."
     visit_link_to_respond: "응답하시려면 %{base_url}%{url} 에 방문하세요."
     
     posted_by: "%{username}님이 %{post_date}에 게시하였습니다."
