@@ -999,9 +999,9 @@ ko:
 
       
     welcome_user:
-      subject_template: "%{site_name} 사이트에 오신 것을 환영합니다!"
+      subject_template: "%{site_name}에 오신 것을 환영합니다!"
       text_body_template: |
-        %{site_name} 사이트에 오신 것을 환영합니다!
+        %{site_name}에 오신 것을 환영합니다!
 
         %{new_user_tips}
 
