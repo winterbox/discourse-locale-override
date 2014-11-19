@@ -865,7 +865,7 @@ ko:
     username:
       short: "최소 %{min}자 이상이어야 합니다."
       long: "%{max}자 이상은 사용할 수 없습니다."
-      characters: "문자, 숫자, 언더바(_)만 포함 가능합니다."
+      characters: "영어, 숫자, 언더바(_)만 포함 가능합니다."
       unique: "이미 사용 중입니다."
       blank: "공백이 없어야 합니다."
       must_begin_with_alphanumeric: "첫 글자는 문자나 숫자로 시작해야 합니다."
