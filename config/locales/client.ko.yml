@@ -2064,7 +2064,7 @@ ko:
         title: '네비게이션'
         jump: '<b>#</b> 게시물 #으로 이동'
         back: '<b>u</b> 뒤로'
-        up_down: '<b>k</b>/<b>j</b> 위&uarr; 아래&darr 이동;'
+        up_down: '<b>k</b>/<b>j</b> 위&uarr; 아래&darr; 이동'
         open: '<b>o</b> or <b>Enter</b> 선택한 토픽 읽기'
         next_prev: '<b>shift j</b>/<b>shift k</b> 다음/이전 섹션'
       application:
