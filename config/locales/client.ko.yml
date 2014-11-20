@@ -563,8 +563,8 @@ ko:
     composer:
       add_warning: "공식적인 경고입니다."
       posting_not_on_topic: "어떤 토픽에 답글을 작성하시겠습니까?"
-      saving_draft_tip: "저장 중..."
-      saved_draft_tip: "저장 완료"
+      saving_draft_tip: "임시 저장 중..."
+      saved_draft_tip: "임시 저장됨"
       saved_local_draft_tip: "로컬에 저장됨"
       similar_topics: "당신이 작성하려는 내용과 비슷한 토픽들..."
       drafts_offline: "초안"
@@ -581,12 +581,12 @@ ko:
         post_length: "게시물은 최소 {{min}} 글자 이상이어야 합니다."
         category_missing: "카테고리를 선택해주세요."
         
-      save_edit: "편집 저장"
+      save_edit: "편집본 전송"
       reply_original: "기존 토픽에 대해 답글을 작성합니다."
       reply_here: "여기에 답글 작성"
       reply: "답글 전송"
       cancel: "취소"
-      create_topic: "토픽 만들기"
+      create_topic: "토픽 전송"
       create_pm: "개인 메시지 만들기"
       title: "또는 Ctrl + Enter를 누름"
       
