@@ -591,7 +591,7 @@ ko:
       title: "또는 Ctrl + Enter를 누름"
       
       users_placeholder: "사용자 추가"
-      title_placeholder: "토픽 제목을 입력하세요"
+      title_placeholder: "토픽 제목을 입력하세요 (어떤 내용인지 한 문장으로 쓴다면?)"
       edit_reason_placeholder: "왜 편집하시죠?"
       show_edit_reason: "(편집하는 이유를 남기세요)"
       reply_placeholder: "내용을 입력하세요. Markdown 또는 BBCode 형식을 사용하세요. 드래그 & 드랍 이미지 업로드가 가능합니다."
