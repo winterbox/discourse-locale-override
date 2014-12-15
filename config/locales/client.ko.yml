@@ -2194,3 +2194,13 @@ ko:
         reader:
           name: 애독자
           description: 100개가 넘는 답글이 달린 토픽을 처음부터 끝까지 정독했습니다.
+          
+    google_search: |
+      <h2>구글에서 검색</h2>
+      <p>
+        <form action='//google.com/search' id='google-search' onsubmit="document.getElementById('google-query').value = 'site:' + window.location.host + ' ' + document.getElementById('user-query').value; return true;">
+          <input type="text" id='user-query' value="">
+          <input type='hidden' id='google-query' name="q">
+          <button class="btn btn-primary">검색</button>
+        </form>
+      </p>
