@@ -318,7 +318,7 @@ ko:
     title: '비밀번호 초기화'
     success: "비밀번호를 성공적으로 변경하고 지금 로그인 되었습니다."
     success_unapproved: "비밀번호를 성공적으로 변경하였습니다."
-    continue: "%{site_name}으로 가기"
+    continue: "%{site_name} 포럼으로 가기"
   change_email:
     confirmed: "이메일 주소가 변경되었습니다."
     please_continue: "%{site_name}으로 가기"
@@ -1348,7 +1348,7 @@ ko:
 
   static:
     search_help: |
-      <h2>유용한 팁들</h2>
+      <h2>유용한 팁</h2>
       <p>
       <ul>
         <li>제목 매치가 가장 우선시됩니다. 확실치 않을 땐 제목으로 찾아보세요.</li>
@@ -1356,19 +1356,6 @@ ko:
         <li>가능하다면 당신의 검색을 특정 카테고리, 사용자, 또는 토픽으로 좁혀 설정해보세요.</li>
       </ul>
       </p>
-      <h2>옵션들</h2>
-      <p>
-        <table>
-        <tr><td><code>order:views</code></td><td><code>order:latest</code></td><td colspan=3></td></tr>
-        <tr><td><code>status:open</code></td><td><code>status:closed</code></td><td><code>status:archived</code></td><td><code>status:noreplies</code></td><td><code>status:singleuser</code></td></tr>
-        <tr><td><code>category:foo</code></td><td><code>user:foo</code></td><td colspan=3></td></tr>
-        <tr><td><code>in:likes</code></td><td><code>in:posted</code></td><td><code>in:watching</code></td><td><code>in:tracking</code></td><td></td></tr>
-        </table>
-      </p>
-      <p>
-        <code>rainbows category:parks status:open order:latest</code> will search for topics containing the word "rainbows" in the category "parks" that are not closed or archived, ordered by date of last post.
-      </p>
-      
         
   guidelines_topic:
     title: "커뮤니티 가이드라인"
