@@ -11,7 +11,7 @@ ko:
       human:
         storage_units:
           format: '%n %u'
-          units:
+          units:ㄴ
             byte:
               other: 바이트
             gb: GB
@@ -50,7 +50,7 @@ ko:
         almost_x_years:
           other: "%{count}년"
         date_month: "MMM D일"
-        date_year: "'YY년 M"
+        date_year: "'YY년 M월"
       medium:
         x_minutes:
           other: "%{count}분"
