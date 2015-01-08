@@ -24,11 +24,11 @@ ko:
       long_no_year_no_time: "MMM D일"
       long_with_year: "YYYY년  MMM D일 a h:mm"
       long_with_year_no_time: "YYYY년 MMM D일"
-      long_date_with_year: "MMM D일, 'YY년 LT"
+      long_date_with_year: "'YY년 MMM D일, LT"
       long_date_without_year: "MMM D일, LT"
-      long_date_with_year_without_time: "MMM D일, 'YY년"
+      long_date_with_year_without_time: "'YY년 MMM D일"
       long_date_without_year_with_linebreak: "MMM D일 <br/>LT"
-      long_date_with_year_with_linebreak: "MMM D일, 'YY년 <br/>LT"
+      long_date_with_year_with_linebreak: "'YY년 MMM D일, <br/>LT"
       tiny:
         half_a_minute: "< 1분"
         less_than_x_seconds:
