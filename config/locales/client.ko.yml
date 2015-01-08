@@ -11,7 +11,7 @@ ko:
       human:
         storage_units:
           format: '%n %u'
-          units:ㄴ
+          units:
             byte:
               other: 바이트
             gb: GB
