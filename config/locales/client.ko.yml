@@ -1191,6 +1191,8 @@ ko:
       delete: '카테고리 삭제'
       create: '카테고리 생성'
       save: '카테고리 저장'
+      slug: '카테고리 Slug'
+      slug_placeholder: '(Optional) dashed-words for URL'
       creation_error: 카테고리 생성 중 오류가 발생했습니다.
       save_error: 카테고리 저장 중 오류가 발생했습니다.
       name: "카테고리 이름"
