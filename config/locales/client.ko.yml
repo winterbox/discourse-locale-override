@@ -58,7 +58,7 @@ ko:
           other: "%{count}시간"
         x_days:
           other: "%{count}일"
-        date_year: "MMM D일, 'YY년"
+        date_year: "'YY년 MMM D일"
       medium_with_ago:
         x_minutes:
           other: "%{count}분 전"
