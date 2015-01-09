@@ -218,12 +218,12 @@ ko:
       latest_by: "latest by"
       toggle_ordering: "정렬 컨트롤 토글"
       subcategories: "하위 카테고리"
-      topic_stats: "새로운 토픽의 수"
+      topic_stats: "새 토픽 갯수 : "
       topic_stat_sentence:
-        other: "지난 %{unit}동안 %{count}개의 새로운 토픽이 있습니다."
-      post_stats: "새로운 게시물의 수"
+        other: "최근 %{unit}동안 %{count}개의 새로운 토픽이 생성."
+      post_stats: "새 게시물 갯수 : "
       post_stat_sentence:
-        other: "지난 %{unit}동안 %{count}개의 새로운 게시물이 있습니다."
+        other: "최근 %{unit}동안 %{count}개의 새로운 게시물이 생성."
     ip_lookup:
       title: IP Address Lookup
       hostname: 호스트네임
