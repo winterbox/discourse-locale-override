@@ -468,11 +468,11 @@ ko:
     too_few_topics_notice: "토론을 시작하기 위해 최소 5개의 공개 토픽과 %{posts}개의 공개 게시물을 만들어주세요. 읽을거리가 없으면 신규 가입자는 회원레벨을 올릴 수 없습니다. 이 메시지는 스탭에게만 보입니다."
     
     learn_more: "더 배우기"
-    year: '년'
+    year: ': 최근 1년'
     year_desc: '지난 365일간 생성된 토픽'
-    month: '월'
+    month: ': 최근 1개월'
     month_desc: '지난 30일간 생성된 토픽'
-    week: '주'
+    week: ': 최근 1주'
     week_desc: '지난 7일간 생성된 토픽'
     day: '일'
     
@@ -1222,7 +1222,7 @@ ko:
       allow_badges_label: "뱃지가 이 카테고리 내에서 주어질 수 있도록 허용"
       edit_permissions: "권한 수정"
       add_permission: "권한 추가"
-      this_year: "올해"
+      this_year: ": 최근 1년"
       position: "위치"
       default_position: "기본 위치"
       position_disabled: "카테고리는 활동량에 따라서 정렬됩니다. 목록 내의 카테고리 순서를 지정하려면, "
