@@ -226,7 +226,7 @@ ko:
 
       [trust]: http://www.manvsstyle.net/t/topic/21
   category:
-    topic_prefix: "'%{category}' 카테고리 설명"
+    topic_prefix: "이곳은 '%{category}' 카테고리입니다"
     replace_paragraph: "[이 첫번째 문단을 당신의 새로운 카테고리의 짧은 설명으로 바꿔주세요. 이 지침은 카테고리 선택 화면에 나타날 것입니다. 200자 이하로 적어주세요.]"
     post_template: "%{replace_paragraph}\n\n이 공간은 긴 설명을 사용하여 주세요. 또한 카테고리 가이드라인이나 룰도 이 공간을 이용해주세요.\n\n몇 가지 답글에 관련하여 고려해봐야 할 것들:\n\n- 무엇을 위한 카테고리인가? 왜 사용자들이 이 카테고리를 필요로 하겠는가?\n\n- 이미 가지고있는 다른 카테고리와 어떻게 다른가?\n\n- 정말 이 카테고리가 필요한가?\n\n- 다른 카테고리와 합병이 필요한가 아니면 더욱 자세한 카테고리로 나눌 필요가 있는가?\n"
     errors:
