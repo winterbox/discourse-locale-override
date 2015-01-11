@@ -328,7 +328,7 @@ ko:
     already_done: "죄송합니다. 이 계정 확인 링크는 더 이상 유효하지 않습니다."
     please_continue: "계정이 활성화되었고, 로그인 되었습니다."
     continue_button: "%{site_name}으로 가기"
-    welcome_to: "%{site_name}에 오신것을 환영합니다."
+    welcome_to: "%{site_name}에 오신 것을 환영합니다."
     approval_required: "이 포럼을 사용하기 위해선 운영자가 수동으로 당신의 새로운 계정을 허가해야 합니다. 계정이 허가되면 자동으로 이메일이 발송됩니다."
   post_action_types:
     off_topic:
@@ -1011,7 +1011,7 @@ ko:
         커뮤니티를 즐겨보세요!
         
     welcome_invite:
-      subject_template: "%{site_name} 사이트에 오신것을 환영합니다!"
+      subject_template: "%{site_name} 사이트에 오신 것을 환영합니다!"
       text_body_template: |
         %{site_name}에의 초대에 응해주셔서 고맙습니다. 환영합니다!
         
