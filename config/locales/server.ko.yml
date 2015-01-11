@@ -1300,7 +1300,7 @@ ko:
     signup:
       subject_template: "[%{site_name}] 새로운 계정을 활성화하세요"
       text_body_template: |
-        %{site_name}에 오신것을 환영합니다!
+        %{site_name}에 오신 것을 환영합니다!
 
         다음 링크를 클릭하여 당신의 신규 계정을 활성화하세요.
         %{base_url}/users/activate-account/%{email_token}
