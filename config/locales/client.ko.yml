@@ -134,6 +134,9 @@ ko:
       topic_count: "토픽"
       post_count: "게시물"
       user_count: "사용자"
+      contact: "Contact Us"
+      contact_info: "사이트 운영과 관련된 사항이나 요청이 있으시다면 이메일(%{contact_email})로 연락주시기 바랍니다."
+      
     bookmarks:
       not_logged_in: "게시물을 북마크하려면 로그인해야 합니다."
       created: "이 게시글을 북마크 하였습니다."
