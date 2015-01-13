@@ -137,6 +137,12 @@ ko:
       contact: "Contact Us"
       contact_info: "사이트 운영과 관련된 사항이나 요청이 있으시다면 이메일(%{contact_email})로 연락주시기 바랍니다."
       
+    bookmarked:
+      title: "북마크"
+      help:
+        bookmark: "이 토픽을 북마크"
+        unbookmark: "북마크 제거"
+      
     bookmarks:
       not_logged_in: "게시물을 북마크하려면 로그인해야 합니다."
       created: "이 게시글을 북마크 하였습니다."
@@ -908,7 +914,7 @@ ko:
         
       flag_topic:
         title: '신고'
-        help: '운영자에게 이 글을 신고합니다.'
+        help: '운영자에게 이글을 신고'
         success_message: '성공적으로 토픽을 신고 하였습니다.'
         
       inviting: "초대 중..."
@@ -927,7 +933,7 @@ ko:
       invite_reply:
         title: '초대'
         action: '이메일 초대'
-        help: '한 번의 클릭으로 이 토픽에 답글을 작성할 수 있도록 친구에게 초대장을 보낼 수 있습니다.'
+        help: '이 토론에 참여하도록 친구에게 초대장 발송'
         to_topic: "별도의 로그인 없이 이 토픽에 답글을 작성할 수 있도록 친구에게 이메일을 전송합니다."
         to_forum: "별도의 로그인 없이 이 포럼에 가입할 수 있도록 친구에게 이메일을 전송합니다."
         
@@ -1043,7 +1049,7 @@ ko:
         undo_like: "'좋아요' 취소하기"
         edit: "이 게시물을 편집합니다."
         edit_anonymous: "이 게시물을 수정하려면 로그인이 필요합니다."
-        flag: "운영자에게 이 글을 신고합니다."
+        flag: "운영자에게 이글을 신고합니다."
         delete: "이 게시물을 삭제합니다."
         undelete: "이 게시물 삭제를 취소합니다."
         share: "이 게시물의 주소를 공유합니다."
