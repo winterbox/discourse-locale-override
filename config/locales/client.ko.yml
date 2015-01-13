@@ -145,8 +145,8 @@ ko:
       
     bookmarks:
       not_logged_in: "게시물을 북마크하려면 로그인해야 합니다."
-      created: "이 게시글을 북마크 하였습니다."
-      not_bookmarked: "이미 이 게시물을 읽으셨습니다. 북마크하려면 클릭하세요."
+      created: "이 게시물을 북마크 하였습니다."
+      not_bookmarked: "이 게시물을 북마크하려면 클릭하세요."
       last_read: "마지막으로 읽으신 게시물입니다. 북마크하려면 클릭하세요."
       remove: "북마크 제거"
     topic_count_latest:
@@ -914,7 +914,7 @@ ko:
         
       flag_topic:
         title: '신고'
-        help: '운영자에게 이글을 신고'
+        help: '운영자에게 이 게시물을 신고'
         success_message: '성공적으로 토픽을 신고 하였습니다.'
         
       inviting: "초대 중..."
@@ -1049,7 +1049,7 @@ ko:
         undo_like: "'좋아요' 취소하기"
         edit: "이 게시물을 편집합니다."
         edit_anonymous: "이 게시물을 수정하려면 로그인이 필요합니다."
-        flag: "운영자에게 이글을 신고합니다."
+        flag: "운영자에게 이 게시물을 신고합니다."
         delete: "이 게시물을 삭제합니다."
         undelete: "이 게시물 삭제를 취소합니다."
         share: "이 게시물의 주소를 공유합니다."
