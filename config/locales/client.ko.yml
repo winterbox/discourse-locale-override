@@ -242,6 +242,7 @@ ko:
       mute: "알림 끄기"
       edit: "환경설정 편집"
       download_archive: "내 게시물을 아카이브로 다운로드"
+      new_private_message: "개인 메시지 보내기"
       private_message: "개인 메시지"
       private_messages: "메시지"
       activity_stream: "활동내역"
