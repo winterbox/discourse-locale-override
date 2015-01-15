@@ -1588,10 +1588,10 @@ ko:
             title: "백업 삭제"
             confirm: "정말 이 백업을 삭제할까요?"
           restore:
-            is_disabled: "사이트 설정에서 '복구 기능'이 비활성화 되어있습니다."
-            text: "복구하기"
-            title: "백업을 이용하여 복구"
-            confirm: "정말 이 백업을 이용하여 복구할까요?"
+            is_disabled: "사이트 설정에서 '복원 기능'이 비활성화 되어있습니다."
+            text: "복원하기"
+            title: "백업을 이용하여 복원"
+            confirm: "정말 이 백업을 이용하여 복원할까요?"
           rollback:
             text: "롤백"
             title: "데이터베이스를 이전 workiong state로 되돌리기"
