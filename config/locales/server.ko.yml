@@ -15,7 +15,7 @@ ko:
       short: "%Y년 %m %d일"
       short_no_year: "%B %-d일"
       date_only: "%Y년 %b %-d일"
-  title: "Man vs. Style"
+  title: "Discourse"
   topics: "토픽"
   posts: "포스트"
   loading: "로딩 중"
