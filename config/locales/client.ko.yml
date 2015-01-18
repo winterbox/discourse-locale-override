@@ -20,15 +20,15 @@ ko:
             tb: TB
     dates:
       time: "a h:mm"
-      long_no_year: "MMM D a h:mm "
-      long_no_year_no_time: "MMM D일"
-      long_with_year: "YYYY년  MMM D일 a h:mm"
-      long_with_year_no_time: "YYYY년 MMM D일"
-      long_date_with_year: "'YY년 MMM D일, LT"
-      long_date_without_year: "MMM D일, LT"
-      long_date_with_year_without_time: "'YY년 MMM D일"
-      long_date_without_year_with_linebreak: "MMM D일 <br/>LT"
-      long_date_with_year_with_linebreak: "'YY년 MMM D일, <br/>LT"
+      long_no_year: "MMM월 D일 a h:mm "
+      long_no_year_no_time: "MMM월 D일"
+      long_with_year: "YYYY년  MMM월 D일 a h:mm"
+      long_with_year_no_time: "YYYY년 MMM월 D일"
+      long_date_with_year: "'YY년 MMM월 D일, LT"
+      long_date_without_year: "MMM월 D일, LT"
+      long_date_with_year_without_time: "'YY년 MMM월 D일"
+      long_date_without_year_with_linebreak: "MMM월 D일 <br/>LT"
+      long_date_with_year_with_linebreak: "'YY년 MMM월 D일, <br/>LT"
       tiny:
         half_a_minute: "< 1분"
         less_than_x_seconds:
@@ -49,7 +49,7 @@ ko:
           other: "> %{count}년"
         almost_x_years:
           other: "%{count}년"
-        date_month: "MMM D일"
+        date_month: "MMM월 D일"
         date_year: "'YY년 M월"
       medium:
         x_minutes:
@@ -58,7 +58,7 @@ ko:
           other: "%{count}시간"
         x_days:
           other: "%{count}일"
-        date_year: "'YY년 MMM D일"
+        date_year: "'YY년 MMM월 D일"
       medium_with_ago:
         x_minutes:
           other: "%{count}분 전"
