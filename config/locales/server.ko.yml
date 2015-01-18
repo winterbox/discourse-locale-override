@@ -7,12 +7,12 @@
 
 ko:
   dates:
-    short_date_no_year: "MMM D일"
-    short_date: "YYYY년 MMM D일"
-    long_date: "YYYY년 MMM D일 a h:mm"
+    short_date_no_year: "MMM월 D일"
+    short_date: "YYYY년 MMM월 D일"
+    long_date: "YYYY년 MMM월 D일 a h:mm"
   time:
     formats:
-      short: "%Y년 %m %d일"
+      short: "%Y년 %m월 %d일"
       short_no_year: "%B %-d일"
       date_only: "%Y년 %b %-d일"
   title: "Discourse"
